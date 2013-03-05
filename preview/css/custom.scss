@@ -316,6 +316,7 @@ h1, h2, h3, h4, p {
 			float:left;
 			width:100%;
 			color: #353535;	
+			margin-top:-1px;
 			
 			p {
 				color: #353535;	
@@ -333,11 +334,11 @@ h1, h2, h3, h4, p {
 				}
 			}
 
-			.share {
+			.share, .legislator {
 
 				padding-top:20px;
 
-				.sociallabel {
+				.alabel {
 					width:100px;
 					float:left;
 					font-family: $font;
@@ -351,6 +352,35 @@ h1, h2, h3, h4, p {
 					float:left;
 					width:360px;
 				}
+			}
+
+			.legislator{
+				.alabel {
+					width:170px;
+				}
+
+				.zipcode {
+					float:left;
+					width:250px;
+
+					input {
+					height:45px;
+					margin-top:-10px;
+					width:100px;	
+						margin-bottom:4px;
+					}
+
+					#zipsubmit {
+						background-color: #2ecc71;
+						background-image:none;
+						margin-top:-10px;
+						margin-bottom:4px;
+					}
+
+
+
+				}
+
 			}
 		}
 

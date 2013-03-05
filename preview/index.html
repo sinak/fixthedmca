@@ -3,6 +3,7 @@
 	<title>FixTheDMCA.org</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="navbar navbar-fixed">
@@ -173,25 +174,82 @@
 			</div>
 
 			<div class="span6 share">
-
-				<div class="sociallabel">FACEBOOK:</div>
+				<div class="alabel">FACEBOOK:</div>
 				<div class="socialcontent">
 					<fb:like send="true" width="360" show_faces="false"></fb:like>
 				</div>
-
 				<div class="clearfix"></div>
-				<div class="sociallabel">TWITTER:</div>
-
+				<div class="alabel">TWITTER:</div>
 				<div class="socialcontent">
-				<a href="https://twitter.com/share" class="twitter-share-button" data-via="fixthedmca" data-related="sinak" data-hashtags="fixthedmca">Tweet</a>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="fixthedmca" data-related="sinak" data-hashtags="fixthedmca">Tweet</a>
 				</div>
-				
-
-				
 			</div>
 		</div>
 
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+		<div class="action">
+			<div class="span5 actiontitle">
+				<h3>Tweet at your legislators:</h3>
+			</div>
+
+			<div class="span6 legislator">
+				<div class="alabel">ENTER YOUR ZIP CODE:</div>
+				<div class="zipcode">
+					<input type="text" class="zip"></input>
+					<button  type="button" class="btn btn-large btn-success get-legislators" id="zipsubmit">Submit</button>
+					<br />
+				</div>
+				<div class="clearfix"></div>
+				(We'll use your zip code to find your congressional representatives)
+			</div>
+			<div class="clearfix"></div>
+
+
+			<div id="david"></div>
+		</div>
+
+
+		<script>
+
+		!function (d, s, id) {
+		    var js, fjs = d.getElementsByTagName(s)[0];
+		    if (!d.getElementById(id)) {
+		        js = d.createElement(s);
+		        js.id = id;
+		        js.src = "https://platform.twitter.com/widgets.js";
+		        fjs.parentNode.insertBefore(js, fjs);
+		    }
+		}(document, "script", "twitter-wjs");
+		
+		    $('.get-legislators').click(function () {
+		        $.ajax({
+		            type: 'GET',
+		            url: 'http://services.sunlightlabs.com/api/legislators.allForZip.json',
+		            data: 'zip=' + $('.zip').val() + '&apikey=0268e7d928694dfe85b778415c844a66',
+		            crossDomain: true,
+		            dataType: 'jsonp',
+		            jsonp: 'jsonp'
+		        }).done(function (xhr) {
+		                    console.log(xhr.response.legislators);
+
+		                    var a = xhr.response.legislators;
+
+		                    var html_fragment = '';
+
+		                    for (var i = 0; i < a.length; i++) {
+		                    	if ( a[i].legislator['twitter_id'] != '')
+		                    	{
+			                        html_fragment = html_fragment + '<a href="https://twitter.com/intent/tweet?screen_name=' + a[i].legislator['twitter_id'] + '" class="twitter-mention-button" data-lang="en">Tweet to @' + a[i].legislator['twitter_id'] + '</a><br>';
+		                        }
+		                    }
+		                    $("#david").html(html_fragment + i);
+
+		                });
+		    });
+
+		</script>
+
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 	</div>
 </div>
 
