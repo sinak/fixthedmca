@@ -246,7 +246,8 @@ h1, h2, h3, h4, p {
           font-family: "Yanone Kaffeesatz";
           font-size: 22px;
           height: 40px;
-          padding-top: 3px; }
+          padding-top: 1px;
+          font-weight: 100; }
         .join .container .action .share .socialcontent {
           float: left;
-          width: 300px; }
+          width: 360px; }
