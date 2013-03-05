@@ -222,19 +222,31 @@ h1, h2, h3, h4, p {
     font-size: 34px; }
   .join .container {
     padding-top: 30px; }
-  .join .action {
-    border: 1px solid #b0b0b0;
-    padding: 15px;
-    float: left;
-    width: 100%;
-    color: #353535; }
-    .join .action p {
-      color: #353535;
-      font-size: 24px;
-      font-weight: 100; }
-  .join .actiontitle h3 {
-    font-family: "Yanone Kaffeesatz";
-    font-size: 37px;
-    float: left;
-    font-weight: 400;
-    color: #353535; }
+    .join .container .action {
+      border: 1px solid #b0b0b0;
+      padding: 15px;
+      float: left;
+      width: 100%;
+      color: #353535; }
+      .join .container .action p {
+        color: #353535;
+        font-size: 24px;
+        font-weight: 100; }
+      .join .container .action .actiontitle h3 {
+        font-family: "Yanone Kaffeesatz";
+        font-size: 37px;
+        float: left;
+        font-weight: 400;
+        color: #353535; }
+      .join .container .action .share {
+        padding-top: 20px; }
+        .join .container .action .share .sociallabel {
+          width: 100px;
+          float: left;
+          font-family: "Yanone Kaffeesatz";
+          font-size: 22px;
+          height: 50px;
+          clear: both; }
+        .join .container .action .share .socialcontent {
+          float: left;
+          width: 400px; }

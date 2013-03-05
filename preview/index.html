@@ -167,13 +167,26 @@
 	<h2>Get Started</h2>
 	<div class="container">
 
-		<div class="action actiontitle">
-			<div class="span5">
+		<div class="action ">
+			<div class="span5 actiontitle">
 				<h3>Share this page:</h3>
 			</div>
+
 			<div class="span6 share">
-				<p>FACEBOOK:</p><fb:like send="true" width="450" show_faces="false"></fb:like>
-				<p>TWITTER:</p>
+
+				<div class="sociallabel">FACEBOOK:</div>
+				<div id="socialcontent">
+					Hi<fb:like send="true" width="450" show_faces="false"></fb:like>
+				</div>
+
+				<div class="clearfix"></div>
+				<div class="sociallabel">TWITTER:</div>
+
+				<div id="socialcontent">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-via="fixthedmca" data-size="large" data-related="sinak" data-hashtags="fixthedmca">Tweet</a>
+				</div>
+				
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 				
 			</div>
