@@ -31,14 +31,14 @@
     margin-left: 225px; }
 
 h1, h2, h3, h4, p {
-  font-family: "Kaffeesatz";
+  font-family: "kaffeesatz";
   color: #f1f1f1;
   font-weight: 300; }
 
 #step1 {
   margin-top: 50px; }
   #step1 h1 {
-    font-family: "Kaffeesatz";
+    font-family: "kaffeesatz";
     font-size: 60px;
     text-align: center;
     color: #f1f1f1;
@@ -47,7 +47,7 @@ h1, h2, h3, h4, p {
   #step1 .not-quite {
     margin-top: 30px; }
   #step1 h2 {
-    font-family: "Kaffeesatz";
+    font-family: "kaffeesatz";
     text-align: center;
     color: #f1f1f1;
     font-weight: 300;
@@ -167,7 +167,7 @@ h1, h2, h3, h4, p {
     color: #ffffff; }
   #blue li {
     list-decoration: none;
-    font-family: "Kaffeesatz";
+    font-family: "kaffeesatz";
     font-size: 28px;
     line-height: 2;
     margin-left: 5px;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, p {
         font-size: 24px;
         font-weight: 100; }
       .join .container .action .actiontitle h3 {
-        font-family: "Kaffeesatz";
+        font-family: "kaffeesatz";
         font-size: 37px;
         float: left;
         font-weight: 400;
@@ -258,7 +258,7 @@ h1, h2, h3, h4, p {
         .join .container .action .share .alabel, .join .container .action .legislator .alabel {
           width: 100px;
           float: left;
-          font-family: "Kaffeesatz";
+          font-family: "kaffeesatz";
           font-size: 22px;
           height: 40px;
           padding-top: 1px;
@@ -283,7 +283,7 @@ h1, h2, h3, h4, p {
           margin-bottom: 4px; }
       .join .container .action .legislator #choosereason {
         margin-top: 38px;
-        font-family: "Kaffeesatz"; }
+        font-family: "kaffeesatz"; }
         .join .container .action .legislator #choosereason .options {
           margin-left: 80px; }
         .join .container .action .legislator #choosereason label {
