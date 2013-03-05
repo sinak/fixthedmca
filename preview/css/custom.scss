@@ -1,4 +1,4 @@
-$font: "Yanone Kaffeesatz";
+$font: "Kaffeesatz";
 
 #gray-background {
 	background-image: url('../images/background.jpg');
@@ -20,6 +20,7 @@ $font: "Yanone Kaffeesatz";
 	}
 	.nav-supporters {
 		margin-top:13px;
+		float:right;
 	}
 }
 
@@ -27,9 +28,16 @@ $font: "Yanone Kaffeesatz";
 	position:fixed;
 	z-index: 5;
 	bottom: 0px;
-	left: 15px;
-	right: 15px;
-	height: 64px;
+	left: 0;
+	right: 0;
+	height: 54px;
+	background-color:#171717;
+	.convinced {
+		height: auto;
+		width: auto;
+		margin-top: -43px;
+		margin-left: 225px;
+	}
 }
 
 h1, h2, h3, h4, p {
@@ -47,6 +55,7 @@ h1, h2, h3, h4, p {
 		text-align:center;
 		color: #f1f1f1;
 		font-weight:300;
+		letter-spacing: 1;
 	}
 
 	.not-quite {
@@ -62,8 +71,11 @@ h1, h2, h3, h4, p {
 	}
 }
 
-#step2 {
+#two {
 	margin-top:140px;
+}
+#step2 {
+	
 	background-image: url('../images/computer.png');
 	background-repeat:no-repeat;
 	background-position:center;
@@ -110,9 +122,11 @@ h1, h2, h3, h4, p {
 	}
 }
 
-
+#three {
+		padding-top:150px;
+		margin-top:150px;
+}
 #step3 {
-	margin-top:300px;
 	h2 {
 		font-size:60px;
 		}
@@ -133,9 +147,11 @@ h1, h2, h3, h4, p {
 	}
 }
 
-
+#four, #five, #six, #seven {
+	margin-top:150px;
+	padding-top:150px;
+}
 #step4, #step5, #step6 {
-	margin-top:300px;
 	h2{
 		font-size:48px;
 		text-align:center;
@@ -145,7 +161,6 @@ h1, h2, h3, h4, p {
 }
 
 #step7 {
-	margin-top:300px;
 	h2 {
 		font-size:42px;
 		text-align:center;
@@ -171,7 +186,7 @@ h1, h2, h3, h4, p {
 		font-weight:100;
 		margin-top:30px;
 		color:#cecece;
-		line-height: 1.1;
+		line-height: 1.4;
 		letter-spacing: 1;
 	}
 
@@ -181,9 +196,11 @@ h1, h2, h3, h4, p {
 		font-weight:100;
 	}
 }
-
+#eight {
+	margin-top:70px;
+	padding-top:100px;
+}
 #step8 {
-	margin-top:250px;
 	h3 {
 		font-size:32px;
 		color: #cecece;
@@ -376,8 +393,51 @@ h1, h2, h3, h4, p {
 						margin-top:-10px;
 						margin-bottom:4px;
 					}
+				}
+
+				#choosereason {
+					margin-top:38px;
+					font-family: $font;
+
+					.options {
+						margin-left:80px;
+					}
+
+					label {
+						font-size:22px;
+						font-weight:100;
+						margin-top:20px;
+					}
+
+					p {
+						font-weight:400;
+					}
+				}
+
+				#legtweets {
+
+					margin-top:25px;
 
 
+					.legtweet {
+						
+						font-size:15px;
+						border: 1px #ccc solid;
+						background: #f6f6f6;
+						margin:15px;
+						margin-left:20px;
+						padding: 10px 15px;
+
+						.span2 {
+							padding-top:5px;
+							margin-left:20px;
+							text-align:right;
+						}
+
+						.span9 {margin-left:0}
+
+						.blue {color: #2980B9;}
+					}
 
 				}
 
