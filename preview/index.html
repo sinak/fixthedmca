@@ -230,10 +230,10 @@
 	</div>
 	-->
 
-	<div class="join">
+	<div class="join" id="join">
 
 		<h2>Get Started</h2>
-		<div class="container"  id="join">
+		<div class="container">
 			<div class="action">
 				<div class="span5 actiontitle">
 					<h3>Share this page:</h3>
@@ -316,7 +316,7 @@
 					<br />
 					<p>Enter your details and we'll send an email to your congressional representatives on your behalf.</p>
 					<div id="email-form">
-						<form id="rep-form">
+						<form id="rep-form" action="">
 						<fieldset>
 							<input type="hidden" name="object" value="supporter" />
 			        		<input type="hidden" name="organization_KEY" value="501" />
@@ -328,7 +328,7 @@
 								<input type="text" name="name" id="name" required="required">
 								</div>
 							</div>
-							<div class="email control-group">
+							<div class="email control-group error">
 								<label for="email">Your Email</label>
       							<div class="controls">
 									<input type="text" name="email" d="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required">
@@ -347,7 +347,7 @@
 								</div>
 							</div>
 							<div class="send">
-								<button   type="button" onclick="return false;" class="btn btn-large btn-success" id="email-send">Send</button>
+								<button type="submit" class="btn btn-large btn-success" id="email-send">Send</button>
 							</div>
 						</fieldset>
 						</form>
