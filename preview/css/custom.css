@@ -31,14 +31,14 @@
     margin-left: 225px; }
 
 h1, h2, h3, h4, p {
-  font-family: "kaffeesatz";
+  font-family: "Yanone Kaffeesatz";
   color: #f1f1f1;
   font-weight: 300; }
 
 #step1 {
   margin-top: 50px; }
   #step1 h1 {
-    font-family: "kaffeesatz";
+    font-family: "Yanone Kaffeesatz";
     font-size: 60px;
     text-align: center;
     color: #f1f1f1;
@@ -48,7 +48,7 @@ h1, h2, h3, h4, p {
     margin-top: 60px;
     margin-bottom: 60px; }
   #step1 h2 {
-    font-family: "kaffeesatz";
+    font-family: "Yanone Kaffeesatz";
     text-align: center;
     color: #f1f1f1;
     font-weight: 300;
@@ -103,7 +103,8 @@ h1, h2, h3, h4, p {
   margin-top: 20px;
   font-size: 30px;
   line-height: 1.3;
-  font-weight: 100; }
+  font-weight: 100;
+  color: #b3b3b3; }
 #step3 .smaller {
   font-size: 24px; }
 
@@ -120,17 +121,20 @@ h1, h2, h3, h4, p {
 #step7 h2 {
   font-size: 42px;
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  letter-spacing: 1; }
 #step7 h3 {
-  margin-top: 15px;
+  margin-top: 20px;
   color: #e1d400;
   font-size: 30px;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 1; }
 #step7 h4 {
-  margin-top: 15px;
+  margin-top: 20px;
   color: #e10000;
   font-size: 48px;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 1; }
 #step7 p {
   font-size: 30px;
   text-align: center;
@@ -155,6 +159,11 @@ h1, h2, h3, h4, p {
   margin-top: 30px;
   margin-bottom: 30px; }
 
+.add {
+  margin-left: 40px;
+  font-family: "Yanone Kaffeesatz";
+  font-size: 18px; }
+
 #blue {
   background-image: url("../images/blue.png");
   background-repeat: repeat;
@@ -168,7 +177,7 @@ h1, h2, h3, h4, p {
     color: #ffffff; }
   #blue li {
     list-decoration: none;
-    font-family: "kaffeesatz";
+    font-family: "Yanone Kaffeesatz";
     font-size: 28px;
     line-height: 2;
     margin-left: 5px;
@@ -176,14 +185,17 @@ h1, h2, h3, h4, p {
     font-weight: 100;
     letter-spacing: 1; }
   #blue h1, #blue h2 {
-    text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 48;
     line-height: 1.2; }
+  #blue h1 {
+    color: #faf692;
+    text-align: left; }
   #blue h2 {
     text-transform: uppercase;
-    letter-spacing: 3; }
+    letter-spacing: 3;
+    text-align: center; }
   #blue .supporters {
     margin-top: 30px; }
     #blue .supporters h1 {
@@ -251,14 +263,14 @@ h1, h2, h3, h4, p {
         font-size: 24px;
         font-weight: 100; }
       .join .container .action .actiontitle h3 {
-        font-family: "kaffeesatz";
+        font-family: "Yanone Kaffeesatz";
         font-size: 37px;
         float: left;
         font-weight: 400;
         color: #353535;
         letter-spacing: 1; }
       .join .container .action .actiontitle p {
-        font-family: "kaffeesatz";
+        font-family: "Yanone Kaffeesatz";
         font-size: 22px;
         height: 40px;
         padding-top: 1px;
@@ -268,7 +280,7 @@ h1, h2, h3, h4, p {
         .join .container .action .share .alabel, .join .container .action .legislator .alabel {
           width: 100px;
           float: left;
-          font-family: "kaffeesatz";
+          font-family: "Yanone Kaffeesatz";
           font-size: 22px;
           height: 40px;
           padding-top: 1px;
@@ -339,19 +351,19 @@ h1, h2, h3, h4, p {
           float: left;
           letter-spacing: 1; }
       .join .container .email h3 {
-        font-family: "kaffeesatz";
+        font-family: "Yanone Kaffeesatz";
         font-size: 37px;
         font-weight: 400;
         color: #353535;
         letter-spacing: 1; }
       .join .container .email p {
         font-size: 24px;
-        font-family: "kaffeesatz";
+        font-family: "Yanone Kaffeesatz";
         letter-spacing: 1; }
       .join .container .email #email-form {
         margin-top: 60px; }
         .join .container .email #email-form label {
-          font-family: "kaffeesatz";
+          font-family: "Yanone Kaffeesatz";
           font-size: 24px;
           color: #353535;
           font-weight: 300; }
