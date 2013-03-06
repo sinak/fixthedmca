@@ -40,7 +40,7 @@
             }
         },
         'goToSlide': function(n){
-            $.scrollTo(slideshow.$slides.eq(n), {
+            $.scrollTo(slideshow.$slides.eq(n), 500, {
                 'axis': 'y'
             });
         },
