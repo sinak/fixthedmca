@@ -373,7 +373,7 @@
 			                        message = "Hi @" + a[i].legislator['twitter_id'] + " I'd like to see the DMCA fixed so that unlocking phones for use with any carrier is permanently legal. #FixTheDMCA http://fixthedmca.org";
 			                        urlmessage = encodeURIComponent(message);
 
-			                        html_fragment = html_fragment + '<a href="https://twitter.com/intent/tweet?screen_name=twitterapi" class="twitter-mention-button" data-lang="en">Tweet to @twitterapi</a>';
+			                        html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">Hi <span class="blue">@' + a[i].legislator['twitter_id'] + '</span>, I\'d like to see Section 1201 of the DMCA fixed <em>so that unlocking phones for use with any carrier</em> is permanently legal. <span class="blue">#fixthedmca http://fixthedmca.org</span></div><div class="span2"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button" data-lang="en" data-count="none" data-size="large">Tweet</a></div></div>';
 
 
 
@@ -388,6 +388,7 @@
 		                    }
 
 		                    $("#legtweets").html(html_fragment);
+		                    $.getScript("http://platform.twitter.com/widgets.js");
 
 		                });
 
