@@ -207,7 +207,8 @@ h1, h2, h3, h4, p {
     margin-top: 30px; }
     #blue .supporters h1 {
       text-align: left;
-      margin-left: 15px; }
+      margin-left: 15px;
+      margin-bottom:25px; }
     #blue .supporters .supporter-list li {
       list-style: none;
       list-style-image: none;
