@@ -5,7 +5,7 @@
 	<link href="css/custom.css" rel="stylesheet">
 	<script type="text/javascript">if (Math.random()<0.0) {window.location="http://s.fixthedmca.org";}</script>
 
-	<!-- ENABLE FOR REMOTE -->
+	<!-- ENABLE FOR REMOTE -
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/zys6zcw.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -21,11 +21,11 @@
     		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   		})();
-  	</script>
+  	</script>->
   	
 
-  	<!-- Enable for local
-  	<script src="js/jquery.js"></script>-->
+  	<!-- Enable for local-->
+  	<script src="js/jquery.js"></script>
  	
 
 </head>
@@ -243,7 +243,7 @@
 
 				<div class="span6">
 					<div class="alabel">ENTER YOUR ZIP CODE:</div>
-					<div class="zipcode">
+					<div class="zipcode control-group">
 						<input type="text" class="zip"></input>
 						<button  type="button" class="btn btn-large btn-success get-legislators" id="zipsubmit">Submit</button>
 						<br />
@@ -258,19 +258,19 @@
 					<div class="options">
 						<div class="span5">
 							<label class="radio">
-								<input class="reason" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >Creating backup copies of DVDs.
+								<input class="reason" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >Jailbreaking phones and tablets.
 							</label>
 							<label class="radio">
-								<input class="reason" type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >Screen reading technology for the blind.
+								<input class="reason" type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >Unlocking phones for use with any carrier.
 							</label>
 						</div>
 
 						<div class="span5">
 							<label class="radio">
-								<input class="reason" type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >Unlocking phones for use with any carrier.
+								<input class="reason" type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >Screen reading technology for the blind.
 							</label>
 							<label class="radio">
-								<input class="reason" type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >Jailbreaking phones and tablets.
+								<input class="reason" type="radio" name="optionsRadios" id="optionsRadios4" value="option4" >Modifications and repairs to electronics.
 							</label>
 						</div>
 					</div>
@@ -443,16 +443,23 @@ function didSubmitEmail(d) {
 		                    	if ( a[i].legislator['twitter_id'] != '')
 		                    	{
 		                    		handles_avail = 1;
-			                        message = "Hi @" + a[i].legislator['twitter_id'] + " I'd like to see the DMCA fixed so  unlocking phones for use with any carrier is permanently legal. #FixTheDMCA http://fixthedmca.org";
-			                        messagef = 'Hi <span class="blue">@' + a[i].legislator['twitter_id'] + '</span> I\'d like to see the DMCA fixed so unlocking phones for use with any carrier is permanently legal. <span class="blue">#FixTheDMCA fixthedmca.org</span>';
-			                        urlmessage = encodeURIComponent(message);
+			                        message = "Hi <span class=\"blue\">@" + a[i].legislator['twitter_id'] + "</span>, I'm one of your constituents. Please fix the DMCA to <span class=\"choice\">make unlocking permanently legal</span>. <span class=\"blue\">#FixTheDMCA fixthedmca.org</span>";
+			                        messagef = 'Hi @' + a[i].legislator['twitter_id'] + ', I\'m one of your constituents. Please fix the DMCA to make unlocking permanently legal. #FixTheDMCA fixthedmca.org';
+			                        urlmessage = encodeURIComponent(messagef);
 
-			                        html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">' + messagef + '</div><div class="span2"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button" url="" data-lang="en" data-count="none" data-size="large">Tweet</a></div></div>';
+			                        html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">' + message + '</div><div class="span2" id="'+ a[i].legislator['twitter_id'] +'"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="" data-lang="en" data-count="none" data-size="large">Tweet</a></div></div>';
 		                        }
 		                    }
 
 		                    if (handles_avail == 1) {
 		                    	$('div#choosereason').removeClass('hide');
+		                    	$('.get-legislators').parent().removeClass("error");
+		                    }
+
+
+		                    if (handles_avail == 0) {
+		                    	$('div#choosereason').addClass('hide');
+		                    	$('.get-legislators').parent().addClass("error");
 		                    }
 
 		                    $("#legtweets").html(html_fragment);
@@ -467,12 +474,78 @@ function didSubmitEmail(d) {
 		        window.setTimeout(function(){}, 300);
 		    });
 
+		    $('input.zip').keypress(function(e) {
+		        if(e.which == 13) {
+		            $(this).blur();
+		            $('.get-legislators').focus().click();
+		        	window.setTimeout(function(){}, 300);
+			    }
+		    });
+
 			$('input.reason').click(function () {
+				selected = $(':radio:checked').attr('id');
+
+				var opt = new Array();
+				opt[0] = "make jailbreaking permanently legal";
+				opt[1] = "make unlocking permanently legal";
+				opt[2] = "make screenreading legal";
+				opt[3] = "make repairing and modifying legal";
+
+				if (selected == 'optionsRadios1'){
+					$('span.choice').html(opt[0]);
+					$('iframe.legislatortweet').each(function(){
+						twitter = $(this).parent().attr('id');
+						theparent = $(this).parent()
+						$(this).remove();
+						message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[0] + '.  #FixTheDMCA fixthedmca.org';
+						urlmessage = encodeURIComponent(message);
+						theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="" data-lang="en" data-count="none" data-size="large">Tweet</a>');
+					});
+					$.getScript("http://platform.twitter.com/widgets.js");
+				}
+				
+				if (selected == 'optionsRadios2'){
+					$('span.choice').html(opt[1]);
+					$('iframe.legislatortweet').each(function(){
+						twitter = $(this).parent().attr('id');
+						theparent = $(this).parent()
+						$(this).remove();
+						message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[1] + '.  #FixTheDMCA fixthedmca.org';
+						urlmessage = encodeURIComponent(message);
+						theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="" data-lang="en" data-count="none" data-size="large">Tweet</a>');
+					});
+					$.getScript("http://platform.twitter.com/widgets.js");
+				}
+
+				if (selected == 'optionsRadios3'){
+					$('span.choice').html(opt[2]);
+					$('iframe.legislatortweet').each(function(){
+						twitter = $(this).parent().attr('id');
+						theparent = $(this).parent()
+						$(this).remove();
+						message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[2] + '.  #FixTheDMCA fixthedmca.org';
+						urlmessage = encodeURIComponent(message);
+						theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="" data-lang="en" data-count="none" data-size="large">Tweet</a>');
+					});
+					$.getScript("http://platform.twitter.com/widgets.js");
+				}
+
+				if (selected == 'optionsRadios4'){
+					$('span.choice').html(opt[3]);
+					$('iframe.legislatortweet').each(function(){
+						twitter = $(this).parent().attr('id');
+						theparent = $(this).parent()
+						$(this).remove();
+						message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[3] + '.  #FixTheDMCA fixthedmca.org';
+						urlmessage = encodeURIComponent(message);
+						theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="" data-lang="en" data-count="none" data-size="large">Tweet</a>');
+					});
+					$.getScript("http://platform.twitter.com/widgets.js");
+				}
 
 				$('div#legtweets').removeClass('hide');
 
 			});
-
 		</script>
 
 		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
