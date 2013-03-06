@@ -36,7 +36,7 @@ $font: "Yanone Kaffeesatz";
 	.convinced {
 		height: auto;
 		width: auto;
-		margin-top: -43px;
+		margin-top: -49px;
 		margin-left: 225px;
 	}
 }
@@ -580,20 +580,26 @@ h1, h2, h3, h4, p {
 .about {
 	background-image: url('../images/background.jpg');
 	background-repeat: repeat;
-	height:800px;
+	height:640px;
 	margin-top:80px;
 
-	.about-push {
-		margin-top:30px;
+	h2 {
+		padding-bottom:0px;
+		padding-top:0px;
 	}
+
+	.about-push {
+		margin-top:20px;
+	}
+	img {margin-top:15px;}
 
 	h4{
 		color:#e1d400;
-		margin-top:23px;
+		font-family: 'Arial';
 	}
 
 	p {
-		font-size:18px;
-		letter-spacing: 1;
+		font-size:15px;
+		font-family: 'Arial';
 	}
 }
