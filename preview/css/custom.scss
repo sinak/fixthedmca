@@ -369,6 +369,7 @@ h1, h2, h3, h4, p {
 				font-weight:400;
 				color: #353535;	
 				letter-spacing: 1;
+				margin-left:-10px;
 				}
 				p {
 					font-family: $font;
@@ -425,6 +426,7 @@ h1, h2, h3, h4, p {
 						background-image:none;
 						margin-top:-10px;
 						margin-bottom:4px;
+						margin-left:10px;
 					}
 				}
 
@@ -482,7 +484,7 @@ h1, h2, h3, h4, p {
 			padding-left:13px;
 
 			.check-in{
-				margin-top:20px;
+				margin-top:0px;
 
 				input[type="checkbox"] {
 					display:inline;
@@ -494,7 +496,7 @@ h1, h2, h3, h4, p {
 					margin-top:12px;
 					margin-left:10px;
 					float:left;
-					letter-spacing: 1;
+					letter-spacing: 0.5;
 				}
 			}
 			h3 {
@@ -512,13 +514,14 @@ h1, h2, h3, h4, p {
 			}
 
 			#email-form{
-				margin-top:60px;
+				margin-top:50px;
 
 				label {
 					font-family: $font;
-					font-size:24px;
+					font-size:14px;
 					color:#353535;
 					font-weight:300;
+					font-family:"Arial";
 				}
 				input {
 					display:inline;
@@ -554,6 +557,8 @@ h1, h2, h3, h4, p {
 					height:54px;
 					margin-top:10px;
 					float:right;
+					background-color: #2ecc71;
+					background-image:none;
 				}
 			}
 
