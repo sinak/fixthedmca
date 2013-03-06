@@ -271,7 +271,8 @@ h1, h2, h3, h4, p {
         float: left;
         font-weight: 400;
         color: #353535;
-        letter-spacing: 1; }
+        letter-spacing: 1;
+        margin-left: -10px; }
       .join .container .action .actiontitle p {
         font-family: "Yanone Kaffeesatz";
         font-size: 22px;
@@ -311,7 +312,8 @@ h1, h2, h3, h4, p {
             background-color: #2ecc71;
             background-image: none;
             margin-top: -10px;
-            margin-bottom: 4px; }
+            margin-bottom: 4px;
+            margin-left: 10px; }
         .join .container .action .legislator #choosereason {
           margin-top: 38px; }
           .join .container .action .legislator #choosereason .options {
@@ -343,7 +345,7 @@ h1, h2, h3, h4, p {
     .join .container .email {
       padding-left: 13px; }
       .join .container .email .check-in {
-        margin-top: 20px; }
+        margin-top: 0px; }
         .join .container .email .check-in input[type="checkbox"] {
           display: inline;
           float: left; }
@@ -352,7 +354,7 @@ h1, h2, h3, h4, p {
           margin-top: 12px;
           margin-left: 10px;
           float: left;
-          letter-spacing: 1; }
+          letter-spacing: 0.5; }
       .join .container .email h3 {
         font-family: "Yanone Kaffeesatz";
         font-size: 37px;
@@ -364,12 +366,13 @@ h1, h2, h3, h4, p {
         font-family: "Yanone Kaffeesatz";
         letter-spacing: 1; }
       .join .container .email #email-form {
-        margin-top: 60px; }
+        margin-top: 50px; }
         .join .container .email #email-form label {
           font-family: "Yanone Kaffeesatz";
-          font-size: 24px;
+          font-size: 14px;
           color: #353535;
-          font-weight: 300; }
+          font-weight: 300;
+          font-family: "Arial"; }
         .join .container .email #email-form input {
           display: inline;
           height: 30px;
@@ -398,7 +401,9 @@ h1, h2, h3, h4, p {
           width: 130px;
           height: 54px;
           margin-top: 10px;
-          float: right; }
+          float: right;
+          background-color: #2ecc71;
+          background-image: none; }
       .join .container .email .behalf {
         margin-top: 40px; }
       .join .container .email .email-text {
