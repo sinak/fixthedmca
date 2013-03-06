@@ -165,7 +165,7 @@ function didSubmitEmail(d) {
                                           name: $('#name').val(),                   
                                           street_address: $('#address').val(),                   
                                           zip: $('#zip-code').val(),                   
-                                          opt_in: $('#optin').val(),               
+                                          opt_in: $('#optin').is(':checked'),               
                                           }}),                                      
         dataType: 'json',
         contentType : 'application/json', 
