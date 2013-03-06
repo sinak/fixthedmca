@@ -28,7 +28,10 @@
     height: auto;
     width: auto;
     margin-top: -49px;
-    margin-left: 225px; }
+    margin-left: 225px;
+    position: fixed;
+    right: 20px;
+    bottom: 2px; }
 
 h1, h2, h3, h4, p {
   font-family: "Yanone Kaffeesatz";
