@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
    	<title>FixTheDMCA.org</title>
-   	<meta name="viewport" content="width=720,
-                               maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -296,31 +295,6 @@
 									<input class="reason" type="radio" name="optionsRadios" id="optionsRadios4" value="option4" >Modifications and repairs to electronics.
 								</label>
 							</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="action">
-			<div class="email">
-				<h3>Email your legislators:</h3><br />
-				<p>Enter your details and we'll send an email to your congressional representatives on your behalf.</p>
-				<div id="email-form">
-					<form id="rep-form">
-						<input type="hidden" name="object" value="supporter" />
-		        <input type="hidden" name="organization_KEY" value="501" />
-				  	<input type="hidden" name="tag" value="UNIQUE_IDENTIFIER_FOR_CAMPAIGN" />        
-						<input type="hidden" name="redirect" value="http://www.fixthedmca.org"> 
-						<div class="name">
-							<label for="name">Name</label>
-							<input type="text" id="name">
-						</div>
-						<div class="email">
-							<label for="email">Your Email</label>
-							<input type="text" id="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required">
-						</div>
-						<div class="street">
-							<label for="address">Street Address</label>
-							<input type="text" id="address">
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -386,94 +360,11 @@
 							<label for="optin" class="label-optin">Send me occasional important updates from FixTheDMCA.org and <a href="http://www.fightforthefuture.org/" target="_blank">Fight for the Future</a> (<a href="http://fightforthefuture.org/privacy/" target="_blank">privacy</a>).</label>
 						</div>
 						<div class="clearfix"></div>
-		</div>
-</div>
-
-		<script>
-			!function (d, s, id) {
-			    var js, fjs = d.getElementsByTagName(s)[0];
-			    if (!d.getElementById(id)) {
-			        js = d.createElement(s);
-			        js.id = id;
-			        js.src = "https://platform.twitter.com/widgets.js";
-			        fjs.parentNode.insertBefore(js, fjs);
-			    }
-			}(document, "script", "twitter-wjs");
-
-function didSubmitEmail(d) {
-  alert('Thanks for your support!');
-  $('rep-form')[0].reset();
-}
-
-  $('#email-send').click(function(){                                               
-      $.ajax({                                                                      
-        type: 'POST',
-        url: '/api/add_email_rep/1',                                                
-        data: JSON.stringify({email_rep: {
-                                          email: $('#email').val(),                 
-                                          name: $('#name').val(),                   
-                                          street_address: $('#address').val(),                   
-                                          zip: $('#address').val(),                   
-                                          opt_in: $('#optin').val(),               
-                                          }}),                                      
-        dataType: 'json',
-        contentType : 'application/json', 
-        success: didSubmitEmail
-      });                                                                           
-      return false;
-  
-    });
-
-			function submitZip()
-			{
-				$.ajax({
-		            type: 'GET',
-		            url: 'http://services.sunlightlabs.com/api/legislators.allForZip.json',
-		            data: 'zip=' + $('.zip').val() + '&apikey=0268e7d928694dfe85b778415c844a66',
-		            crossDomain: true,
-		            dataType: 'jsonp',
-		            jsonp: 'jsonp'
-		        }).done(function (xhr) {
-		                    //console.log(xhr.response.legislators);
-
-		                    var a = xhr.response.legislators;
-
-		                    var html_fragment = '';
-		                    var handles_avail = 0;
-
-		                    for (var i = 0; i < a.length; i++) {
-		                    	if ( a[i].legislator['twitter_id'] != '')
-		                    	{
-		                    		handles_avail = 1;
-			                        //html_fragment = html_fragment + '<a href="https://twitter.com/intent/tweet?screen_name=' + a[i].legislator['twitter_id'] + '" class="twitter-mention-button" data-lang="en">Tweet to @' + a[i].legislator['twitter_id'] + '</a><br>';
-
-			                        message = "Hi @" + a[i].legislator['twitter_id'] + " I'd like to see the DMCA fixed so that unlocking phones for use with any carrier is permanently legal. #FixTheDMCA http://fixthedmca.org";
-			                        urlmessage = encodeURIComponent(message);
-
-			                        html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">Hi <span class="blue">@' + a[i].legislator['twitter_id'] + '</span>, I\'d like to see Section 1201 of the DMCA fixed <em>so that unlocking phones for use with any carrier</em> is permanently legal. <span class="blue">#fixthedmca http://fixthedmca.org</span></div><div class="span2"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button" data-lang="en" data-count="none" data-size="large">Tweet</a></div></div>';
-
-
-
-			                        //html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">Hi <span class="blue">' + a[i].legislator['twitter_id'] + '</span>, I\'d like to see Section 1201 of the DMCA fixed <em>so that unlocking phones for use with any carrier</em> is permanently legal. <span class="blue">#fixthedmca http://fixthedmca.org</span></div><div class="span2"><a href="https://twitter.com/intent/tweet?screen_name=' + a[i].legislator['twitter_id'] + '" class="twitter-mention-button" data-lang="en"></div></div>';
-			                        //html_fragment = html_fragment + '<a href="https://twitter.com/share?text=Hello%20there%20this%20is%20text%20%40sinak" class="twitter-share-button" data-dnt="true" data-related="sinak" data-count="none" data-size="large" data-via="twitterapi">Tweet</a>';
-
-		                        }
-		                    }
 
 						<p class="behalf">The text we'll email on your behalf:</p>
 						<p class='email-text'>"Section 1201 of the Digital Millenium Copyright Act was originally written to protect copyright owners from privacy by outlawing "circumvention of technological protection measures." But the broad language in the anti-circumvention provisions means that technologies such as carrier unlocking cell phones, "jailbreaking" phones, tablets and games consoles, as well as creating non-infringing personal backups of DVDs are all in a legal grey area. Individuals, companies and consumer advocacy groups must request exemptions from the LIbrarian of Congress on a triennual basis, and these are sometimes granted. Most recently, an exemption for unlocking phones was not renewed by the Librarian, a decision that is bad for consumers and innovation. <br /><br />
 
 						I have joined a campaign to anti-circumvention provision of the DMCA (section 1201) at http://fixthedmca.org, and would like to ask you to also support a bill to that effect in congress. Will you join us? <br /><br />
-		                    $("#legtweets").html(html_fragment);
-
-		                });
-
-			}
-
-		    $('.get-legislators').click(function () {
-		        submitZip();
-		        window.setTimeout(function(){}, 300);
-		    });
 
 						Best regards, <br /><br />
 
