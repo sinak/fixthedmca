@@ -25,6 +25,8 @@ $font: "kaffeesatz";
 	}
 }
 
+
+#rep-form {margin-bottom:0px;}
 .overlay {
 	position:fixed;
 	z-index: 5;
@@ -258,7 +260,7 @@ h1, h2, h3, h4, p {
 
 		margin-top:50px;
 		margin-bottom:50px;
-		font-size:48;
+		font-size:42px;
 		line-height: 1.2;
 	}
 	h1 {
@@ -270,6 +272,7 @@ h1, h2, h3, h4, p {
 		text-transform:uppercase;
 		letter-spacing: 3;
 		text-align:center;
+		font-size:60px;
 	}
 
 	.supporters {
@@ -418,7 +421,7 @@ h1, h2, h3, h4, p {
 					margin-bottom:10px;
 
 					input {
-					height:45px;
+					height:35px;
 					margin-top:-10px;
 					width:100px;	
 						margin-bottom:4px;
@@ -545,7 +548,7 @@ h1, h2, h3, h4, p {
 					width:210px;
 					float:left;
 					display:inline;
-					input {width:210px;}
+					input {width:195px;}
 				}
 
 				.zip {
@@ -558,7 +561,7 @@ h1, h2, h3, h4, p {
 				#email-send{
 					width: 130px;
 					height:54px;
-					margin-top:10px;
+					margin-top:20px;
 					float:right;
 					background-color: #2ecc71;
 					background-image:none;

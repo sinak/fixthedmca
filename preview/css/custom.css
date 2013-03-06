@@ -16,6 +16,9 @@
     margin-top: 13px;
     float: right; }
 
+#rep-form {
+  margin-bottom: 0px; }
+
 .overlay {
   position: fixed;
   z-index: 5;
@@ -190,7 +193,7 @@ h1, h2, h3, h4, p {
   #blue h1, #blue h2 {
     margin-top: 50px;
     margin-bottom: 50px;
-    font-size: 48;
+    font-size: 42px;
     line-height: 1.2; }
   #blue h1 {
     color: #faf692;
@@ -198,7 +201,8 @@ h1, h2, h3, h4, p {
   #blue h2 {
     text-transform: uppercase;
     letter-spacing: 3;
-    text-align: center; }
+    text-align: center;
+    font-size: 60px; }
   #blue .supporters {
     margin-top: 30px; }
     #blue .supporters h1 {
@@ -304,7 +308,7 @@ h1, h2, h3, h4, p {
           width: 250px;
           margin-bottom: 10px; }
           .join .container .action .legislator .zipcode input {
-            height: 45px;
+            height: 35px;
             margin-top: -10px;
             width: 100px;
             margin-bottom: 4px; }
@@ -390,7 +394,7 @@ h1, h2, h3, h4, p {
           float: left;
           display: inline; }
           .join .container .email #email-form .email input, .join .container .email #email-form .street input {
-            width: 210px; }
+            width: 195px; }
         .join .container .email #email-form .zip {
           width: 90px;
           float: left;
@@ -400,7 +404,7 @@ h1, h2, h3, h4, p {
         .join .container .email #email-form #email-send {
           width: 130px;
           height: 54px;
-          margin-top: 10px;
+          margin-top: 20px;
           float: right;
           background-color: #2ecc71;
           background-image: none; }

@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
    	<title>FixTheDMCA.org</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<meta name="viewport" content="width=720,
+                               maximum-scale=1.0" />
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -24,19 +25,6 @@
 	<script type="text/javascript" src="//use.typekit.net/zys6zcw.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
- 		_gaq.push(['_setAccount', 'UA-39057900-1']);
-  		_gaq.push(['_setDomainName', 'grassroots.io']);
-  		_gaq.push(['_trackPageview']);
-
-  		(function() {
-    		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  		})();
-  	</script>
-  	
 
   	<!-- Enable for local
   	<script src="js/jquery.js"></script>
@@ -70,7 +58,7 @@
 					<div class="phone">
 						<p>On October 28th, the</p>
 						<p class="below">
-							decided to not renew an exemption for <br />
+							decided not to renew an exemption for <br />
 							<strong>carrier unlocking cell phones*</strong>
 						</p>
 					</div>
@@ -129,7 +117,7 @@
 					<h2>The Culprit:</h2>
 					<h3>"The Anti-Circumvention Provision"</h3>
 					<h4>Section 1201 of the Digital Millenium Copyright Act</h4>
-					<p>Orignally passed by Congress to protect music labels and the movie industry from piracy, Section 1201 is now being used to prevent Americans from making fair use of the things we buy. The law specifies that the Librarian of Congress can make exemptions every three years.</p>
+					<p>Originally passed by Congress to protect music labels and the movie industry from piracy, Section 1201 is now being used to prevent Americans from making fair use of the things we buy. The law specifies that the Librarian of Congress can make exemptions every three years.</p>
 					<p class="smaller">You can read the librarian's 2012 ruling <a href="https://s3.amazonaws.com/public-inspection.federalregister.gov/2012-26308.pdf">here.</a></p>
 				</div>
 			</section>
@@ -151,8 +139,8 @@
 	<div id="blue">
 		<div class="container">
 
-			<h1>We're asking Congress to fight for consumer rights and <strong>fix the DMCA</strong>. We need your help.</h1>
-			<p>Repealing section 1201  would make the following <strong>clearly and permanently legal:</strong></p>
+			<h1>We're asking Congress to fight for consumer rights and <strong>fix the DMCA</strong>. <br />We need your help.</h1>
+			<p>Repealing section 1201  would make the following clearly and permanently legal:</p>
 			<ul class="pink-list">
 				<li>Unlocking cell phones</li>
 				<li>Jailbreaking phones, tablets, and game consoles</li>
@@ -230,10 +218,10 @@
 	</div>
 	-->
 
-	<div class="join" id="join">
+	<div class="join">
 
 		<h2>Get Started</h2>
-		<div class="container">
+		<div class="container"  id="join">
 			<div class="action">
 				<div class="span5 actiontitle">
 					<h3>Share this page:</h3>
@@ -247,7 +235,7 @@
 					<div class="clearfix"></div>
 					<div class="alabel">TWITTER:</div>
 					<div class="socialcontent">
-						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fixthedmca.org" data-text="Unlocking, jailbreaking and modifying need to be legally protected. Join the #FixTheDMCA Campaign!" data-via="fixthedmca" data-related="sinak">Tweet</a>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fixthedmca.org" data-text="Think you own the electronics you buy? Not quite. #FixTheDMCA" data-via="fixthedmca" data-related="sinak">Tweet</a>
 						<a href="https://twitter.com/fixthedmca" class="twitter-follow-button" data-show-count="false">Follow @fixthedmca</a>
 					</div>
 				</div>
@@ -317,41 +305,51 @@
 					<p>Enter your details and we'll send an email to your congressional representatives on your behalf.</p>
 					<div id="email-form">
 						<form id="rep-form">
+						<fieldset>
 							<input type="hidden" name="object" value="supporter" />
 			        		<input type="hidden" name="organization_KEY" value="501" />
 					  		<input type="hidden" name="tag" value="UNIQUE_IDENTIFIER_FOR_CAMPAIGN" />        
 							<input type="hidden" name="redirect" value="http://www.fixthedmca.org"> 
 							<div class="name  control-group">
-								<label for="name">First and ALName</label>
+								<label for="name">First and last name</label>
+      							<div class="controls">
 								<input type="text" name="name" id="name" required="required">
+								</div>
 							</div>
 							<div class="email control-group">
 								<label for="email">Your Email</label>
-								<input type="text" name="email" d="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required">
+      							<div class="controls">
+									<input type="text" name="email" id="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required">
+								</div>
 							</div>
 							<div class="street  control-group">
 								<label for="address">Street Address</label>
-								<input type="text" name="address" id="address" required="required">
+      							<div class="controls">
+									<input type="text" name="address" id="address" required="required">
+								</div>
 							</div>
 							<div class="zip  control-group">
 								<label for="zip-code">Zip Code</label>
-								<input type="text" name="zip-code" id="zip-code" pattern="^[\d-]{5,10}$" required="required">-
+      							<div class="controls">
+									<input type="text" maxlength="6" name="zip-code" id="zip-code" pattern="^[\d-]{5,10}$" required="required">
+								</div>
 							</div>
-							<div class="send  control-group">-
-								<button  type="submit" class="btn btn-large btn-success" id="email-send">Send</button>
+							<div class="send">
+								<button type="submit" class="btn btn-large btn-success" id="email-send">Send</button>
 							</div>
+						</fieldset>
 						</form>
 						<div class="clearfix"></div>
 						<div class="check-in">
 							<input type="checkbox" id="optin" checked>
-							<label for="optin" class="label-optin">Send me occasional important updates from FixTheDMCA.org and <a href="http://www.fightforthefuture.org/" target="_blank">Fight for the Future</a>.</label>
+							<label for="optin" class="label-optin">Send me occasional important updates from FixTheDMCA.org and <a href="http://www.fightforthefuture.org/" target="_blank">Fight for the Future</a> (<a href="http://fightforthefuture.org/privacy/" target="_blank">privacy</a>).</label>
 						</div>
 						<div class="clearfix"></div>
 
 						<p class="behalf">The text we'll email on your behalf:</p>
 						<p class='email-text'>"Section 1201 of the Digital Millenium Copyright Act was originally written to protect copyright owners from privacy by outlawing "circumvention of technological protection measures." But the broad language in the anti-circumvention provisions means that technologies such as carrier unlocking cell phones, "jailbreaking" phones, tablets and games consoles, as well as creating non-infringing personal backups of DVDs are all in a legal grey area. Individuals, companies and consumer advocacy groups must request exemptions from the LIbrarian of Congress on a triennual basis, and these are sometimes granted. Most recently, an exemption for unlocking phones was not renewed by the Librarian, a decision that is bad for consumers and innovation. <br /><br />
 
-						I have joined a campaign to anti-circumvention provision of the DMCA (section 1201) at http://fixthedmca.org, and would like to ask you to also support a bill to that effect in congress. Will you join us? <br /><br />
+						I'm part of a campaign to fix thea nti-circumvention provision of the DMCA (section 1201) at http://fixthedmca.org, and would like to ask you to also support a bill to that effect in congress. Will you join us? <br /><br />
 
 						Best regards, <br /><br />
 
@@ -375,8 +373,8 @@
 							<img class="face" src="images/sina.png" style="height:60px;width:60px;"/>
 						</div>
 						<div class="about-text span9">
-							<h4>Sina Khanifar</h4>
-							<p>Starter of the WeThePeople Petition to <a href="https://petitions.whitehouse.gov/petition/make-unlocking-cell-phones-legal/1g9KhZG7">Legalize Cell-Phone Unlocking</a>, Co-Founder of OpenSignal. Previously experienced wrangling with the DMCA during his <a href="http://www.cell-unlock.com/motorola-unlock">motorola unlocking</a> days.
+							<h4>Sina Khanifar - <a href="http://twitter.com/sinak" target="blank">@sinak</a></h4>
+							<p>Starter of the We the People Petition to <a href="https://petitions.whitehouse.gov/petition/make-unlocking-cell-phones-legal/1g9KhZG7">Legalize Cell-Phone Unlocking</a>, Co-Founder of <a href="http://opensignal.com">OpenSignal</a>. Previously experienced problems with the DMCA during his <a href="http://www.cell-unlock.com/motorola-unlock">unlocking</a> days.
 						</div>
 					</div>
 					<div class="row about-push">
@@ -393,7 +391,7 @@
 								<img class="face" src="images/dimitri.png" style="height:60px;width:60px;" />
 						</div>
 						<div class="about-text span9">
-							<h4>Dimitri Fischler</h4>
+							<h4>Dimitri Fischler - <a href="http://twitter.com/dimfisch" target="blank">@dimfisch</a></h4>
 							<p> Originally from Belgium, Dimitri has worked at Google for five years doing revenue analysis and strategy, and then joined a mobile payments startup as a product manager. He has lived in Antwerp, Brussels, Barcelona, London, San Francisco and New York.</p>
 						</div>
 					</div>
@@ -402,8 +400,8 @@
 							<img class="face" src="images/austin.png" style="height:60px;width:60px;" />
 						</div>
 						<div class="about-text span9">
-							<h4>Austin Smith</h4>
-							<p>Austin is the community manager for <a href="http://www.singly.com">Singly</a> in San Francisco. His most recent project at singly is APIs & IPAs, a nationwide series of tech happy hours.</p>
+							<h4>Austin Smith  - <a href="http://twitter.com/awwstn" target="blank">@awwstn</a></h4>
+							<p>Austin is the community manager for <a href="http://www.singly.com">Singly</a> in San Francisco. His most recent project at singly is APIs &amp; IPAs, a nationwide series of tech happy hours.</p>
 						</div>
 					</div>
 				</div>
@@ -438,5 +436,18 @@
 	<script src="js/jquery.scrollTo-1.4.3.1-min.js"> </script>
 	<script src="js/script.js"> </script>
 	<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38676652-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>

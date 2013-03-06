@@ -63,7 +63,7 @@
 
 
 $(window).scroll(function(){
-      if($(window).scrollTop()>5700){
+      if($(window).scrollTop()>5500){
          $(".overlay").hide();
       }else{
          $(".overlay").show();
@@ -149,7 +149,7 @@ $(document).ready(function(){
 
 function didSubmitEmail(d) {
   alert('Thanks for your support!');
-  $('rep-form')[0].reset();
+  $('#rep-form')[0].reset();
 }
 
 // FORM VALIDATION
@@ -164,7 +164,7 @@ function didSubmitEmail(d) {
                                           email: $('#email').val(),                 
                                           name: $('#name').val(),                   
                                           street_address: $('#address').val(),                   
-                                          zip: $('#address').val(),                   
+                                          zip: $('#zip-code').val(),                   
                                           opt_in: $('#optin').val(),               
                                           }}),                                      
         dataType: 'json',
@@ -244,10 +244,10 @@ function didSubmitEmail(d) {
                 selected = $(':radio:checked').attr('id');
 
                 var opt = new Array();
-                opt[0] = "make jailbreaking permanently legal";
-                opt[1] = "make unlocking permanently legal";
+                opt[0] = "make jailbreaking legal";
+                opt[1] = "make unlocking legal";
                 opt[2] = "make screenreading legal";
-                opt[3] = "make repairing and modifying legal";
+                opt[3] = "make modifying & repairing legal";
 
                 if (selected == 'optionsRadios1'){
                     $('span.choice').html(opt[0]);
@@ -255,9 +255,9 @@ function didSubmitEmail(d) {
                         twitter = $(this).parent().attr('id');
                         theparent = $(this).parent()
                         $(this).remove();
-                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[0] + '.  #FixTheDMCA fixthedmca.org';
+                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[0] + '.  #FixTheDMCA';
                         urlmessage = encodeURIComponent(message);
-                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="" data-lang="en" data-count="none" data-size="large">Tweet</a>');
+                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a>');
                     });
                     $.getScript("http://platform.twitter.com/widgets.js");
                 }
@@ -268,9 +268,9 @@ function didSubmitEmail(d) {
                         twitter = $(this).parent().attr('id');
                         theparent = $(this).parent()
                         $(this).remove();
-                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[1] + '.  #FixTheDMCA fixthedmca.org';
+                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[1] + '.  #FixTheDMCA';
                         urlmessage = encodeURIComponent(message);
-                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="" data-lang="en" data-count="none" data-size="large">Tweet</a>');
+                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a>');
                     });
                     $.getScript("http://platform.twitter.com/widgets.js");
                 }
@@ -281,9 +281,9 @@ function didSubmitEmail(d) {
                         twitter = $(this).parent().attr('id');
                         theparent = $(this).parent()
                         $(this).remove();
-                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[2] + '.  #FixTheDMCA fixthedmca.org';
+                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[2] + '.  #FixTheDMCA';
                         urlmessage = encodeURIComponent(message);
-                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="" data-lang="en" data-count="none" data-size="large">Tweet</a>');
+                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a>');
                     });
                     $.getScript("http://platform.twitter.com/widgets.js");
                 }
@@ -294,9 +294,9 @@ function didSubmitEmail(d) {
                         twitter = $(this).parent().attr('id');
                         theparent = $(this).parent()
                         $(this).remove();
-                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[3] + '.  #FixTheDMCA fixthedmca.org';
+                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[3] + '.  #FixTheDMCA';
                         urlmessage = encodeURIComponent(message);
-                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="" data-lang="en" data-count="none" data-size="large">Tweet</a>');
+                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a>');
                     });
                     $.getScript("http://platform.twitter.com/widgets.js");
                 }
