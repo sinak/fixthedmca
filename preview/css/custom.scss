@@ -38,6 +38,9 @@ $font: "Yanone Kaffeesatz";
 		width: auto;
 		margin-top: -49px;
 		margin-left: 225px;
+		position: fixed;
+		right: 20px;
+		bottom: 2px;
 	}
 }
 
@@ -585,18 +588,24 @@ h1, h2, h3, h4, p {
 .about {
 	background-image: url('../images/background.jpg');
 	background-repeat: repeat;
-	height:640px;
+	min-height:140px;
 	margin-top:80px;
 
 	h2 {
 		padding-bottom:0px;
 		padding-top:0px;
+		text-align: left;
+	}
+
+	#small-arrow{
+		margin-top: -7px;
+		margin-left: 10px;
 	}
 
 	.about-push {
 		margin-top:20px;
 	}
-	img {margin-top:15px;}
+	img.face {margin-top:15px;}
 
 	h4{
 		color:#e1d400;

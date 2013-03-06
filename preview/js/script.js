@@ -70,6 +70,16 @@ $(window).scroll(function(){
       }
 });
 
+$('#about').click(function () {
+    if ($(".about-content").is(":hidden")) {
+    $(".about-content").slideDown("500");
+    return false;
+    } else {
+    $(".about-content").hide();
+    return false;
+    }
+});
+
    window.trackScrollDepth = {
         'elements': (function(){
             var $slides = $('section'),
