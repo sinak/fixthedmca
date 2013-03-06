@@ -31,24 +31,23 @@
     margin-left: 225px; }
 
 h1, h2, h3, h4, p {
-  font-family: "Yanone Kaffeesatz";
+  font-family: "kaffeesatz";
   color: #f1f1f1;
   font-weight: 300; }
 
 #step1 {
   margin-top: 50px; }
   #step1 h1 {
-    font-family: "Yanone Kaffeesatz";
+    font-family: "kaffeesatz";
     font-size: 60px;
     text-align: center;
     color: #f1f1f1;
     font-weight: 300;
     letter-spacing: 1; }
   #step1 .not-quite {
-    margin-top: 60px;
-    margin-bottom: 60px; }
+    margin-top: 30px; }
   #step1 h2 {
-    font-family: "Yanone Kaffeesatz";
+    font-family: "kaffeesatz";
     text-align: center;
     color: #f1f1f1;
     font-weight: 300;
@@ -168,7 +167,7 @@ h1, h2, h3, h4, p {
     color: #ffffff; }
   #blue li {
     list-decoration: none;
-    font-family: "Yanone Kaffeesatz";
+    font-family: "kaffeesatz";
     font-size: 28px;
     line-height: 2;
     margin-left: 5px;
@@ -244,31 +243,22 @@ h1, h2, h3, h4, p {
       width: 100%;
       color: #353535;
       margin-top: -1px; }
-      .join .container .action .hide {
-        display: none; }
       .join .container .action p {
         color: #353535;
         font-size: 24px;
         font-weight: 100; }
       .join .container .action .actiontitle h3 {
-        font-family: "Yanone Kaffeesatz";
+        font-family: "kaffeesatz";
         font-size: 37px;
         float: left;
         font-weight: 400;
-        color: #353535;
-        letter-spacing: 1; }
-      .join .container .action .actiontitle p {
-        font-family: "Yanone Kaffeesatz";
-        font-size: 22px;
-        height: 40px;
-        padding-top: 1px;
-        font-weight: 100; }
+        color: #353535; }
       .join .container .action .share, .join .container .action .legislator {
         padding-top: 20px; }
         .join .container .action .share .alabel, .join .container .action .legislator .alabel {
           width: 100px;
           float: left;
-          font-family: "Yanone Kaffeesatz";
+          font-family: "kaffeesatz";
           font-size: 22px;
           height: 40px;
           padding-top: 1px;
@@ -276,122 +266,46 @@ h1, h2, h3, h4, p {
         .join .container .action .share .socialcontent, .join .container .action .legislator .socialcontent {
           float: left;
           width: 360px; }
-      .join .container .action .legislator {
-        padding-top: 0px;
-        padding-bottom: 5px; }
-        .join .container .action .legislator .alabel {
-          width: 170px; }
-        .join .container .action .legislator .span6 {
-          padding-top: 20px; }
-        .join .container .action .legislator .zipcode {
-          float: left;
-          width: 250px;
-          margin-bottom: 10px; }
-          .join .container .action .legislator .zipcode input {
-            height: 45px;
-            margin-top: -10px;
-            width: 100px;
-            margin-bottom: 4px; }
-          .join .container .action .legislator .zipcode #zipsubmit {
-            background-color: #2ecc71;
-            background-image: none;
-            margin-top: -10px;
-            margin-bottom: 4px; }
-        .join .container .action .legislator #choosereason {
-          margin-top: 38px;
-          font-family: "Yanone Kaffeesatz"; }
-          .join .container .action .legislator #choosereason .options {
-            margin-left: 80px; }
-          .join .container .action .legislator #choosereason label {
-            font-size: 22px;
-            font-weight: 100;
-            margin-top: 20px;
-            letter-spacing: 1; }
-          .join .container .action .legislator #choosereason p {
-            font-weight: 400;
-            letter-spacing: 1; }
-        .join .container .action .legislator #legtweets {
-          margin-top: 25px; }
-          .join .container .action .legislator #legtweets .legtweet {
-            font-size: 15px;
-            border: 1px #cccccc solid;
-            background: #f6f6f6;
-            margin: 15px;
-            margin-left: 20px;
-            padding: 10px 15px; }
-            .join .container .action .legislator #legtweets .legtweet .span2 {
-              padding-top: 5px;
-              margin-left: 20px;
-              text-align: right; }
-            .join .container .action .legislator #legtweets .legtweet .span9 {
-              margin-left: 0; }
-            .join .container .action .legislator #legtweets .legtweet .blue {
-              color: #2980B9; }
-    .join .container .email {
-      padding-left: 13px; }
-      .join .container .email .check-in {
-        margin-top: 20px; }
-        .join .container .email .check-in input[type="checkbox"] {
-          display: inline;
-          float: left; }
-        .join .container .email .check-in label.label-optin {
-          display: inline;
-          margin-top: 12px;
-          margin-left: 10px;
-          float: left;
-          letter-spacing: 1; }
-      .join .container .email h3 {
-        font-family: "Yanone Kaffeesatz";
-        font-size: 37px;
-        font-weight: 400;
-        color: #353535;
-        letter-spacing: 1; }
-      .join .container .email p {
-        font-size: 24px;
-        font-family: "Yanone Kaffeesatz";
-        letter-spacing: 1; }
-      .join .container .email #email-form {
-        margin-top: 60px; }
-        .join .container .email #email-form label {
-          font-family: "Yanone Kaffeesatz";
-          font-size: 24px;
-          color: #353535;
-          font-weight: 300; }
-        .join .container .email #email-form input {
-          display: inline;
-          height: 30px;
-          margin-top: 8px; }
-        .join .container .email #email-form div {
-          margin-right: 15px; }
-        .join .container .email #email-form .name {
-          width: 175px;
-          float: left;
-          display: inline; }
-          .join .container .email #email-form .name input {
-            width: 175px; }
-        .join .container .email #email-form .email, .join .container .email #email-form .street {
-          width: 210px;
-          float: left;
-          display: inline; }
-          .join .container .email #email-form .email input, .join .container .email #email-form .street input {
-            width: 210px; }
-        .join .container .email #email-form .zip {
-          width: 90px;
-          float: left;
-          display: inline; }
-          .join .container .email #email-form .zip input {
-            width: 90px; }
-        .join .container .email #email-form #email-send {
-          width: 130px;
-          height: 54px;
-          margin-top: 10px;
-          float: right; }
-      .join .container .email .behalf {
-        margin-top: 40px; }
-      .join .container .email .email-text {
-        font-family: "Arial";
-        font-size: 13px;
-        color: #353535;
-        letter-spacing: 0;
-        padding-right: 15px;
+      .join .container .action .legislator .alabel {
+        width: 170px; }
+      .join .container .action .legislator .zipcode {
+        float: left;
+        width: 250px; }
+        .join .container .action .legislator .zipcode input {
+          height: 45px;
+          margin-top: -10px;
+          width: 100px;
+          margin-bottom: 4px; }
+        .join .container .action .legislator .zipcode #zipsubmit {
+          background-color: #2ecc71;
+          background-image: none;
+          margin-top: -10px;
+          margin-bottom: 4px; }
+      .join .container .action .legislator #choosereason {
+        margin-top: 38px;
+        font-family: "kaffeesatz"; }
+        .join .container .action .legislator #choosereason .options {
+          margin-left: 80px; }
+        .join .container .action .legislator #choosereason label {
+          font-size: 22px;
+          font-weight: 100;
+          margin-top: 20px; }
+        .join .container .action .legislator #choosereason p {
+          font-weight: 400; }
+      .join .container .action .legislator #legtweets {
         margin-top: 25px; }
+        .join .container .action .legislator #legtweets .legtweet {
+          font-size: 15px;
+          border: 1px #cccccc solid;
+          background: #f6f6f6;
+          margin: 15px;
+          margin-left: 20px;
+          padding: 10px 15px; }
+          .join .container .action .legislator #legtweets .legtweet .span2 {
+            padding-top: 5px;
+            margin-left: 20px;
+            text-align: right; }
+          .join .container .action .legislator #legtweets .legtweet .span9 {
+            margin-left: 0; }
+          .join .container .action .legislator #legtweets .legtweet .blue {
+            color: #2980B9; }

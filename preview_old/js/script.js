@@ -1,12 +1,4 @@
 
-	$('button #email-send').click( function() {
-		$.post("/",  $(this).serialize(), function(data) {
-			// response from server
-		},
-		'json'
-    );
-});
-
 (function($){ 
 	 window.slideshow = {
         '$slides': $('section'),

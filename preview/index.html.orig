@@ -3,15 +3,23 @@
 	<title>FixTheDMCA.org</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
-<<<<<<< HEAD
+	<script type="text/javascript">if (Math.random()<0.0) {window.location="http://s.fixthedmca.org";}</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-=======
 	<script type="text/javascript" src="//use.typekit.net/zys6zcw.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+ 		_gaq.push(['_setAccount', 'UA-39057900-1']);
+  		_gaq.push(['_setDomainName', 'grassroots.io']);
+  		_gaq.push(['_trackPageview']);
 
-
->>>>>>> 1ea6dc414e4e30d703f3eb6022f7ac45cc4eec36
+  		(function() {
+    		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+  	</script>
 </head>
 <body>
 <div class="navbar navbar-fixed">
@@ -192,11 +200,11 @@
 	</div>
 </div>
 
-<div class="join">
+<div class="join" id="join">
 	<h2>Get Started</h2>
 	<div class="container">
 
-		<div class="action ">
+		<div class="action">
 			<div class="span5 actiontitle">
 				<h3>Share this page:</h3>
 			</div>
@@ -263,19 +271,64 @@
 							Hi <span class="blue">@barbaraboxer</span>, I'd like to see Section 1201 of the DMCA repealed <em>so that unlocking phones for use with any carrier</em> is permanently legal. <span class="blue">#fixthedmca http://fixthedmca.org</span>
 						</div>
 						<div class="span2">
-							<a href=""><img src="images/tweet_leg.jpg" />
+							<a href=""><img src="images/tweet_leg.jpg" /></a>
 						</div>
 					</div>
 
 				<div id="legislatortweets" class="hide" >
-
 				</div>
-
-				</div>
-
 			</div>
 		</div>
+	</div>
 
+		<div class="action">
+			<div class="email">
+				<h3>Email your legislators:</h3><br />
+				<p>Enter your details and we'll send an email to your congressional representatives on your behalf.</p>
+				<div id="email-form">
+					<form>
+						<input type="hidden" name="object" value="supporter" />
+		        <input type="hidden" name="organization_KEY" value="501" />
+				  	<input type="hidden" name="tag" value="UNIQUE_IDENTIFIER_FOR_CAMPAIGN" />        
+						<input type="hidden" name="redirect" value="http://www.fixthedmca.org"> 
+						<div class="name">
+							<label for="name">Name</label>
+							<input type="text" id="name">
+						</div>
+						<div class="email">
+							<label for="email">Your Email</label>
+							<input type="text" id="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required">
+						</div>
+						<div class="street">
+							<label for="address">Street Address</label>
+							<input type="text" id="address">
+						</div>
+						<div class="zip">
+							<label for="zip-code">Zip Code</label>
+							<input type="text" id="zip-code" pattern="^[\d-]{5,10}$" required="required">
+						</div>
+						<div class="send">
+							<button  type="submit" class="btn btn-large btn-success" id="email-send">Send</button>
+						</div>
+					</form>
+					<div class="clearfix"></div>
+					<div class="check-in">
+						<input type="checkbox" id="optin">
+						<label for="optin" class="label-optin">You would like to receive messages from <a href="http://www.fightforthefuture.org/">FFTF</a> and FixTheDMCA.org</label>
+				</div>
+				<div class="clearfix"></div>
+
+				<p class="behalf">The text we'll email on your behalf:</p>
+				<p class='email-text'>"Section 1201 of the Digital Millenium Copyright Act was originally written to protect copyright owners from privacy by outlawing "circumvention of technological protection measures." But the broad language in the anti-circumvention provisions means that technologies such as carrier unlocking cell phones, "jailbreaking" phones, tablets and games consoles, as well as creating non-infringing personal backups of DVDs are all in a legal grey area. Individuals, companies and consumer advocacy groups must request exemptions from the LIbrarian of Congress on a triennual basis, and these are sometimes granted. Most recently, an exemption for unlocking phones was not renewed by the Librarian, a decision that is bad for consumers and innovation. <br /><br />
+
+				I have joined a campaign to anti-circumvention provision of the DMCA (section 1201) at http://fixthedmca.org, and would like to ask you to also support a bill to that effect in congress. Will you join us? <br /><br />
+
+				Best regards, <br /><br />
+
+				YOUR NAME.
+			</div>
+		</div>
+</div>
 
 		<script>
 			!function (d, s, id) {
@@ -323,7 +376,7 @@
 	<div class="pagination-centered">
 		<a href="#" id="scroll">	<img src="images/arrow-bar.png"></a>
 	</div>
-<<<<<<< HEAD
+		<a href="#join"><img src="images/convinced.png" class="convinced"/></a>
 </div>
 
 <div id="fb-root"></div>
@@ -336,11 +389,8 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-=======
-	<a href="#form"><img src="images/convinced.png" class="convinced"/></a>
 </div>	
 <script src="js/jquery.scrollTo-1.4.3.1-min.js"> </script>
 <script src="js/script.js"> </script>
->>>>>>> 1ea6dc414e4e30d703f3eb6022f7ac45cc4eec36
 </body>
 </html>

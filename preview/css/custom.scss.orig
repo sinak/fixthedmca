@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 $font: "kaffeesatz";
 $font: "Yanone Kaffeesatz";
+=======
+$font: "yanone kaffeesatz";
+>>>>>>> ebb5a34116742aca76988e40a2aa051ea416b8ab
 
 #gray-background {
 	background-image: url('../images/background.jpg');

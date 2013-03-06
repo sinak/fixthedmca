@@ -1,5 +1,4 @@
 $font: "kaffeesatz";
-$font: "Yanone Kaffeesatz";
 
 #gray-background {
 	background-image: url('../images/background.jpg');
@@ -60,8 +59,7 @@ h1, h2, h3, h4, p {
 	}
 
 	.not-quite {
-		margin-top:60px;
-		margin-bottom:60px;
+		margin-top:30px;
 	}
 
 	h2 {
@@ -337,10 +335,6 @@ h1, h2, h3, h4, p {
 			color: #353535;	
 			margin-top:-1px;
 			
-			.hide {
-				display:none;
-			}
-
 			p {
 				color: #353535;	
 				font-size:24px;
@@ -354,14 +348,6 @@ h1, h2, h3, h4, p {
 				float:left;
 				font-weight:400;
 				color: #353535;	
-				letter-spacing: 1;
-				}
-				p {
-					font-family: $font;
-					font-size:22px;
-					height:40px;
-					padding-top:1px;
-					font-weight:100;
 				}
 			}
 
@@ -386,18 +372,13 @@ h1, h2, h3, h4, p {
 			}
 
 			.legislator{
-				padding-top:0px;
-				padding-bottom:5px;
 				.alabel {
 					width:170px;
 				}
 
-				.span6 {padding-top:20px;}
-
 				.zipcode {
 					float:left;
 					width:250px;
-					margin-bottom:10px;
 
 					input {
 					height:45px;
@@ -426,12 +407,10 @@ h1, h2, h3, h4, p {
 						font-size:22px;
 						font-weight:100;
 						margin-top:20px;
-						letter-spacing: 1;
 					}
 
 					p {
 						font-weight:400;
-						letter-spacing: 1;
 					}
 				}
 
@@ -465,99 +444,6 @@ h1, h2, h3, h4, p {
 			}
 		}
 
-		.email {
-			padding-left:13px;
-
-			.check-in{
-				margin-top:20px;
-
-				input[type="checkbox"] {
-					display:inline;
-					float:left;
-				}
-
-				label.label-optin {
-					display:inline;
-					margin-top:12px;
-					margin-left:10px;
-					float:left;
-					letter-spacing: 1;
-				}
-			}
-			h3 {
-				font-family: $font;
-				font-size:37px;
-				font-weight:400;
-				color: #353535;	
-				letter-spacing: 1;
-			}
-
-			p {
-				font-size:24px;
-				font-family:$font;
-				letter-spacing:1;
-			}
-
-			#email-form{
-				margin-top:60px;
-
-				label {
-					font-family: $font;
-					font-size:24px;
-					color:#353535;
-					font-weight:300;
-				}
-				input {
-					display:inline;
-					height:30px;
-					margin-top:8px;
-				}
-
-				div {margin-right:15px;}
-
-				.name {
-					width:175px;
-					float:left;
-					display:inline;
-					input {width:175px;}
-				}
-
-				.email, .street {
-					width:210px;
-					float:left;
-					display:inline;
-					input {width:210px;}
-				}
-
-				.zip {
-					width:90px;
-					float:left;
-					display: inline;
-					input {width:90px;}
-				}
-
-				#email-send{
-					width: 130px;
-					height:54px;
-					margin-top:10px;
-					float:right;
-				}
-			}
-
-			.behalf {
-				margin-top: 40px;
-			}
-
-			.email-text {
-				font-family:"Arial";
-				font-size:13px;
-				color: #353535;
-				letter-spacing: 0;
-				padding-right:15px;
-				margin-top:25px;
-			}
-
-		}
 	}
 
 
