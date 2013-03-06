@@ -211,8 +211,8 @@ h1, h2, h3, h4, p {
     #blue .supporters .supporter-list li {
       list-style: none;
       list-style-image: none;
+      line-height:1.5;
       list-decoration: none;
-      margin-top: -2px;
       font-size: 18px; }
     #blue .supporters .supporter-list a {
       color: #f1f1f1; }
