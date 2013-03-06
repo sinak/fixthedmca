@@ -24,9 +24,9 @@
   	</script>
   	
 
-  	<!-- Enable for local 
-  	<script src="js/jquery.js"></script>
- 	-->
+  	<!-- Enable for local
+  	<script src="js/jquery.js"></script>-->
+ 	
 
 </head>
 <body>
@@ -296,7 +296,7 @@
 				<h3>Email your legislators:</h3><br />
 				<p>Enter your details and we'll send an email to your congressional representatives on your behalf.</p>
 				<div id="email-form">
-					<form>
+					<form id="rep-form">
 						<input type="hidden" name="object" value="supporter" />
 		        <input type="hidden" name="organization_KEY" value="501" />
 				  	<input type="hidden" name="tag" value="UNIQUE_IDENTIFIER_FOR_CAMPAIGN" />        
@@ -351,6 +351,30 @@
 			    }
 			}(document, "script", "twitter-wjs");
 
+function didSubmitEmail(d) {
+  alert('Thanks for your support!');
+  $('rep-form')[0].reset();
+}
+
+  $('#email-send').click(function(){                                               
+      $.ajax({                                                                      
+        type: 'POST',
+        url: '/api/add_email_rep/1',                                                
+        data: JSON.stringify({email_rep: {
+                                          email: $('#email').val(),                 
+                                          name: $('#name').val(),                   
+                                          street_address: $('#address').val(),                   
+                                          zip: $('#address').val(),                   
+                                          opt_in: $('#optin').val(),               
+                                          }}),                                      
+        dataType: 'json',
+        contentType : 'application/json', 
+        success: didSubmitEmail
+      });                                                                           
+      return false;
+  
+    });
+
 			function submitZip()
 			{
 				$.ajax({
@@ -372,17 +396,12 @@
 		                    	if ( a[i].legislator['twitter_id'] != '')
 		                    	{
 		                    		handles_avail = 1;
-			                        //html_fragment = html_fragment + '<a href="https://twitter.com/intent/tweet?screen_name=' + a[i].legislator['twitter_id'] + '" class="twitter-mention-button" data-lang="en">Tweet to @' + a[i].legislator['twitter_id'] + '</a><br>';
 
-			                        message = "Hi @" + a[i].legislator['twitter_id'] + " I'd like to see the DMCA fixed so that unlocking phones for use with any carrier is permanently legal. #FixTheDMCA http://fixthedmca.org";
+			                        message = "Hi @" + a[i].legislator['twitter_id'] + " I'd like to see the DMCA fixed so  unlocking phones for use with any carrier is permanently legal. #FixTheDMCA http://fixthedmca.org";
+			                        messagef = 'Hi <span class="blue">@' + a[i].legislator['twitter_id'] + '</span> <strong>I\'d like to see the DMCA fixed so  unlocking phones for use with any carrier is permanently legal.</strong> <span class="blue" #FixTheDMCA http://fixthedmca.org</span>';
 			                        urlmessage = encodeURIComponent(message);
 
-			                        html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">Hi <span class="blue">@' + a[i].legislator['twitter_id'] + '</span>, I\'d like to see Section 1201 of the DMCA fixed <em>so that unlocking phones for use with any carrier</em> is permanently legal. <span class="blue">#fixthedmca http://fixthedmca.org</span></div><div class="span2"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-mention-button" data-lang="en"><img src="images/tweet_leg.jpg" /></a></div></div>';
-
-
-			                        //html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">Hi <span class="blue">' + a[i].legislator['twitter_id'] + '</span>, I\'d like to see Section 1201 of the DMCA fixed <em>so that unlocking phones for use with any carrier</em> is permanently legal. <span class="blue">#fixthedmca http://fixthedmca.org</span></div><div class="span2"><a href="https://twitter.com/intent/tweet?screen_name=' + a[i].legislator['twitter_id'] + '" class="twitter-mention-button" data-lang="en"></div></div>';
-			                        //html_fragment = html_fragment + '<a href="https://twitter.com/share?text=Hello%20there%20this%20is%20text%20%40sinak" class="twitter-share-button" data-dnt="true" data-related="sinak" data-count="none" data-size="large" data-via="twitterapi">Tweet</a>';
-
+			                        html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">' + messagef + '</div><div class="span2"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button" url="" data-lang="en" data-count="none" data-size="large">Tweet</a></div></div>';
 		                        }
 		                    }
 
@@ -391,6 +410,8 @@
 		                    }
 
 		                    $("#legtweets").html(html_fragment);
+		                    $.getScript("http://platform.twitter.com/widgets.js");
+
 		                });
 
 			}
