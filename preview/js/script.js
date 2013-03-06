@@ -107,57 +107,23 @@ $('#about').click(function () {
 
 // SCRIPTS FOR TWEET AND CONTACT BEGIN HERE
 
-$(document).ready(function(){
- 
- $('#rep-form').validate(
- {
-  rules: {
-    name: {
-      minlength: 2,
-      required: true
-    },
-    email: {
-      required: true,
-      email: true
-    },
-    "zip-code": {
-      minlength: 5,
-      required: true
-    }
-  },
-  highlight: function(element) {
-    $(element).closest('.control-group').removeClass('success').addClass('error');
-  },
-  success: function(element) {
-    element
-    .text('OK!').addClass('valid')
-    .closest('.control-group').removeClass('error').addClass('success');
-  }
- });
-}); // end document.ready
-
-
-!function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (!d.getElementById(id)) {
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }
-}(document, "script", "twitter-wjs");
+            !function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "https://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");
 
 function didSubmitEmail(d) {
   alert('Thanks for your support!');
   $('rep-form')[0].reset();
 }
 
-// FORM VALIDATION
-
-  $('#email-send').click(function(){   
-      if ($("#rep-form").valid() == true)
-      {
-        $.ajax({                                                                      
+  $('#email-send').click(function(){                                               
+      $.ajax({                                                                      
         type: 'POST',
         url: '/api/add_email_rep/1',                                                
         data: JSON.stringify({email_rep: {
@@ -171,14 +137,9 @@ function didSubmitEmail(d) {
         contentType : 'application/json', 
         success: didSubmitEmail
       });                                                                           
- //     return false;
+      return false;
   
-    }
-                                                           
-    return false;
-});
-                                                  
-      
+    });
 
             function submitZip()
             {
@@ -306,5 +267,34 @@ function didSubmitEmail(d) {
             });
 
 
+// FORM VALIDATION
 
+$(document).ready(function(){
+ 
+ $('#rep-form').validate(
+ {
+  rules: {
+    name: {
+      minlength: 2,
+      required: true
+    },
+    email: {
+      required: true,
+      email: true
+    },
+    "zip-code": {
+      minlength: 5,
+      required: true
+    }
+  },
+  highlight: function(element) {
+    $(element).closest('.control-group').removeClass('success').addClass('error');
+  },
+  success: function(element) {
+    element
+    .text('OK!').addClass('valid')
+    .closest('.control-group').removeClass('error').addClass('success');
+  }
+ });
+}); // end document.ready
 
