@@ -298,15 +298,13 @@ h1, h2, h3, h4, p {
             margin-top: -10px;
             margin-bottom: 4px; }
         .join .container .action .legislator #choosereason {
-          margin-top: 38px;
-          font-family: "kaffeesatz"; }
+          margin-top: 38px; }
           .join .container .action .legislator #choosereason .options {
             margin-left: 80px; }
           .join .container .action .legislator #choosereason label {
-            font-size: 22px;
-            font-weight: 100;
-            margin-top: 20px;
-            letter-spacing: 1; }
+            font-size: 17px;
+            font-weight: 300;
+            margin-top: 20px; }
           .join .container .action .legislator #choosereason p {
             font-weight: 400;
             letter-spacing: 1; }
