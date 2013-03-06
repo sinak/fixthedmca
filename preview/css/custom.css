@@ -31,14 +31,14 @@
     margin-left: 225px; }
 
 h1, h2, h3, h4, p {
-  font-family: "Yanone Kaffeesatz";
+  font-family: "kaffeesatz";
   color: #f1f1f1;
   font-weight: 300; }
 
 #step1 {
   margin-top: 50px; }
   #step1 h1 {
-    font-family: "Yanone Kaffeesatz";
+    font-family: "kaffeesatz";
     font-size: 60px;
     text-align: center;
     color: #f1f1f1;
@@ -48,7 +48,7 @@ h1, h2, h3, h4, p {
     margin-top: 60px;
     margin-bottom: 60px; }
   #step1 h2 {
-    font-family: "Yanone Kaffeesatz";
+    font-family: "kaffeesatz";
     text-align: center;
     color: #f1f1f1;
     font-weight: 300;
@@ -161,7 +161,7 @@ h1, h2, h3, h4, p {
 
 .add {
   margin-left: 40px;
-  font-family: "Yanone Kaffeesatz";
+  font-family: "kaffeesatz";
   font-size: 18px; }
 
 #blue {
@@ -177,7 +177,7 @@ h1, h2, h3, h4, p {
     color: #ffffff; }
   #blue li {
     list-decoration: none;
-    font-family: "Yanone Kaffeesatz";
+    font-family: "kaffeesatz";
     font-size: 28px;
     line-height: 2;
     margin-left: 5px;
@@ -263,14 +263,14 @@ h1, h2, h3, h4, p {
         font-size: 24px;
         font-weight: 100; }
       .join .container .action .actiontitle h3 {
-        font-family: "Yanone Kaffeesatz";
+        font-family: "kaffeesatz";
         font-size: 37px;
         float: left;
         font-weight: 400;
         color: #353535;
         letter-spacing: 1; }
       .join .container .action .actiontitle p {
-        font-family: "Yanone Kaffeesatz";
+        font-family: "kaffeesatz";
         font-size: 22px;
         height: 40px;
         padding-top: 1px;
@@ -280,7 +280,7 @@ h1, h2, h3, h4, p {
         .join .container .action .share .alabel, .join .container .action .legislator .alabel {
           width: 100px;
           float: left;
-          font-family: "Yanone Kaffeesatz";
+          font-family: "kaffeesatz";
           font-size: 22px;
           height: 40px;
           padding-top: 1px;
@@ -351,19 +351,19 @@ h1, h2, h3, h4, p {
           float: left;
           letter-spacing: 1; }
       .join .container .email h3 {
-        font-family: "Yanone Kaffeesatz";
+        font-family: "kaffeesatz";
         font-size: 37px;
         font-weight: 400;
         color: #353535;
         letter-spacing: 1; }
       .join .container .email p {
         font-size: 24px;
-        font-family: "Yanone Kaffeesatz";
+        font-family: "kaffeesatz";
         letter-spacing: 1; }
       .join .container .email #email-form {
         margin-top: 60px; }
         .join .container .email #email-form label {
-          font-family: "Yanone Kaffeesatz";
+          font-family: "kaffeesatz";
           font-size: 24px;
           color: #353535;
           font-weight: 300; }
