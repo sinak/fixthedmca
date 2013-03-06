@@ -292,7 +292,7 @@
 				<h3>Email your legislators:</h3><br />
 				<p>Enter your details and we'll send an email to your congressional representatives on your behalf.</p>
 				<div id="email-form">
-					<form>
+					<form id="rep-form">
 						<input type="hidden" name="object" value="supporter" />
 		        <input type="hidden" name="organization_KEY" value="501" />
 				  	<input type="hidden" name="tag" value="UNIQUE_IDENTIFIER_FOR_CAMPAIGN" />        
@@ -346,6 +346,30 @@
 			        fjs.parentNode.insertBefore(js, fjs);
 			    }
 			}(document, "script", "twitter-wjs");
+
+function didSubmitEmail(d) {
+  alert('Thanks for your support!');
+  $('rep-form')[0].reset();
+}
+
+  $('#email-send').click(function(){                                               
+      $.ajax({                                                                      
+        type: 'POST',
+        url: '/api/add_email_rep/1',                                                
+        data: JSON.stringify({email_rep: {
+                                          email: $('#email').val(),                 
+                                          name: $('#name').val(),                   
+                                          street_address: $('#address').val(),                   
+                                          zip: $('#address').val(),                   
+                                          opt_in: $('#optin').val(),               
+                                          }}),                                      
+        dataType: 'json',
+        contentType : 'application/json', 
+        success: didSubmitEmail
+      });                                                                           
+      return false;
+  
+    });
 
 			function submitZip()
 			{
