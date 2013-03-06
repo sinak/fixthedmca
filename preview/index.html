@@ -316,45 +316,35 @@
 					<br />
 					<p>Enter your details and we'll send an email to your congressional representatives on your behalf.</p>
 					<div id="email-form">
-						<form id="rep-form" action="">
-						<fieldset>
+						<form id="rep-form">
 							<input type="hidden" name="object" value="supporter" />
 			        		<input type="hidden" name="organization_KEY" value="501" />
 					  		<input type="hidden" name="tag" value="UNIQUE_IDENTIFIER_FOR_CAMPAIGN" />        
 							<input type="hidden" name="redirect" value="http://www.fixthedmca.org"> 
 							<div class="name  control-group">
-								<label for="name">First and last name</label>
-      							<div class="controls">
+								<label for="name">First and ALName</label>
 								<input type="text" name="name" id="name" required="required">
-								</div>
 							</div>
-							<div class="email control-group error">
+							<div class="email control-group">
 								<label for="email">Your Email</label>
-      							<div class="controls">
-									<input type="text" name="email" d="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required">
-								</div>
+								<input type="text" name="email" d="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required">
 							</div>
 							<div class="street  control-group">
 								<label for="address">Street Address</label>
-      							<div class="controls">
-									<input type="text" name="address" id="address" required="required">
-								</div>
+								<input type="text" name="address" id="address" required="required">
 							</div>
 							<div class="zip  control-group">
 								<label for="zip-code">Zip Code</label>
-      							<div class="controls">
-									<input type="text" maxlength="6" name="zip-code" id="zip-code" pattern="^[\d-]{5,10}$" required="required">
-								</div>
+								<input type="text" name="zip-code" id="zip-code" pattern="^[\d-]{5,10}$" required="required">-
 							</div>
-							<div class="send">
-								<button type="submit" class="btn btn-large btn-success" id="email-send">Send</button>
+							<div class="send  control-group">-
+								<button  type="submit" class="btn btn-large btn-success" id="email-send">Send</button>
 							</div>
-						</fieldset>
 						</form>
 						<div class="clearfix"></div>
 						<div class="check-in">
 							<input type="checkbox" id="optin" checked>
-							<label for="optin" class="label-optin">Send me occasional important updates from FixTheDMCA.org and <a href="http://www.fightforthefuture.org/" target="_blank">Fight for the Future</a> (<a href="http://fightforthefuture.org/privacy/" target="_blank">privacy</a>).</label>
+							<label for="optin" class="label-optin">Send me occasional important updates from FixTheDMCA.org and <a href="http://www.fightforthefuture.org/" target="_blank">Fight for the Future</a>.</label>
 						</div>
 						<div class="clearfix"></div>
 
