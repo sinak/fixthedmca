@@ -173,7 +173,7 @@ h1, h2, h3, h4, p {
 #blue {
   background-image: url("../images/blue.png");
   background-repeat: repeat;
-  height: 1010px;
+  height: 1090px;
   padding-top: 50px; }
   #blue p {
     font-size: 30px;
@@ -207,13 +207,12 @@ h1, h2, h3, h4, p {
     margin-top: 30px; }
     #blue .supporters h1 {
       text-align: left;
-      margin-left: 15px;
-      margin-bottom:25px; }
+      margin-left: 15px; }
     #blue .supporters .supporter-list li {
       list-style: none;
       list-style-image: none;
-      line-height:1.5;
       list-decoration: none;
+      margin-top: -2px;
       font-size: 18px; }
     #blue .supporters .supporter-list a {
       color: #f1f1f1; }
@@ -338,13 +337,14 @@ h1, h2, h3, h4, p {
             background: #f6f6f6;
             margin: 5px;
             margin-left: 25px;
-            padding: 10px 15px; }
+            padding: 10px 15px 5px 15px; }
             .join .container .action .legislator #legtweets .legtweet .span2 {
-              padding-top: 5px;
               margin-left: 20px;
-              text-align: right; }
+              text-align: right;
+              margin-top: 4px; }
             .join .container .action .legislator #legtweets .legtweet .span9 {
-              margin-left: 0; }
+              margin-left: 0;
+              margin-top: 3px; }
             .join .container .action .legislator #legtweets .legtweet .blue {
               color: #2980B9; }
     .join .container .email {
