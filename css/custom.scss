@@ -468,7 +468,7 @@ h1, h2, h3, h4, p {
 						background: #f6f6f6;
 						margin:5px;
 						margin-left:25px;
-						padding: 10px 15px;
+						padding: 10px 15px 5px 15px;
 
 						.span2 {
 							padding-top:5px;
@@ -476,7 +476,8 @@ h1, h2, h3, h4, p {
 							text-align:right;
 						}
 
-						.span9 {margin-left:0}
+						.span9 {margin-left:0;
+							margin-top:3px;}
 
 						.blue {color: #2980B9;}
 					}

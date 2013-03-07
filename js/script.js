@@ -202,10 +202,10 @@ function didSubmitEmail(d) {
                                 {
                                     handles_avail = 1;
                                     message = "Hi <span class=\"blue\">@" + a[i].legislator['twitter_id'] + "</span>, I'm one of your constituents. I support fixing the DMCA.</span> <span class=\"blue\">#FixTheDMCA</span>";
-                                    messagef = 'Hi @' + a[i].legislator['twitter_id'] + ', I\'m one of your constituents. I support fixing the DMCA. #FixTheDMCA fixthedmca.org';
+                                    messagef = 'Hi @' + a[i].legislator['twitter_id'] + ', I\'m one of your constituents. I support fixing the DMCA. #FixTheDMCA';
                                     urlmessage = encodeURIComponent(messagef);
 
-                                    html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">' + message + '</div><div class="span2" id="'+ a[i].legislator['twitter_id'] +'"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a></div></div>';
+                                    html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">' + message + '</div><div class="span2" id="'+ a[i].legislator['twitter_id'] +'"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="http://fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a></div></div>';
                                 }
                             }
 
