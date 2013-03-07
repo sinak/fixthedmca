@@ -201,22 +201,22 @@ function didSubmitEmail(d) {
                                 if ( a[i].legislator['twitter_id'] != '')
                                 {
                                     handles_avail = 1;
-                                    message = "Hi <span class=\"blue\">@" + a[i].legislator['twitter_id'] + "</span>, I'm one of your constituents. Please fix the DMCA to <span class=\"choice\">make unlocking permanently legal</span>. <span class=\"blue\">#FixTheDMCA fixthedmca.org</span>";
-                                    messagef = 'Hi @' + a[i].legislator['twitter_id'] + ', I\'m one of your constituents. Please fix the DMCA to make unlocking permanently legal. #FixTheDMCA fixthedmca.org';
+                                    message = "Hi <span class=\"blue\">@" + a[i].legislator['twitter_id'] + "</span>, I'm one of your constituents. I support fixing the DMCA.</span> <span class=\"blue\">#FixTheDMCA</span>";
+                                    messagef = 'Hi @' + a[i].legislator['twitter_id'] + ', I\'m one of your constituents. I support fixing the DMCA. #FixTheDMCA fixthedmca.org';
                                     urlmessage = encodeURIComponent(messagef);
 
-                                    html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">' + message + '</div><div class="span2" id="'+ a[i].legislator['twitter_id'] +'"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="" data-lang="en" data-count="none" data-size="large">Tweet</a></div></div>';
+                                    html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">' + message + '</div><div class="span2" id="'+ a[i].legislator['twitter_id'] +'"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a></div></div>';
                                 }
                             }
 
                             if (handles_avail == 1) {
-                                $('div#choosereason').removeClass('hide');
+                                $('div#legtweets').removeClass('hide');
                                 $('.get-legislators').parent().removeClass("error");
                             }
 
 
                             if (handles_avail == 0) {
-                                $('div#choosereason').addClass('hide');
+                                $('div#legtweets').addClass('hide');
                                 $('.get-legislators').parent().addClass("error");
                             }
 
@@ -238,71 +238,6 @@ function didSubmitEmail(d) {
                     $('.get-legislators').focus().click();
                     window.setTimeout(function(){}, 300);
                 }
-            });
-
-            $('input.reason').click(function () {
-                selected = $(':radio:checked').attr('id');
-
-                var opt = new Array();
-                opt[0] = "make jailbreaking legal";
-                opt[1] = "make unlocking legal";
-                opt[2] = "make screenreading legal";
-                opt[3] = "make modifying & repairing legal";
-
-                if (selected == 'optionsRadios1'){
-                    $('span.choice').html(opt[0]);
-                    $('iframe.legislatortweet').each(function(){
-                        twitter = $(this).parent().attr('id');
-                        theparent = $(this).parent()
-                        $(this).remove();
-                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[0] + '.  #FixTheDMCA';
-                        urlmessage = encodeURIComponent(message);
-                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a>');
-                    });
-                    $.getScript("http://platform.twitter.com/widgets.js");
-                }
-                
-                if (selected == 'optionsRadios2'){
-                    $('span.choice').html(opt[1]);
-                    $('iframe.legislatortweet').each(function(){
-                        twitter = $(this).parent().attr('id');
-                        theparent = $(this).parent()
-                        $(this).remove();
-                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[1] + '.  #FixTheDMCA';
-                        urlmessage = encodeURIComponent(message);
-                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a>');
-                    });
-                    $.getScript("http://platform.twitter.com/widgets.js");
-                }
-
-                if (selected == 'optionsRadios3'){
-                    $('span.choice').html(opt[2]);
-                    $('iframe.legislatortweet').each(function(){
-                        twitter = $(this).parent().attr('id');
-                        theparent = $(this).parent()
-                        $(this).remove();
-                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[2] + '.  #FixTheDMCA';
-                        urlmessage = encodeURIComponent(message);
-                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a>');
-                    });
-                    $.getScript("http://platform.twitter.com/widgets.js");
-                }
-
-                if (selected == 'optionsRadios4'){
-                    $('span.choice').html(opt[3]);
-                    $('iframe.legislatortweet').each(function(){
-                        twitter = $(this).parent().attr('id');
-                        theparent = $(this).parent()
-                        $(this).remove();
-                        message ='Hi @' + twitter + ', I\'m one of your constituents. Please fix the DMCA to ' + opt[3] + '.  #FixTheDMCA';
-                        urlmessage = encodeURIComponent(message);
-                        theparent.append('<a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a>');
-                    });
-                    $.getScript("http://platform.twitter.com/widgets.js");
-                }
-
-                $('div#legtweets').removeClass('hide');
-
             });
 
 
