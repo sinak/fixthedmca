@@ -337,14 +337,14 @@ h1, h2, h3, h4, p {
             background: #f6f6f6;
             margin: 5px;
             margin-left: 25px;
-            padding: 10px 15px 5px 15px; }
+            padding: 5px 15px 5px 15px; }
             .join .container .action .legislator #legtweets .legtweet .span2 {
               margin-left: 20px;
               text-align: right;
               margin-top: 4px; }
             .join .container .action .legislator #legtweets .legtweet .span9 {
               margin-left: 0;
-              margin-top: 3px; }
+              margin-top: 10px; }
             .join .container .action .legislator #legtweets .legtweet .blue {
               color: #2980B9; }
     .join .container .email {
