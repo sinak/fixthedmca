@@ -1,4 +1,27 @@
+var tracking_id=0;
+function update_tracking_id(array) {
+  tracking_id=array[1];
+  $('.twitter-share-button').attr('data-url', 'http://fixthedmca.org/?r=t-'+tracking_id);
+  //$('.twitter-share-button').attr('data-url', 'http://127.0.0.1:3000/?r=t-'+tracking_id);
+  $('.twitter-follow-button').attr('data-url', 'http://fixthedmca.org/?r=t-'+tracking_id);
+  setupFacebookShare();
+}
 
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+
+var tracked_share_view=false;
 	$('button #email-send').click( function() {
 		$.post("/",  $(this).serialize(), function(data) {
 			// response from server
@@ -6,6 +29,7 @@
 		'json'
     );
 });
+
 
 (function($){ 
 	 window.slideshow = {
@@ -134,7 +158,55 @@ $(document).ready(function(){
     .closest('.control-group').removeClass('error').addClass('success');
   }
  });
+
+$('#join').waypoint(function() {
+  if (!tracked_share_view) { 
+    mixpanel.track('Join View');
+    tracked_share_view=true;
+  }
+});
+
+
+twttr.ready(function (twttr) {
+  twttr.events.bind('tweet', function(event) {
+    mixpanel.track('Tweet');
+    $.ajax({ 
+        type: 'POST',
+        url: '/api/record_share/tweet',
+        data: "", 
+        dataType: 'json',
+        contentType : 'application/json', 
+    });                                                                           
+  });
+
+});
+
+$.ajax({
+  type: 'POST',
+  url: '/api/record_share/init',
+  data: "",
+  dataType: 'json',
+  contentType : 'application/json',
+  success : update_tracking_id
+});
+
+var refer_id=GetURLParameter('r');
+if (GetURLParameter('fb_ref')) {
+  refer_id=GetURLParameter('fb_ref');
+}
+
+// $.ajax({
+//   type: 'POST',
+//   url: '/api/record_refer/'+refer_id,
+//   data: "",
+//   dataType: 'json',
+//   contentType : 'application/json'
+// });
+
+
+mixpanel.track('Page View');
 }); // end document.ready
+
 
 
 !function (d, s, id) {
@@ -148,8 +220,9 @@ $(document).ready(function(){
 }(document, "script", "twitter-wjs");
 
 function didSubmitEmail(d) {
-  alert('Thanks for your support!');
+  $('#modal').modal();
   $('#rep-form')[0].reset();
+  mixpanel.track('Sent Congress Email');
 }
 
 // FORM VALIDATION
@@ -157,23 +230,23 @@ function didSubmitEmail(d) {
   $('#email-send').click(function(){   
       if ($("#rep-form").valid() == true)
       {
-        $.ajax({                                                                      
-        type: 'POST',
-        url: '/api/add_email_rep/1',                                                
-        data: JSON.stringify({email_rep: {
-                                          email: $('#email').val(),                 
-                                          name: $('#name').val(),                   
-                                          street_address: $('#address').val(),                   
-                                          zip: $('#zip-code').val(),                   
-                                          opt_in: $('#optin').is(':checked'),               
-                                          }}),                                      
-        dataType: 'json',
-        contentType : 'application/json', 
-        success: didSubmitEmail
-      });                                                                           
+          $.ajax({                                                                      
+          type: 'POST',
+          url: '/api/add_email_rep/1',                                                
+          data: JSON.stringify({email_rep: {
+                                            email: $('#email').val(),                 
+                                            name: $('#action').val() + '|' + $('#name').val(),                   
+                                            street_address: $('#address').val(),                   
+                                            zip: $('#zip-code').val(),                   
+                                            opt_in: $('#optin').is(':checked'),               
+                                            }}),                                      
+          dataType: 'json',
+          contentType : 'application/json', 
+          success: didSubmitEmail
+        });                                                                           
  //     return false;
   
-    }
+       }
                                                            
     return false;
 });
@@ -205,7 +278,7 @@ function didSubmitEmail(d) {
                                     messagef = 'Hi @' + a[i].legislator['twitter_id'] + ', I\'m one of your constituents. I support fixing the DMCA. #FixTheDMCA';
                                     urlmessage = encodeURIComponent(messagef);
 
-                                    html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">' + message + '</div><div class="span2" id="'+ a[i].legislator['twitter_id'] +'"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="http://fixthedmca.org" data-lang="en" data-count="none" data-size="large">Tweet</a></div></div>';
+                                    html_fragment = html_fragment + '<div class="legtweet clearfix span11"><div class="span9">' + message + '</div><div class="span2" id="'+ a[i].legislator['twitter_id'] +'"><a href="https://twitter.com/share?text=' + urlmessage + '" class="twitter-share-button legislatortweet" url="http://fixthedmca.org/?r=t-"'+tracking_id+' data-lang="en" data-count="none" data-size="large" data-counturl="http://fixthedmca.org">Tweet</a></div></div>';
                                 }
                             }
 
@@ -239,7 +312,6 @@ function didSubmitEmail(d) {
                     window.setTimeout(function(){}, 300);
                 }
             });
-
 
 
 

@@ -295,6 +295,7 @@ h1, h2, h3, h4, p {
           font-weight: 100; }
         .join .container .action .share .socialcontent, .join .container .action .legislator .socialcontent {
           float: left;
+          margin-bottom: 10px;
           width: 360px; }
       .join .container .action .legislator {
         padding-top: 0px;
@@ -350,13 +351,13 @@ h1, h2, h3, h4, p {
     .join .container .email {
       padding-left: 13px; }
       .join .container .email .check-in {
-        margin-top: -5px; }
+        margin-top: 0px; }
         .join .container .email .check-in input[type="checkbox"] {
           display: inline;
           float: left; }
         .join .container .email .check-in label.label-optin {
           display: inline;
-          margin-top: 8px;
+          margin-top: 12px;
           margin-left: 10px;
           float: left;
           letter-spacing: 0.5; }
@@ -377,19 +378,15 @@ h1, h2, h3, h4, p {
           font-size: 14px;
           color: #353535;
           font-weight: 300;
-          font-family: Arial;
-          margin-bottom: 0; }
-        .join .container .email #email-form label.error {
-          font-size: 13px;
-          color: #B94A45; }
+          font-family: "Arial"; }
         .join .container .email #email-form input {
           display: inline;
           height: 30px;
-          margin-top: 3px;
-          margin-bottom: 0px; }
+          margin-top: 8px; }
         .join .container .email #email-form div {
-          margin-right: 10px; }
+          margin-right: 15px; }
         .join .container .email #email-form .name {
+          width: 175px;
           float: left;
           display: inline; }
           .join .container .email #email-form .name input {
@@ -401,6 +398,7 @@ h1, h2, h3, h4, p {
           .join .container .email #email-form .email input, .join .container .email #email-form .street input {
             width: 195px; }
         .join .container .email #email-form .zip {
+          width: 90px;
           float: left;
           display: inline; }
           .join .container .email #email-form .zip input {
@@ -408,7 +406,7 @@ h1, h2, h3, h4, p {
         .join .container .email #email-form #email-send {
           width: 130px;
           height: 54px;
-          margin-top: 9px;
+          margin-top: 20px;
           float: right;
           background-color: #2ecc71;
           background-image: none; }
@@ -443,120 +441,18 @@ h1, h2, h3, h4, p {
     font-family: 'Arial'; }
   .about p {
     font-size: 15px;
-    font-family: 'Arial';
-    color: #aaa; }
+    font-family: 'Arial'; }
 
-.announcement #blue, .announcement #bottomsection {
-  height: auto;
-  padding-bottom: 15px;
-  padding-top: 30px; }
-  .announcement #blue p, .announcement #blue ul li, .announcement #bottomsection p, .announcement #bottomsection ul li {
-    font-family: "Proxima Nova", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.3em;
-    line-height: 130%;
-    margin-top: 15px; }
-  .announcement #blue p, .announcement #bottomsection p {
-    margin-left: 0px; }
-  .announcement #blue ul, .announcement #bottomsection ul {
-    margin-top: 15px; }
-  .announcement #blue h1, .announcement #bottomsection h1 {
-    margin: 0px 0px 20px 0px;
-    font-size: 44px;
-    font-weight: 400; }
-  .announcement #blue h3, .announcement #bottomsection h3 {
-    font-size: 2.3em;
-    margin-top: 35px;
-    margin-bottom: 25px;
-    color: #2980b9; }
-  .announcement #blue h3, .announcement #bottomsection h3 {
-    margin: 0;
-    width: inherit; }
-  .announcement #blue h2, .announcement #bottomsection h2 {
-    color: #2980b9;
-    text-align: left;
-    text-transform: none; }
-  .announcement #blue .join, .announcement #bottomsection .join {
-    background-image: none;
-    background-color: none;
-    padding-top: 0;
-    height: auto; }
-    .announcement #blue .join .callout, .announcement #bottomsection .join .callout {
-      border-top: 8px solid #e68614;
-      border-bottom: 15px solid #d9d9d9;
-      background: #fff;
-      background: -moz-linear-gradient(top, white 0, #eaeaea 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #eaeaea));
-      background: -webkit-linear-gradient(top, white 0, #eaeaea 100%);
-      background: -o-linear-gradient(top, white 0, #eaeaea 100%);
-      background: -ms-linear-gradient(top, white 0, #eaeaea 100%);
-      background: linear-gradient(to bottom, white 0, #eaeaea 100%);
-      border-radius: 5px;
-      -webkit-box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.7);
-      box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.7); }
-    .announcement #blue .join .container, .announcement #bottomsection .join .container {
-      background-image: none;
-      background-color: #fff;
-      padding-top: 0;
-      margin-top: 25px; }
-      .announcement #blue .join .container p, .announcement #bottomsection .join .container p {
-        color: #353535; }
-      .announcement #blue .join .container .email-text, .announcement #bottomsection .join .container .email-text {
-        font-size: 14px; }
-      .announcement #blue .join .container .action, .announcement #bottomsection .join .container .action {
-        margin: 15px;
-        width: 98%;
-        padding: 0;
-        border: none; }
-      .announcement #blue .join .container .email, .announcement #bottomsection .join .container .email {
-        padding-left: 0; }
-        .announcement #blue .join .container .email #email-form, .announcement #bottomsection .join .container .email #email-form {
-          margin-top: 10px; }
-.announcement #bottomsection {
-  padding-bottom: 0px; }
-  .announcement #bottomsection h2 {
-    font-family: "Proxima Nova", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2em;
-    padding-bottom: 0px;
-    margin-bottom: 20px;
-    color: #102A4B; }
-  .announcement #bottomsection h3 {
-    font-family: "Proxima Nova", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.6em;
-    margin: 20px 0 0px 0;
-    color: #2A5F92;
-    font-weight: 400; }
-  .announcement #bottomsection ul {
-    padding-left: 30px; }
-  .announcement #bottomsection p {
-    margin-top: 5px; }
+#share_sidebar {
+  float:left;
+  width:60px;
+  text-align:center;
+  height:100px;
+  position:fixed;
+  margin-left:10px;
+  margin-top:10px;
+}
 
-.modal {
-  display: none;
-  width: 400px;
-  background: #fff;
-  padding: 15px 30px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 0 10px black;
-  -moz-box-shadow: 0 0 10px black;
-  -o-box-shadow: 0 0 10px black;
-  -ms-box-shadow: 0 0 10px black;
-  box-shadow: 0 0 10px black; }
-  .modal p {
-    font-family: "Proxima Nova", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
-    font-size: 21px;
-    line-height: 140%; }
-
-.modal a.close-modal {
-  position: absolute;
-  top: -12.5px;
-  right: -12.5px;
-  display: block;
-  width: 30px;
-  height: 30px;
-  text-indent: -9999px;
-  background: url(close.png) no-repeat 0 0; }
+#post_to_feed {
+  margin-bottom: 10px;
+}

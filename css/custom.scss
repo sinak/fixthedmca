@@ -1,5 +1,5 @@
 $font: "kaffeesatz";
-// $font: "Yanone Kaffeesatz";
+//$font: "Yanone Kaffeesatz";
 
 #gray-background {
 	background-image: url('../images/background.jpg');
@@ -491,7 +491,7 @@ h1, h2, h3, h4, p {
 			padding-left:13px;
 
 			.check-in{
-				margin-top:0px;
+				margin-top:-5px;
 
 				input[type="checkbox"] {
 					display:inline;
@@ -500,7 +500,7 @@ h1, h2, h3, h4, p {
 
 				label.label-optin {
 					display:inline;
-					margin-top:12px;
+					margin-top:8px;
 					margin-left:10px;
 					float:left;
 					letter-spacing: 0.5;
@@ -525,21 +525,28 @@ h1, h2, h3, h4, p {
 
 				label {
 					font-family: $font;
-					font-size:14px;
-					color:#353535;
-					font-weight:300;
-					font-family:"Arial";
+					font-size: 14px;
+					color: #353535;
+					font-weight: 300;
+					font-family: Arial;
+					margin-bottom:0;
 				}
+
+				label.error {
+					font-size:13px;
+					color: #B94A45;
+					}
+
 				input {
 					display:inline;
 					height:30px;
-					margin-top:8px;
+					margin-top:3px;
+					margin-bottom:0px;
 				}
 
-				div {margin-right:15px;}
+				div {margin-right:10px;}
 
 				.name {
-					width:175px;
 					float:left;
 					display:inline;
 					input {width:175px;}
@@ -553,7 +560,6 @@ h1, h2, h3, h4, p {
 				}
 
 				.zip {
-					width:90px;
 					float:left;
 					display: inline;
 					input {width:90px;}
@@ -562,7 +568,7 @@ h1, h2, h3, h4, p {
 				#email-send{
 					width: 130px;
 					height:54px;
-					margin-top:20px;
+					margin-top:9px;
 					float:right;
 					background-color: #2ecc71;
 					background-image:none;
@@ -619,5 +625,164 @@ h1, h2, h3, h4, p {
 	p {
 		font-size:15px;
 		font-family: 'Arial';
+	color: #aaa;
 	}
+}
+
+.announcement {
+
+
+	#blue, #bottomsection {
+		height: auto;
+		padding-bottom:15px;
+		padding-top:30px;
+
+		p, ul li {
+  			font-family: "Proxima Nova", "Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  			font-size:1.3em;
+  			line-height:130%;
+  			margin-top:15px;	
+		}
+		
+		p {
+			margin-left: 0px;
+		}
+
+		ul {
+		margin-top:15px;
+		}
+
+		h1 {
+			margin: 0px 0px 20px 0px;
+			font-size:44px;
+			font-weight:400;
+		}
+
+		h3 {
+			font-size: 2.3em;
+			margin-top:35px;
+			margin-bottom:25px;
+			color: #2980b9;
+		}
+		h3 {margin: 0; width: inherit;}
+
+		h2 {
+			color: #2980b9;
+			text-align: left;
+			text-transform: none;
+		}
+
+		.join {
+			background-image:none; 
+			background-color: none; 
+			padding-top:0;
+			height: auto;
+			
+			.callout {
+				border-top: 8px solid #e68614;
+				border-bottom: 15px solid #d9d9d9;
+				background: #fff;
+				background: -moz-linear-gradient(top,#fff 0,#eaeaea 100%);
+				background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(100%,#eaeaea));
+				background: -webkit-linear-gradient(top,#fff 0,#eaeaea 100%);
+				background: -o-linear-gradient(top,#fff 0,#eaeaea 100%);
+				background: -ms-linear-gradient(top,#fff 0,#eaeaea 100%);
+				background: linear-gradient(to bottom,#fff 0,#eaeaea 100%);
+				border-radius: 5px;
+				-webkit-box-shadow: 0 1px 9px 0 rgba(0,0,0,0.7);
+				box-shadow: 0 1px 9px 0 rgba(0,0,0,0.7);
+			}
+
+			.container {
+				background-image:none; 
+				background-color: #fff; 
+				padding-top:0;
+				margin-top:25px;
+
+				p {color: #353535;}
+
+				.email-text {
+					font-size:14px;
+				}
+
+				.action {
+					margin:15px;
+					width: 98%;
+					padding:0;
+					border: none;
+				}
+
+				.email {
+					#email-form {
+						margin-top:10px;
+					}
+					padding-left:0;
+				}
+
+			}
+
+		}
+	}
+
+
+	#bottomsection {
+		padding-bottom: 0px;
+		h2 {
+  			font-family: "Proxima Nova", "Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  			font-size:2em;
+  			padding-bottom:0px;
+  			margin-bottom:20px;
+  			color: #102A4B;
+		}
+
+		h3 {
+  			font-family: "Proxima Nova", "Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  			font-size:1.6em;
+  			margin: 20px 0 0px 0;
+  			color: #2A5F92;
+  			font-weight:400;
+		}
+		
+		ul {padding-left:30px;
+			}
+
+		p { margin-top:5px}
+	}
+	
+}
+
+
+.modal {
+  display: none;
+  width: 400px;
+  background: #fff;
+  padding: 15px 30px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #000;
+  -moz-box-shadow: 0 0 10px #000;
+  -o-box-shadow: 0 0 10px #000;
+  -ms-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+
+  	p {
+  		font-family: "Proxima Nova", "Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+		color: #333;
+		font-size: 21px;
+		line-height:140%;
+  	}
+}
+
+.modal a.close-modal {
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background: url(close.png) no-repeat 0 0;
 }

@@ -11,29 +11,84 @@
 	<meta property="og:title" content="Ask Congress to Make Unlocking and Jailbreaking Legal" />
 	<meta property="og:type" content="cause" />
 	<meta property="og:url" content="http://fixthedmca.org" />
-	<meta property="og:image" content="http://sina.is/fixthedmca/preview/images/fb-graphic.jpg" />
+	<meta property="og:image" content="http://fixthedmca.org/images/fb-graphic.png" />
 	<meta property="og:site_name" content="FixTheDMCA" />
 	<meta property="fb:admins" content="36801504" />
+  <meta property="fb:admins" content="100003928804985" /> 
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/custom.css" rel="stylesheet" />
-	<script type="text/javascript">if (Math.random()<0.0) {window.location="http://s.fixthedmca.org";}</script>
 
 	<!-- ENABLE FOR REMOTE -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/zys6zcw.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
   	<!-- Enable for local
   	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="//use.typekit.net/zys6zcw.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   	-->
+
+
+<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
+e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
+
+	<script type="text/javascript">
+	function setupFacebookShare() {
+	  $('#post_to_feed').click(function() {
+	          // calling the API ...
+	          var obj = {
+	            method: 'feed',
+	            link: 'http://fixthedmca.org/?r=s-'+tracking_id,
+	            picture: 'http://fixthedmca.org/images/fb-graphic.png',
+	            name: 'FixTheDMCA',
+	            caption: 'Join the fight to Fix the DMCA',
+	            description: 'The DMCA is broken. It is hampering innovation, restricing freedom, and gouging consumers. Let\'s fix it!'
+	          };
+
+	          function callback(response) {
+	            mixpanel.track('Facebook Share');
+	            $.ajax({ 
+	                type: 'POST',
+	                url: '/api/record_share/fbshare',
+	                data: "",
+	                dataType: 'json',
+	                contentType : 'application/json', 
+	            });
+	          }
+
+	          FB.ui(obj, callback);
+	    });
+	}
+	</script>
+
 </head>
 
 <body>
+<!--<div id="share_sidebar">
+    <span id="share-widget">
+<script type="text/javascript">
+  reddit_url = "http://fixthedmca.org";
+</script>
+    <script type="text/javascript" src="http://www.reddit.com/static/button/button2.js"></script>
+  </span>
+</div>-->
 	<div class="navbar navbar-fixed">
 		<div class="container nav-container">
 			<a class="brand" href="/"><img src="images/logo.jpg"></a>
 			<img src="images/nav-supporters.jpg" class="pull-right nav-supporters" />
+		</div>
+	</div>
+
+
+	<div class="join">
+		<div class="about" style="margin-top:0px">
+			<div class="container">
+				<p style="font-size:18px; text-align:center; line-height:140%;"><a href="http://fixthedmca.org/unlocking-technology-act.html" style="color: #F3E078"><span style="font-size: 20px">Breaking news: "Unlocking Technology Act" proposed in Congress.</span> <br />Read more and take action by clicking here.</a> </p>
+			</div>
 		</div>
 	</div>
 
@@ -225,18 +280,23 @@
 		<div class="container"  id="join">
 			<div class="action">
 				<div class="span5 actiontitle">
-					<h3>Share this page:</h3>
+					<h3>Spread the word:</h3>
 				</div>
 
 				<div class="span6 share">
+        <p>If you care, PLEASE share. We can make this go viral!</p><br/>
 					<div class="alabel">FACEBOOK:</div>
 					<div class="socialcontent">
+            <div id="post_to_feed">
+            <a id="#post_to_feed"><img src="images/fbshare.png"/></a>
+            </div>
 						<fb:like send="true" width="360" show_faces="false"></fb:like>
+
 					</div>
 					<div class="clearfix"></div>
 					<div class="alabel">TWITTER:</div>
 					<div class="socialcontent">
-						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fixthedmca.org" data-text="Think you own the electronics you buy? Not quite. #FixTheDMCA" data-via="fixthedmca" data-related="sinak">Tweet</a>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fixthedmca.org" data-text="Think you own the electronics you buy? Not quite. #FixTheDMCA" data-via="fixthedmca" data-related="sinak" data-counturl="http://fixthedmca.org">Tweet</a>
 						<a href="https://twitter.com/fixthedmca" class="twitter-follow-button" data-show-count="false">Follow @fixthedmca</a>
           </div>
 					<div class="clearfix"></div>
@@ -392,7 +452,7 @@
 						</div>
 						<div class="about-text span9">
 							<h4>Joe Kumph</h4>
-							<p> Joe is an independant developer in San Francisco, most recently focused on iOS apps. His apps have been downloaded more than 3 million times. </p>
+							<p> Joe is an independent developer in San Francisco, most recently focused on iOS apps. His apps have been downloaded more than 3 million times. </p>
 						</div>
 					</div>
 					<div class="row about-push">
@@ -429,18 +489,42 @@
 	</div>
 
 	<div id="fb-root"></div>
-	<script>
-		(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=360247060757406";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
+    <script> 
+    window.fbAsyncInit = function() {
+      FB.init({appId: "360247060757406", status: true, cookie: true});
+
+      FB.Event.subscribe('edge.create', function(href, widget) {
+        mixpanel.track('Facebook Like') 
+          $.ajax({ 
+              type: 'POST',
+              url: '/api/record_share/fblike',
+              data: "" ,
+              dataType: 'json',
+              contentType : 'application/json', 
+          });
+      });
+      FB.Event.subscribe('comment.create', function(href, widget) {
+        mixpanel.track('Facebook Comment') 
+      });
+      }
+    </script>
+<script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=360247060757406";
+      fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+  </script>
 
 	<script>
-		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+    js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
 	</script>
 	<script src="js/jquery.scrollTo-1.4.3.1-min.js"> </script>
 	<script src="js/script.js"> </script>
