@@ -1,5 +1,6 @@
 $font: "kaffeesatz";
 //$font: "Yanone Kaffeesatz";
+$sans: "Proxima Nova";
 
 #gray-background {
 	background-image: url('../images/background.jpg');
@@ -786,3 +787,311 @@ h1, h2, h3, h4, p {
   text-indent: -9999px;
   background: url(close.png) no-repeat 0 0;
 }
+
+
+
+// NEW CSS FOR REDESIGN - sohail is the greatest
+#redesign {
+	header, #slidedeck, #infographic {
+		background-color: #ecf0f1;
+	}
+
+	header {
+		padding-top:8px;
+		.header-bar {
+			height:3px;
+			background-color: #bdc3c7;
+			width:100%;
+			margin-top:53px;
+		}
+		.header-border {
+			border-bottom: 1px #bdc3c7 solid;
+			padding-bottom:2px;
+		}
+
+		.logo {
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		h1 {
+			font-family: $sans;
+			font-size:40px;
+			color:#c0392b;
+			letter-spacing: -2px;
+			text-align: center;
+			margin: 30px 0 30px 0;
+		}
+
+	}
+
+	.pull-right {
+		float:right;
+	}
+
+	.pull-left {
+		float:left;
+	}
+
+	#slidedeck {
+		
+		.fixed-right {
+			position: fixed;
+			top: 10px;
+			left: 808px;
+		}
+
+
+		#join-form {
+			.blue-header {
+				height:60px;
+				width:100%;
+				background-color: #2980b9;
+
+				h2 {
+					font-family: $sans;
+					text-align:center;
+					font-size:22px;
+					font-weight:500;
+					padding-top:10px;
+					letter-spacing: -1px;
+				}
+			}
+				
+			.white-body {
+				background-color:white;
+				height:230px;
+				margin-top:5px;
+
+				.clipboard {
+					padding:5px 0 10px 0;
+				}
+
+				.form {
+					padding: 0 10px 0 10px;
+				}
+
+				input {
+					width:187px;
+					height:30px;
+					background-color:#ecf0f1;
+					border: 1px #6cd0bd solid;
+					border-radius: 5px;
+				}
+
+				button {
+					border-radius: 3px;
+					height:60px;
+					width:200px;
+					background-color:#e74c3c;
+					font-size:20px;
+					color:white;
+					font-family: $sans;
+					border:none;
+					-moz-box-shadow: 2px 2px 2px rgb(197, 197, 197);
+					-webkit-box-shadow: 2px 2px 2px rgb(197, 197, 197);
+					box-shadow: 2px 2px 2px rgb(197, 197, 197);
+				}
+			}
+
+			.social-footer {
+				height:55px;
+				width:100%;
+				background-color: white;
+				margin-top:10px;
+			}
+		}
+	}
+
+	#infographic {
+		height:1800px;
+
+		.supporters-image {
+			margin-bottom:50px;
+			margin-left:0;
+		}
+	}
+
+	#examples {
+		background-color: #2980b9;
+		padding-top:20px;
+		padding-bottom:30px;
+
+		.examples-h2 {
+			width:100%;
+			background-color: #5e9ec8;
+			height:53px;
+			margin-bottom:20px;
+
+			h2{
+				font-family:$sans;
+				font-size:28px;
+				color:#ecf0f1;
+				font-weight: 100;
+				padding-top:8px;
+				padding-left:20px;
+			}
+		}
+
+		.examples-link {
+			font-size:20px;
+			font-weight:500;
+			color:#f1c40f;
+			margin-top:25px;
+			margin-bottom:5px;
+		}
+
+		p {
+			font-family: $sans;
+			font-color:#ecf0f1;
+			font-size:13px;
+			margin-left:20px;
+			font-weight:100;
+		}
+	}
+
+	#news-press{
+		height:380px;
+		.news-color {
+			background-color: #7f8c8d;
+			height:380px;
+			float:left;
+			width:50%;
+		}
+
+		.press-color {
+			background-color:#616d6e;
+			height:380px;
+			float:right;
+			width:50%;
+		}
+
+		h2 {
+			font-family: $sans;
+			font-size:28px;
+			font-color:white;
+			font-weight: 100;
+			margin-left:20px;
+			padding-top:8px;
+		}
+
+		a, p {
+			font-family: $sans;
+			font-size:18px;
+			font-weight:100;
+			margin-top:0;
+			color:white;
+
+		}
+
+		.press-list, .news-list {
+			margin-left: 20px;
+		}
+
+		.news-div {
+			margin-left: 0px;
+			margin-right: 20px;
+			float:right;
+		}
+
+		.news-h2 {
+			height:53px;
+			width:100%;
+			background-color:#9ca7a8;
+			margin-bottom:20px;
+		}
+
+		.date {
+			color: #d2f6fb;
+			font-size:14px;
+			font-weight:bold;
+			margin-top:15px;
+			margin-bottom:0;
+		}
+
+		.press-h2 {
+			height:53px;
+			width:100%;
+			background-color:#879091;
+			margin-bottom:20px;
+		}
+
+		.press-name {
+			font-size: 14px;
+			font-weight:bold;
+			color: #e1ba23;
+		}
+
+	}
+
+	#fix-supporters {
+		height:430px;
+		background-color:#ffe9ad;
+
+		h2 {
+			font-family: $sans;
+			font-size:18px;
+			font-weight:bold;
+			color: #34495e;
+			margin-top:30px;
+			margin-bottom:15px;
+		}
+		h4 {
+			font-family: $sans;
+			font-size: 15px;
+			font-weight: 500;
+			color: #27ae60;
+			letter-spacing: -1px;
+			margin-bottom:3px;
+		}
+
+		p {
+			font-family: $sans;
+			font-size:14px;
+			color: #34495e;
+			letter-spacing: -1px;
+			font-weight:100;
+			margin-top:0;
+		}
+	}
+
+	#organizations {
+		height:400px;
+		h4 {
+			text-align:center;
+			font-family: $sans;
+			font-size:18px;
+			color: #34495e;
+			font-weight:bold;
+			margin-top:20px;
+			margin-bottom:30px;
+		}
+
+		.organizations-img {
+		}
+
+		h5 {
+			text-align: center;
+			font-family: $sans;
+			font-size: 12px;
+			color:#34495e;
+			margin-top:40px;
+		}
+
+		.organization-list {
+			li {
+				display:inline;
+				color: #2c3e50;
+				font-family: $sans;
+				font-size:13px;
+				font-weight:bold;
+			}
+			.blue {
+				color:#2980b9;
+			}
+		}
+	}
+
+}
+
+

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en">
+<head>
+    <meta charset="utf-8">
+   	<title>FixTheDMCA.org</title>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+	<meta name="description" content="Join the campaign asking Congress to fix the DMCA and make unlocking, jailbreaking, and modifying devices permanently legal" />
+	<meta property="og:title" content="Ask Congress to Make Unlocking and Jailbreaking Legal" />
+	<meta property="og:type" content="cause" />
+	<meta property="og:url" content="http://fixthedmca.org" />
+	<meta property="og:image" content="http://fixthedmca.org/images/fb-graphic.png" />
+	<meta property="og:site_name" content="FixTheDMCA" />
+	<meta property="fb:admins" content="36801504" />
+  <meta property="fb:admins" content="100003928804985" /> 
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/custom.css" rel="stylesheet" />
+
+	<!-- ENABLE FOR REMOTE -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/affix.min.js"></script>
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="//use.typekit.net/zys6zcw.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  	<!-- Enable for local
+  	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="//use.typekit.net/zys6zcw.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  	-->
+
+
+<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
+e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
+
+	<script type="text/javascript">
+	function setupFacebookShare() {
+	  $('#post_to_feed').click(function() {
+	          // calling the API ...
+	          var obj = {
+	            method: 'feed',
+	            link: 'http://fixthedmca.org/?r=s-'+tracking_id,
+	            picture: 'http://fixthedmca.org/images/fb-graphic.png',
+	            name: 'FixTheDMCA',
+	            caption: 'Join the fight to Fix the DMCA',
+	            description: 'The DMCA is broken. It is hampering innovation, restricing freedom, and gouging consumers. Let\'s fix it!'
+	          };
+
+	          function callback(response) {
+	            mixpanel.track('Facebook Share');
+	            $.ajax({ 
+	                type: 'POST',
+	                url: '/api/record_share/fbshare',
+	                data: "",
+	                dataType: 'json',
+	                contentType : 'application/json', 
+	            });
+	          }
+
+	          FB.ui(obj, callback);
+	    });
+	}
+	</script>
+
+</head>
+
+<body id="redesign">
+	<!-- header: logo + h1 -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="header-border span5"><div class="header-bar pull-left"></div></div>
+				<div class="span2 pagination-centered">
+					<img src="images/new/logo.png">
+				</div>
+				<div class="header-border span5"><div class="header-bar pull-right"></div></div>
+			</div>
+			<h1> Your right to repair, unlock, modify, remix is under attack.</h1>
+		</div>
+	</header>
+
+	<!-- slide deck + scrolldown signup form -->
+	<section id="slidedeck">
+		<div class="container">
+			<div class="row">
+				<div class="span9">
+					<iframe width="100%" height="450" src="http://stacks.newsbound.com/explainers/fix_dmca/app/" name="nb-stack" class="newsbound-embedded" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="span3" id="join-form">
+					<div class="blue-header">
+						<h2>Join the movement</h2>
+					</div>
+					<div class="white-body">
+						<div class="pagination-centered clipboard">
+							<img src="images/new/clipboard.png">
+						</div>
+						<div class="form">
+							<label for="email">Email:</label>
+							<input type="email" class="email" />
+							<button class="form-submit">LET'S DO THIS</button> 
+						</div>
+					</div>
+					<div class="social-footer">
+						<div class="fb"></div>
+						<div class="tw"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- infographic -->
+	<section id="infographic">
+		<div class="container">
+			<img src="images/new/supporters.png" class="supporters-image span9">
+			<img src="images/new/infographic.png" class="infographic-image">
+		</div>
+	</section>
+
+	<section id="examples">
+		<div class="container">
+			<div class="examples-h2">
+				<h2>A few examples of the DMCA’s effects:</h2>
+			</div>
+			<div class="row">
+				<div class="span6">
+					<p class="examples-link">Sony RootKit Research Blocked:</p>
+					<p>  Between 2005 and 2007, over 562,000 computers were infected by a rootkit distributed on Sony-BMG CDs. Security researchers at Princeton University were unable to publish their results because of the DMCA’s restrictions.</p>
+					<p class="examples-link">TI-83 Calculator Modders Threatened:</p>
+					<p>  In 2009, Texas Instruments threatened three bloggers with legal action after they posted about a hobbyists success in reverse-engineering aTI-83 Plus graphing calculator to run a different operating system.</p>
+					<p class="examples-link">Read more </p>
+				</div>
+				<div class="span6">
+					<p class="examples-link">Phone unlocking lawsuits:</p>
+					<p> Phone unlockers have repeatedly been sued under the DMCA’s anti-circumvention provision. An exemption for unlocking was removed by the Librarian of Congress last year, sparking a massive petition to the White House. </p>
+					<p class="examples-link">XBOX Security Research Stifled</p>
+					<p> Wiley refused to publish a book written by security researcher Andrew Huang about security flaws in the XBox gaming system. Wiley feared that the book might be treated as an “anti-circumvention device” under the DMCA.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="news-press">
+		<div class="press-color">
+			<div class="span6">
+				<div class="press-h2">
+					<h2>In the Press:</h2>
+				</div>
+				<div class="press-list">
+					<p class="press-name">Wired</p>
+					<a href="#" class="press-link">Forget the Cellphone Fight — We Should Be Allowed to Unlock Everything We Own</a>
+					<p class="press-name">The Atlantic:</p>
+					<a href="#" class="press-link">The Copyright Rule We Need to Repeal If We Want to Preserve Our Cultural Heritage</a>
+					<p class="press-name">Slate:</p>
+					<a href="#" class="press-link">The Digital Millennium Copyright Act Is Even Worse Than You Think</a>
+					<p class="press-name">Mashable:</p>
+					<a href="#" class="press-link">Activists Want Your Help to Legalize Unlocking and Fix the DMCA</a>
+				</div>
+			</div>
+		</div>
+		<div class="news-color">
+			<div class="span6 news-div">
+				<div class="news-h2">
+					<h2> Latest News:</h2>
+				</div>
+				<div class="news-list">
+					<p class="date">Monday, July 12th 2013</p>
+					<p>Unlocking bill proposed in Congress</p>
+					<p class="date">Monday, July 12th 2013</p>
+					<p>14 new supporters added to coalition</p>
+					<p class="date">Monday, July 12th 2013</p>
+					<p>White House petition reaches 100,000 signatures</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="fix-supporters">
+		<div class="container pagination-centered">
+			<h2>Just a few of the individuals supporting our efforts:</h2>
+			<div class="row">
+				<div class="span2">
+					<img src="images/new/supporters/saurik.png">
+					<h4>Jay Freeman (saurik)</h4>
+					<p>Cydia Developer,<br>SaurikIT Founder</p>
+				</div>
+				<div class="span2">
+					<img src="images/new/supporters/alexis.png">
+					<h4>Alexis Ohanian</h4>
+					<p>Reddit Founder and<br>startup investor</p>
+				</div>
+				<div class="span2">
+					<img src="images/new/supporters/jennifer.png">
+					<h4>Jennifer Granick</h4>
+					<p>Cydia Developer, <br>at Stanford CIS</p>
+				</div>
+				<div class="span2">
+					<img src="images/new/supporters/oreilly.png">
+					<h4>Tim O'Reilly</h4>
+					<p>O'Reilly Media<br>Founder</p>
+				</div>
+				<div class="span2">
+					<img src="images/new/supporters/felten.png">
+					<h4>Ed Felten</h4>
+					<p>Cydia Developer, <br> SaurikIT Founder</p>
+				</div>
+				<div class="span2">
+					<img src="images/new/supporters/weins.png">
+					<h4>Kyle Wiens</h4>
+					<p>Founder, iFixit</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span2">
+					<img src="images/new/supporters/sina.png">
+					<h4>Sina Khanifar</h4>
+					<p>Entrepreneur,<br>FixtheDMCA Founder</p>
+				</div>
+				<div class="span2">
+					<img src="images/new/supporters/cory.png">
+					<h4>Cory Doctorow</h4>
+					<p>Author, Blogger, and<br>editor of BoingBoing</p>
+				</div>
+				<div class="span2">
+					<img src="images/new/supporters/cutts.png">
+					<h4>Matt Cutts</h4>
+					<p>Head of Google<br>Webspam Team</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="organizations">
+		<div class="container">
+			<h4>Organizations and companies in support:</h4>
+			<div class="pagination-centered">
+				<img src="images/new/organizations.png" class="organizations-img">
+			</div>
+			<h5>+ OVER 25 Startups AND ONLINE COMMUNITIES:</h5>
+				<ul class="organization-list">
+					<li><a href="http://www.polleverywhere.com/" target="_blank" class="blue">Poll Everywhere</a></li>
+					<li><a href="https://circuithub.com/" target="_blank">CircuitHub</a></li>
+					<li><a href="http://bitnami.org/" target="_blank" class="blue">Bitnami</a></li>
+					<li><a href="http://www.cell-unlock.com/" target="_blank">Cell-Unlock</a></li>
+					<li><a href="https://www.semantics3.com/" target="_blank" class="blue">Semantics3</a></li>
+					<li><a href="http://amicushq.com/" target="_blank">Amicus</a></li>
+					<li><a href="http://www.zenefits.com/" target="_blank" class="blue">Zenefits</a></li>
+					<li><a href="http://www.submittable.com/" target="_blank">Submittable</a></li>
+					<li><a href="http://www.modmyi.com/" target="_blank" class="blue" >ModMyi</a></li>
+					<li><a href="http://cryptoseal.com/" target="_blank">CryptoSeal</a></li>
+					<li><a href="http://teespring.com/" target="_blank" class="blue" >Teespring</a></li>
+					<li><a href="http://luma.io/" target="_blank">midnox inc.</a></li>
+					<li><a href="http://www.apportable.com/" target="_blank" class="blue">Apportable</a></li>
+					<li><a href="https://watsi.org/" target="_blank">Watsi</a></li>
+					<li><a href="http://www.viacycle.com/" target="_blank" class="blue" >viaCycle</a></li>
+					<li><a href="https://coderwall.com/" target="_blank">CoderWall</a></li>
+					<li><a href="http://streem.us/" target="_blank" class="blue">Streem</a></li>
+					<li><a href="http://scoutzie.com/" target="_blank">Scoutzie</a></li>
+					<li><a href="https://www.meldium.com/" target="_blank" class="blue">Meldium</a></li>
+					<li><a href="http://streem.us/" target="_blank">Streem</a></li>
+					<li><a href="https://www.makegameswith.us/" target="_blank" class="blue">MakeGamesWithUs</a></li>
+					<li><a href="http://sendhub.com/" target="_blank">SendHub</a></li>
+					<li><a href="http://www.zaranga.com/" target="_blank" class="blue">Zaranga</a></li>
+					<li><a href="http://microyza.com/" target="_blank">Microyrza</a></li>
+					<li><a href="http://openmedianow.net/" target="_blank" class="blue">OpenMedia</a></li>
+					<li><a href="http://opensignal.com/" target="_blank">OpenSignal</a></li>
+					<li><a herf="http://nytm.org/" target="_blank" class="blue">NY Tech Meetup</li>
+				</ul>
+		</div>
+	</section
+
+</body>
+</html>

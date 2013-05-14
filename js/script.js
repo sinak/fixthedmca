@@ -315,3 +315,14 @@ function didSubmitEmail(d) {
 
 
 
+
+ // $(document).scroll(function() {
+ //    if ($(this).scrollTop() > 185) {
+ //      $('#join-form').addClass('fixed-right');
+ //    }
+ //    else if ($(this).scrollTop() > 1985) {
+ //      $('#join-form').removeClass('fixed-right');
+ //      $('#join-form').addClass('stuck-right');
+ //    }
+ //    else {false}
+ //  })
