@@ -318,7 +318,7 @@ function didSubmitEmail(d) {
 
  $(document).scroll(function() {
     if ($(this).scrollTop() > 185 && $(this).scrollTop() < 2061 ) {
-      $('#join-form').addClass('fixed-right');
+      $('#join-form').addClass('fixed-right offset9');
       $('#join-form').removeClass('stuck-right');
     }
     else if ($(this).scrollTop() > 2061) {
@@ -326,7 +326,7 @@ function didSubmitEmail(d) {
       $('#join-form').addClass('stuck-right');
     }
     else if ($(this).scrollTop() < 185) {
-       $('#join-form').removeClass('fixed-right');
+       $('#join-form').removeClass('fixed-right offset9');
     }
     else {false}
   })

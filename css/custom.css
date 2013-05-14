@@ -589,12 +589,10 @@ h1, h2, h3, h4, p {
   float: left; }
 #redesign #slidedeck .fixed-right {
   position: fixed;
-  top: 0px;
-  left: 805px; }
+  top: 0px; }
 #redesign #slidedeck .stuck-right {
   position: absolute;
-  top: 2061px;
-  left: 805px; }
+  top: 2061px; }
 #redesign #slidedeck #join-form .blue-header {
   height: 60px;
   width: 100%;
