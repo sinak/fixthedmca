@@ -316,13 +316,17 @@ function didSubmitEmail(d) {
 
 
 
- // $(document).scroll(function() {
- //    if ($(this).scrollTop() > 185) {
- //      $('#join-form').addClass('fixed-right');
- //    }
- //    else if ($(this).scrollTop() > 1985) {
- //      $('#join-form').removeClass('fixed-right');
- //      $('#join-form').addClass('stuck-right');
- //    }
- //    else {false}
- //  })
+ $(document).scroll(function() {
+    if ($(this).scrollTop() > 185 && $(this).scrollTop() < 2061 ) {
+      $('#join-form').addClass('fixed-right');
+      $('#join-form').removeClass('stuck-right');
+    }
+    else if ($(this).scrollTop() > 2061) {
+      $('#join-form').removeClass('fixed-right');
+      $('#join-form').addClass('stuck-right');
+    }
+    else if ($(this).scrollTop() < 185) {
+       $('#join-form').removeClass('fixed-right');
+    }
+    else {false}
+  })

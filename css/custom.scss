@@ -837,10 +837,15 @@ h1, h2, h3, h4, p {
 		
 		.fixed-right {
 			position: fixed;
-			top: 10px;
-			left: 808px;
+			top: 0px;
+			left: 805px;
 		}
 
+		.stuck-right {
+			position: absolute;
+			top: 2061px;
+			left: 805px;
+		}
 
 		#join-form {
 			.blue-header {
@@ -977,7 +982,7 @@ h1, h2, h3, h4, p {
 
 		a, p {
 			font-family: $sans;
-			font-size:18px;
+			font-size:14px;
 			font-weight:100;
 			margin-top:0;
 			color:white;
@@ -1005,7 +1010,7 @@ h1, h2, h3, h4, p {
 			color: #d2f6fb;
 			font-size:14px;
 			font-weight:bold;
-			margin-top:15px;
+			margin-top:20px;
 			margin-bottom:0;
 		}
 
@@ -1017,9 +1022,11 @@ h1, h2, h3, h4, p {
 		}
 
 		.press-name {
-			font-size: 14px;
+			font-size: 13px;
 			font-weight:bold;
 			color: #e1ba23;
+			margin-bottom:0;
+			margin-top:9px;
 		}
 
 	}
@@ -1056,7 +1063,7 @@ h1, h2, h3, h4, p {
 	}
 
 	#organizations {
-		height:400px;
+		height:310px;
 		h4 {
 			text-align:center;
 			font-family: $sans;
@@ -1076,20 +1083,44 @@ h1, h2, h3, h4, p {
 			font-size: 12px;
 			color:#34495e;
 			margin-top:40px;
+			margin-bottom:3px;
+			text-transform: uppercase;
+			font-weight:100;
 		}
 
 		.organization-list {
+			text-align: center;
+			color: #c0392b;
+
 			li {
 				display:inline;
-				color: #2c3e50;
+				color: #2980b9;
 				font-family: $sans;
-				font-size:13px;
+				font-size:12px;
 				font-weight:bold;
 			}
 			.blue {
-				color:#2980b9;
+				color:#2c3e50;
 			}
 		}
+	}
+
+	footer {
+		background-color:#2c3e50;
+		height:110px;
+		padding-top:30px;
+		font-size:12px;
+		img {margin-left:15px;}
+		a {display:inline;}
+		a,p {font-family:$sans;}
+		.footer-about{
+			margin-top:30px;
+			a {color:#f1c40f;}
+		}
+		.lisence {
+			color: #3498db;
+		}
+
 	}
 
 }

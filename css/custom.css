@@ -589,8 +589,12 @@ h1, h2, h3, h4, p {
   float: left; }
 #redesign #slidedeck .fixed-right {
   position: fixed;
-  top: 10px;
-  left: 808px; }
+  top: 0px;
+  left: 805px; }
+#redesign #slidedeck .stuck-right {
+  position: absolute;
+  top: 2061px;
+  left: 805px; }
 #redesign #slidedeck #join-form .blue-header {
   height: 60px;
   width: 100%;
@@ -687,7 +691,7 @@ h1, h2, h3, h4, p {
     padding-top: 8px; }
   #redesign #news-press a, #redesign #news-press p {
     font-family: "Proxima Nova";
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 100;
     margin-top: 0;
     color: white; }
@@ -706,7 +710,7 @@ h1, h2, h3, h4, p {
     color: #d2f6fb;
     font-size: 14px;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 0; }
   #redesign #news-press .press-h2 {
     height: 53px;
@@ -714,9 +718,11 @@ h1, h2, h3, h4, p {
     background-color: #879091;
     margin-bottom: 20px; }
   #redesign #news-press .press-name {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-    color: #e1ba23; }
+    color: #e1ba23;
+    margin-bottom: 0;
+    margin-top: 9px; }
 #redesign #fix-supporters {
   height: 430px;
   background-color: #ffe9ad; }
@@ -742,7 +748,7 @@ h1, h2, h3, h4, p {
     font-weight: 100;
     margin-top: 0; }
 #redesign #organizations {
-  height: 400px; }
+  height: 310px; }
   #redesign #organizations h4 {
     text-align: center;
     font-family: "Proxima Nova";
@@ -756,12 +762,35 @@ h1, h2, h3, h4, p {
     font-family: "Proxima Nova";
     font-size: 12px;
     color: #34495e;
-    margin-top: 40px; }
-  #redesign #organizations .organization-list li {
-    display: inline;
-    color: #2c3e50;
-    font-family: "Proxima Nova";
-    font-size: 13px;
-    font-weight: bold; }
-  #redesign #organizations .organization-list .blue {
-    color: #2980b9; }
+    margin-top: 40px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    font-weight: 100; }
+  #redesign #organizations .organization-list {
+    text-align: center;
+    color: #c0392b; }
+    #redesign #organizations .organization-list li {
+      display: inline;
+      color: #2980b9;
+      font-family: "Proxima Nova";
+      font-size: 12px;
+      font-weight: bold; }
+    #redesign #organizations .organization-list .blue {
+      color: #2c3e50; }
+#redesign footer {
+  background-color: #2c3e50;
+  height: 110px;
+  padding-top: 30px;
+  font-size: 12px; }
+  #redesign footer img {
+    margin-left: 15px; }
+  #redesign footer a {
+    display: inline; }
+  #redesign footer a, #redesign footer p {
+    font-family: "Proxima Nova"; }
+  #redesign footer .footer-about {
+    margin-top: 30px; }
+    #redesign footer .footer-about a {
+      color: #f1c40f; }
+  #redesign footer .lisence {
+    color: #3498db; }
