@@ -179,7 +179,7 @@ section#postsignup #actioncontainer {
   #slidedeck .fixed-right, section#postsignup .fixed-right {
     top: 204px;
     position: absolute; } }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #slidedeck .fixed-right, section#postsignup .fixed-right {
     position: fixed;
     bottom: 0px;
@@ -198,7 +198,7 @@ section#postsignup #actioncontainer {
     margin-left: -10px;
     margin-right: 0;
     background-color: white; } }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #slidedeck #join-form .form, section#postsignup #join-form .form {
     text-align: center;
     display: inline;
@@ -424,7 +424,7 @@ section#postsignup #actioncontainer {
     letter-spacing: -1px;
     font-weight: 100;
     margin-top: 0; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     #fix-supporters [class*="span"], #fix-supporters .uneditable-input[class*="span"], #fix-supporters .row-fluid [class*="span"] {
       display: block;
       float: left;
@@ -490,7 +490,7 @@ footer {
 
   padding-left: 0;
   padding-right: 0; }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body {
     padding: 0; }
 
