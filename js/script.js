@@ -327,11 +327,17 @@ function didSubmitEmail(d) {
     }
     else {false}
 
-    if ($(this).scrolltop() > 1318) {
-      $('#ipad-form').fadeIn();
-    }
-    else {
-      $('#ipad-form').fadeOut();
-    }
 
+    if ($(this).scrollTop() > 185 && $(this).scrollTop() < 716 ) {
+      $('#progress').addClass('fixed-right offset9');
+      $('#progress').removeClass('stuck-right');
+    }
+    else if ($(this).scrollTop() > 716) {
+      $('#progress').removeClass('fixed-right');
+      $('#progress').addClass('stuck-right');
+    }
+    else if ($(this).scrollTop() < 716) {
+       $('#progress').removeClass('fixed-right offset9');
+    }
+    else {false}
   })
