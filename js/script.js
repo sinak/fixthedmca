@@ -326,4 +326,12 @@ function didSubmitEmail(d) {
       $('#join-form').addClass('stuck-right');
     }
     else {false}
+
+    if ($(this).scrolltop() > 1318) {
+      $('#ipad-form').fadeIn();
+    }
+    else {
+      $('#ipad-form').fadeOut();
+    }
+
   })
