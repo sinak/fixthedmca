@@ -329,4 +329,17 @@ function didSubmitEmail(d) {
        $('#join-form').removeClass('fixed-right offset9');
     }
     else {false}
+
+    if ($(this).scrollTop() > 185 && $(this).scrollTop() < 716 ) {
+      $('#progress').addClass('fixed-right offset9');
+      $('#progress').removeClass('stuck-right');
+    }
+    else if ($(this).scrollTop() > 716) {
+      $('#progress').removeClass('fixed-right');
+      $('#progress').addClass('stuck-right');
+    }
+    else if ($(this).scrollTop() < 716) {
+       $('#progress').removeClass('fixed-right offset9');
+    }
+    else {false}
   })
