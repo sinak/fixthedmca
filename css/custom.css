@@ -181,23 +181,27 @@ header {
   bottom: 0;
   left: 0;
   position: fixed;
-  height: 35px; }
+  height: 48px; }
   #slidedeck #ipad-form .white-body, section#postsignup #ipad-form .white-body {
     text-align: center;
     background-color: rgba(41, 127, 184, 0.9);
     display: inline;
     float: left;
-    height: 32px;
+    height: 44px;
     width: 100%;
     bottom: 0;
+    left: 0;
     position: fixed; }
     #slidedeck #ipad-form .white-body input, section#postsignup #ipad-form .white-body input, #slidedeck #ipad-form .white-body label, section#postsignup #ipad-form .white-body label {
       display: inline; }
+    #slidedeck #ipad-form .white-body .form, section#postsignup #ipad-form .white-body .form {
+      margin-top: 6px; }
     #slidedeck #ipad-form .white-body label, section#postsignup #ipad-form .white-body label {
       margin: 0 10px 0 0;
       margin-top: -3px;
       color: white;
-      font-weight: 100; }
+      font-weight: 100;
+      font-size: 16px; }
       @media (max-width: 480px) {
         #slidedeck #ipad-form .white-body label, section#postsignup #ipad-form .white-body label {
           font-size: 12px;
@@ -214,7 +218,6 @@ header {
       font-size: 14px;
       padding-top: 4px;
       margin-top: -5px;
-      margin-left: 5px;
       background-color: #e74c3c;
       color: white;
       font-weight: 100;

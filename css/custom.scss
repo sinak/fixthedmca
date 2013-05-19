@@ -229,26 +229,27 @@ header {
 		bottom:0;
 		left:0;
 		position:fixed;
-		height:35px;
+		height:48px;
 		.white-body {
 			text-align:center;
 			background-color:	rgba(41, 127, 184, .9);
 			display:inline;
 			float:left;
-			height:32px;
+			height:44px;
 			width: 100%;
 			bottom:0;
+			left:0;
 			position:fixed;
-			.form {
-			}
 			input, label {
 				display:inline;
 			}
+			.form {margin-top:6px;}
 			label {
 				margin:0 10px 0 0;
 				margin-top:-3px;
 				color:white;
 				font-weight:100;
+				font-size:16px;
 				@media (max-width:480px) {font-size:12px;margin-right:3px;}
 			}
 			input {margin-top:5px; height:14px;font-size:13px; width:140px}
@@ -259,7 +260,6 @@ header {
 				font-size: 14px;
 				padding-top:4px;
 				margin-top: -5px;
-				margin-left:5px;
 				background-color:#e74c3c;
 				color:white;
 				font-weight:100;
