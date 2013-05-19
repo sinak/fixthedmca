@@ -245,7 +245,7 @@ section#postsignup {
 			top: 177px;
 		}
 		@media (min-width: 768px) and (max-width: 959px) {top:204px;position:absolute;}
-		@media (max-width: 768px) {
+		@media (max-width: 767px) {
 			position: fixed;
 			bottom: 0px;
 			border-top: 1px rgb(219, 219, 219) solid;
@@ -261,14 +261,14 @@ section#postsignup {
 	}
 
 	#join-form {
-		@media (max-width: 768px) {
+		@media (max-width: 767px) {
 			width: 100%;
 			margin-left: -10px;
 			margin-right: 0;
 			background-color: white;
 		}
 
-		@media (max-width: 768px) {
+		@media (max-width: 767px) {
 			.form {
 				text-align:center;
 				display:inline;
@@ -288,7 +288,7 @@ section#postsignup {
 		.blue-header {
 			height:40px;
 			width:100%;
-			@media (max-width: 770px) {
+			@media (max-width: 767px) {
 				display:inline;
 				width:25%;
 				float:left;
@@ -303,10 +303,10 @@ section#postsignup {
 				margin-top:0;
 				letter-spacing: -1px;
 				color:white;
-				@media (min-width: 771px) and (max-width: 979px) {
+				@media (min-width: 768px) and (max-width: 979px) {
 					font-size:15px;
 				}
-				@media (max-width: 770px) {
+				@media (max-width: 767px) {
 					font-size:15px;
 					padding-top:0px;
 					margin-top:0;
@@ -317,7 +317,7 @@ section#postsignup {
 		.white-body {
 			background-color:white;
 			height:230px;
-			@media (max-width: 770px) {
+			@media (max-width: 767px) {
 				display:inline;
 				float:left;
 				height:35px;
@@ -331,7 +331,7 @@ section#postsignup {
 			}
 
 			.form {
-				@media (min-width:771px){padding: 0 10px 0 10px;}
+				@media (min-width:768px){padding: 0 10px 0 10px;}
 			}
 
 			input {
@@ -563,7 +563,7 @@ section#postsignup {
 		font-weight:100;
 		margin-top:0;
 	}
-	@media (max-width: 768px){
+	@media (max-width: 767px){
 		[class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
 			display: block;
 			float: left;
@@ -639,7 +639,7 @@ footer {
 
 
 
-@media (max-width: 770px) {
+@media (max-width: 767px) {
 	#section {
 		padding-left:10px;
 		padding-right:10px;
@@ -653,7 +653,7 @@ footer {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 		body {padding:0}
 		section {padding:0 10px 0 10px}
 }
