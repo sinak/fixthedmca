@@ -257,6 +257,7 @@ section#postsignup {
 		position: absolute;
 		top: 2010px;
 		}
+		@media (max-width:959px) {position:absolute;top:204px;}
 	}
 
 	#join-form {

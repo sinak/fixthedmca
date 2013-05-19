@@ -188,6 +188,10 @@ section#postsignup #actioncontainer {
   #slidedeck .stuck-right, section#postsignup .stuck-right {
     position: absolute;
     top: 2010px; } }
+@media (max-width: 959px) {
+  #slidedeck .stuck-right, section#postsignup .stuck-right {
+    position: absolute;
+    top: 204px; } }
 @media (max-width: 768px) {
   #slidedeck #join-form, section#postsignup #join-form {
     width: 100%;
