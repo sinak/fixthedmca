@@ -315,7 +315,6 @@ function didSubmitEmail(d) {
 
 
 
-
  $(document).scroll(function() {
     if ($(this).scrollTop() < 1827)  {
       $('#join-form').addClass('fixed-right offset9');
@@ -326,7 +325,18 @@ function didSubmitEmail(d) {
       $('#join-form').addClass('stuck-right');
     }
     else {false}
+    ;
 
+    if ($(this).scrollTop() > 10 && $(this).scrollTop() < $(document).height() ) {
+      $('#ipad-form').fadeIn();
+    }
+     else if ($(this).scrollTop() < 5) {
+      $('#ipad-form').fadeOut();
+    }
+    else if ($(this).scrollTop == $(document).height()) {
+      $('#ipad-form').fadeOut();
+    }
+    ;
 
     if ($(this).scrollTop() > 185 && $(this).scrollTop() < 716 ) {
       $('#progress').addClass('fixed-right offset9');
@@ -340,4 +350,9 @@ function didSubmitEmail(d) {
        $('#progress').removeClass('fixed-right offset9');
     }
     else {false}
-  })
+  });
+
+
+ $(document).ready(function(){
+      $('#ipad-form').hide();
+   });
