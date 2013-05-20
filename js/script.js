@@ -316,11 +316,11 @@ function didSubmitEmail(d) {
 
 
  $(document).scroll(function() {
-    if ($(this).scrollTop() < 1827)  {
+    if ($(this).scrollTop() < 1850)  {
       $('#join-form').addClass('fixed-right offset9');
       $('#join-form').removeClass('stuck-right');
     }
-    else if ($(window).scrollTop() > 1827) {
+    else if ($(window).scrollTop() > 1850) {
       $('#join-form').removeClass('fixed-right');
       $('#join-form').addClass('stuck-right');
     }
@@ -407,6 +407,18 @@ function tweetThis(url) {
   });
 
 
- $(document).ready(function(){
-      $('#ipad-form').hide();
-   });
+ var resizeExplainer = function(){
+    var wrapper = $('.embed-wrapper');
+    // height = width / aspectRatio + staticNavigationHeight
+    wrapper.height(wrapper.width() / (16/9) + 55)
+  }
+
+  $(document).ready(function(){
+    // Have the resize function called every time window resizes
+    $(window).on("resize", resizeExplainer);
+
+    // Call the resize function immediately
+    resizeExplainer()
+  });
+
+

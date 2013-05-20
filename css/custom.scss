@@ -118,7 +118,7 @@ header {
 	.stuck-right {
 		@media (min-width: 980px) {
 		position: absolute;
-		top: 2010px;
+		top: 2033px;
 		}
 		@media (max-width:979px) {position:absolute;top:204px;}
 	}
@@ -152,18 +152,19 @@ header {
 		.blue-header {
 			height:40px;
 			width:100%;
-			background-color: #2980b9;
+			background-color: transparent;
 
 			h2 {
 				font-family: $sans;
 				text-align:center;
-				font-size:22px;
-				font-weight:300;
+				font-size:18px;
+				text-transform: uppercase;
+				font-weight:700;
 				margin-top:0;
-				letter-spacing: -1px;
-				color:white;
+				letter-spacing: 2px;
+				color:#2980b9;
 				@media (min-width: 768px) and (max-width: 979px) {
-					font-size:15px;
+					font-size:14px;;
 				}
 				@media (max-width: 767px) {
 					font-size:15px;
@@ -174,28 +175,65 @@ header {
 		}
 			
 		.white-body {
-			background-color:white;
-			height:230px;
+			background-color:#2c3e50;
+			height:130px;
 			margin-top:5px;
-
-			.clipboard {
-				padding:5px 0 10px 0;
-			}
 
 			.form {
 				@media (min-width:768px){padding: 0 10px 0 12px;}
 			}
 
 			input {
-				width:187px;
-				height:30px;
+				width:150px;
+				height:20px;
+				margin-bottom:0;
+				text-align:center;
 				@media (min-width: 768px) and (max-width: 979px) {
-					width: 127px;
+					width: 100px;
+					padding-top:18px;
 				}
-				background-color:#ecf0f1;
-				border: 1px #6cd0bd solid;
-				border-radius: 5px;
-				font-size:13px;
+				background-color:transparent;
+				border: none;
+				border-bottom: 1px solid #f1c40f;
+				color:#f1c40f;
+				border-radius: 0px;
+				font-size:15px;
+				display:inline;
+				float:left;
+				padding-top:16px;
+				padding-bottom:0px;
+			}
+			::-webkit-input-placeholder {
+			   color: #f1c40f;
+			}
+
+			:-moz-placeholder { /* Firefox 18- */
+			   color: #f1c40f;  
+			}
+
+			::-moz-placeholder {  /* Firefox 19+ */
+			   color: #f1c40f;  
+			}
+
+			:-ms-input-placeholder {  
+			   color: #f1c40f;  
+			}
+
+			input:focus {
+				outline:none;
+				box-shadow:none;
+			}
+
+			p {
+				color:white;
+				font-family: $sans;
+				font-size:18px;
+				padding-left:15px;
+				padding-right:12px;
+				padding-top:10px;
+				display:inline;
+				float:left;
+				line-height: 2;
 			}
 
 			button {
@@ -220,11 +258,56 @@ header {
 				box-shadow: 2px 2px 2px rgb(197, 197, 197);
 			}
 		}
+		.emailbox {
+			background-color:#2c3e50;
+			height:80px;
+			margin-top:5px;
+			label {
+				display:block;
+				font-family: $sans;
+				color:white;
+				margin-left:10px;
+				margin-top:3px;
+				padding-top:9px;
+				margin-bottom:2px;
+				font-weight:100;
+				font-size:13px;
+			}
+		}
+
+		.email-input {
+			width: 187px;
+			height: 23px;
+			background-color: #ecf0f1;
+			border: 1px #f1c40f solid;
+			border-radius: 5px;
+			font-size: 13px;
+			margin-left:9px;
+			float:left;
+			@media (min-width: 768px) and (max-width: 979px) {
+				width: 127px;
+			}
+		}
+
+		button {
+			margin-left:0px;
+			margin-top:5px;
+			height:50px;
+			border-radius:4px;
+			background-color: #c0392b;
+			background-image: -webkit-linear-gradient(top, #c0392b, #bd392b);
+			color:white;
+			border:none;
+			font-family:$sans;
+			font-weight:100;
+			font-size:18px;
+			letter-spacing: 1px;
+		}
 
 		.social-footer {
 			height:55px;
 			width:100%;
-			background-color: white;
+			background-color: transparent;
 			margin-top:10px;
 		}
 	}
@@ -250,7 +333,7 @@ header {
 			input, label {
 				display:inline;
 			}
-			.form {margin-top:6px;}
+			.form {margin-top:3px;}
 			label {
 				margin:0 10px 0 0;
 				margin-top:-3px;
@@ -263,7 +346,7 @@ header {
 			button {
 				width: 40px;
 				border-radius: 4px;
-				height: 30px;
+				height: 29px;
 				font-size: 14px;
 				padding-top:6px;
 				margin-top: -5px;
@@ -288,6 +371,7 @@ header {
 	padding-bottom:30px;
 
 	.supporters-image {
+		margin-top:5px;
 		margin-bottom:50px;
 		margin-left:0;
 	}
@@ -333,6 +417,7 @@ header {
 
 #news-press{
 	min-height:380px;
+	background-color:#7f8c8d;
 	.news-color {
 		background-color: #7f8c8d;
 		height:380px;
@@ -341,7 +426,7 @@ header {
 		@media (max-width:610px) {
 			width:100%;
 			display:block;
-			height:300px;
+			height:300px; 
 		}
 	}
 
@@ -474,7 +559,7 @@ header {
 }
 
 #organizations {
-	height:310px;
+	min-height:310px;
 	h4 {
 		text-align:center;
 		font-family: $sans;
@@ -518,20 +603,18 @@ header {
 
 footer {
 	background-color:#2c3e50;
-	height:110px;
+	min-height:110px;
 	padding-top:30px;
 	font-size:12px;
 	img {margin-left:15px;}
 	a {display:inline;}
-	a,p {font-family:$sans;}
-	.footer-about{
-		margin-top:30px;
-		a {color:#f1c40f;}
-	}
+	a,p {font-family:$sans;margin-top:30px;color:#f1c40f;}
+	a {float:left}
+	p {color:white;}
 	.lisence {
 		color: #3498db;
 	}
-
+	.sina-link {float:none;}
 }
 
 
@@ -863,6 +946,7 @@ section#postsignup {
 
 
 @media (max-width: 767px) {
+
 	body {padding:0}
 	section {padding:0 10px 0 10px}
 	body#postsignup {
@@ -1004,3 +1088,15 @@ section#supportbill {
 
 }
 
+.embed-wrapper {
+  max-width: 800px;
+  margin: auto; /* this is just for centering, not crucial for responsiveness */
+  }
+  iframe.newsbound-embedded {
+    width: 100%;
+    height: 100%;
+  }
+
+.marg-top {
+@media (max-width:767px) {margin-top:15px}
+}

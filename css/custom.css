@@ -79,7 +79,7 @@ header {
 @media (min-width: 980px) {
   #slidedeck .stuck-right, section#postsignup .stuck-right, section#supportbill .stuck-right {
     position: absolute;
-    top: 2010px; } }
+    top: 2033px; } }
 @media (max-width: 979px) {
   #slidedeck .stuck-right, section#postsignup .stuck-right, section#supportbill .stuck-right {
     position: absolute;
@@ -105,42 +105,73 @@ header {
 #slidedeck #join-form .blue-header, section#postsignup #join-form .blue-header, section#supportbill #join-form .blue-header, #slidedeck section#postsignup #progress .blue-header, section#postsignup #slidedeck #progress .blue-header, section#postsignup #progress .blue-header, section#supportbill section#postsignup #progress .blue-header, section#postsignup section#supportbill #progress .blue-header, #slidedeck section#supportbill #progress .blue-header, section#supportbill #slidedeck #progress .blue-header, section#postsignup section#supportbill #progress .blue-header, section#supportbill section#postsignup #progress .blue-header, section#supportbill #progress .blue-header {
   height: 40px;
   width: 100%;
-  background-color: #2980b9; }
+  background-color: transparent; }
   #slidedeck #join-form .blue-header h2, section#postsignup #join-form .blue-header h2, section#supportbill #join-form .blue-header h2, #slidedeck section#postsignup #progress .blue-header h2, section#postsignup #slidedeck #progress .blue-header h2, section#postsignup #progress .blue-header h2, section#supportbill section#postsignup #progress .blue-header h2, section#postsignup section#supportbill #progress .blue-header h2, #slidedeck section#supportbill #progress .blue-header h2, section#supportbill #slidedeck #progress .blue-header h2, section#postsignup section#supportbill #progress .blue-header h2, section#supportbill section#postsignup #progress .blue-header h2, section#supportbill #progress .blue-header h2 {
     font-family: "Proxima Nova";
     text-align: center;
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
     margin-top: 0;
-    letter-spacing: -1px;
-    color: white; }
+    letter-spacing: 2px;
+    color: #2980b9; }
     @media (min-width: 768px) and (max-width: 979px) {
       #slidedeck #join-form .blue-header h2, section#postsignup #join-form .blue-header h2, section#supportbill #join-form .blue-header h2, #slidedeck section#postsignup #progress .blue-header h2, section#postsignup #slidedeck #progress .blue-header h2, section#postsignup #progress .blue-header h2, section#supportbill section#postsignup #progress .blue-header h2, section#postsignup section#supportbill #progress .blue-header h2, #slidedeck section#supportbill #progress .blue-header h2, section#supportbill #slidedeck #progress .blue-header h2, section#postsignup section#supportbill #progress .blue-header h2, section#supportbill section#postsignup #progress .blue-header h2, section#supportbill #progress .blue-header h2 {
-        font-size: 15px; } }
+        font-size: 14px; } }
     @media (max-width: 767px) {
       #slidedeck #join-form .blue-header h2, section#postsignup #join-form .blue-header h2, section#supportbill #join-form .blue-header h2, #slidedeck section#postsignup #progress .blue-header h2, section#postsignup #slidedeck #progress .blue-header h2, section#postsignup #progress .blue-header h2, section#supportbill section#postsignup #progress .blue-header h2, section#postsignup section#supportbill #progress .blue-header h2, #slidedeck section#supportbill #progress .blue-header h2, section#supportbill #slidedeck #progress .blue-header h2, section#postsignup section#supportbill #progress .blue-header h2, section#supportbill section#postsignup #progress .blue-header h2, section#supportbill #progress .blue-header h2 {
         font-size: 15px;
         padding-top: 0px;
         margin-top: 0; } }
 #slidedeck #join-form .white-body, section#postsignup #join-form .white-body, section#supportbill #join-form .white-body, #slidedeck section#postsignup #progress .white-body, section#postsignup #slidedeck #progress .white-body, section#postsignup #progress .white-body, section#supportbill section#postsignup #progress .white-body, section#postsignup section#supportbill #progress .white-body, #slidedeck section#supportbill #progress .white-body, section#supportbill #slidedeck #progress .white-body, section#postsignup section#supportbill #progress .white-body, section#supportbill section#postsignup #progress .white-body, section#supportbill #progress .white-body {
-  background-color: white;
-  height: 230px;
+  background-color: #2c3e50;
+  height: 130px;
   margin-top: 5px; }
-  #slidedeck #join-form .white-body .clipboard, section#postsignup #join-form .white-body .clipboard, section#supportbill #join-form .white-body .clipboard, #slidedeck section#postsignup #progress .white-body .clipboard, section#postsignup #slidedeck #progress .white-body .clipboard, section#postsignup #progress .white-body .clipboard, section#supportbill section#postsignup #progress .white-body .clipboard, section#postsignup section#supportbill #progress .white-body .clipboard, #slidedeck section#supportbill #progress .white-body .clipboard, section#supportbill #slidedeck #progress .white-body .clipboard, section#postsignup section#supportbill #progress .white-body .clipboard, section#supportbill section#postsignup #progress .white-body .clipboard, section#supportbill #progress .white-body .clipboard {
-    padding: 5px 0 10px 0; }
   @media (min-width: 768px) {
     #slidedeck #join-form .white-body .form, section#postsignup #join-form .white-body .form, section#supportbill #join-form .white-body .form, #slidedeck section#postsignup #progress .white-body .form, section#postsignup #slidedeck #progress .white-body .form, section#postsignup #progress .white-body .form, section#supportbill section#postsignup #progress .white-body .form, section#postsignup section#supportbill #progress .white-body .form, #slidedeck section#supportbill #progress .white-body .form, section#supportbill #slidedeck #progress .white-body .form, section#postsignup section#supportbill #progress .white-body .form, section#supportbill section#postsignup #progress .white-body .form, section#supportbill #progress .white-body .form {
       padding: 0 10px 0 12px; } }
   #slidedeck #join-form .white-body input, section#postsignup #join-form .white-body input, section#supportbill #join-form .white-body input, #slidedeck section#postsignup #progress .white-body input, section#postsignup #slidedeck #progress .white-body input, section#postsignup #progress .white-body input, section#supportbill section#postsignup #progress .white-body input, section#postsignup section#supportbill #progress .white-body input, #slidedeck section#supportbill #progress .white-body input, section#supportbill #slidedeck #progress .white-body input, section#postsignup section#supportbill #progress .white-body input, section#supportbill section#postsignup #progress .white-body input, section#supportbill #progress .white-body input {
-    width: 187px;
-    height: 30px;
-    background-color: #ecf0f1;
-    border: 1px #6cd0bd solid;
-    border-radius: 5px;
-    font-size: 13px; }
+    width: 150px;
+    height: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #f1c40f;
+    color: #f1c40f;
+    border-radius: 0px;
+    font-size: 15px;
+    display: inline;
+    float: left;
+    padding-top: 16px;
+    padding-bottom: 0px; }
     @media (min-width: 768px) and (max-width: 979px) {
       #slidedeck #join-form .white-body input, section#postsignup #join-form .white-body input, section#supportbill #join-form .white-body input, #slidedeck section#postsignup #progress .white-body input, section#postsignup #slidedeck #progress .white-body input, section#postsignup #progress .white-body input, section#supportbill section#postsignup #progress .white-body input, section#postsignup section#supportbill #progress .white-body input, #slidedeck section#supportbill #progress .white-body input, section#supportbill #slidedeck #progress .white-body input, section#postsignup section#supportbill #progress .white-body input, section#supportbill section#postsignup #progress .white-body input, section#supportbill #progress .white-body input {
-        width: 127px; } }
+        width: 100px;
+        padding-top: 18px; } }
+  #slidedeck #join-form .white-body ::-webkit-input-placeholder, section#postsignup #join-form .white-body ::-webkit-input-placeholder, section#supportbill #join-form .white-body ::-webkit-input-placeholder, #slidedeck section#postsignup #progress .white-body ::-webkit-input-placeholder, section#postsignup #slidedeck #progress .white-body ::-webkit-input-placeholder, section#postsignup #progress .white-body ::-webkit-input-placeholder, section#supportbill section#postsignup #progress .white-body ::-webkit-input-placeholder, section#postsignup section#supportbill #progress .white-body ::-webkit-input-placeholder, #slidedeck section#supportbill #progress .white-body ::-webkit-input-placeholder, section#supportbill #slidedeck #progress .white-body ::-webkit-input-placeholder, section#postsignup section#supportbill #progress .white-body ::-webkit-input-placeholder, section#supportbill section#postsignup #progress .white-body ::-webkit-input-placeholder, section#supportbill #progress .white-body ::-webkit-input-placeholder {
+    color: #f1c40f; }
+  #slidedeck #join-form .white-body :-moz-placeholder, section#postsignup #join-form .white-body :-moz-placeholder, section#supportbill #join-form .white-body :-moz-placeholder, #slidedeck section#postsignup #progress .white-body :-moz-placeholder, section#postsignup #slidedeck #progress .white-body :-moz-placeholder, section#postsignup #progress .white-body :-moz-placeholder, section#supportbill section#postsignup #progress .white-body :-moz-placeholder, section#postsignup section#supportbill #progress .white-body :-moz-placeholder, #slidedeck section#supportbill #progress .white-body :-moz-placeholder, section#supportbill #slidedeck #progress .white-body :-moz-placeholder, section#postsignup section#supportbill #progress .white-body :-moz-placeholder, section#supportbill section#postsignup #progress .white-body :-moz-placeholder, section#supportbill #progress .white-body :-moz-placeholder {
+    /* Firefox 18- */
+    color: #f1c40f; }
+  #slidedeck #join-form .white-body ::-moz-placeholder, section#postsignup #join-form .white-body ::-moz-placeholder, section#supportbill #join-form .white-body ::-moz-placeholder, #slidedeck section#postsignup #progress .white-body ::-moz-placeholder, section#postsignup #slidedeck #progress .white-body ::-moz-placeholder, section#postsignup #progress .white-body ::-moz-placeholder, section#supportbill section#postsignup #progress .white-body ::-moz-placeholder, section#postsignup section#supportbill #progress .white-body ::-moz-placeholder, #slidedeck section#supportbill #progress .white-body ::-moz-placeholder, section#supportbill #slidedeck #progress .white-body ::-moz-placeholder, section#postsignup section#supportbill #progress .white-body ::-moz-placeholder, section#supportbill section#postsignup #progress .white-body ::-moz-placeholder, section#supportbill #progress .white-body ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #f1c40f; }
+  #slidedeck #join-form .white-body :-ms-input-placeholder, section#postsignup #join-form .white-body :-ms-input-placeholder, section#supportbill #join-form .white-body :-ms-input-placeholder, #slidedeck section#postsignup #progress .white-body :-ms-input-placeholder, section#postsignup #slidedeck #progress .white-body :-ms-input-placeholder, section#postsignup #progress .white-body :-ms-input-placeholder, section#supportbill section#postsignup #progress .white-body :-ms-input-placeholder, section#postsignup section#supportbill #progress .white-body :-ms-input-placeholder, #slidedeck section#supportbill #progress .white-body :-ms-input-placeholder, section#supportbill #slidedeck #progress .white-body :-ms-input-placeholder, section#postsignup section#supportbill #progress .white-body :-ms-input-placeholder, section#supportbill section#postsignup #progress .white-body :-ms-input-placeholder, section#supportbill #progress .white-body :-ms-input-placeholder {
+    color: #f1c40f; }
+  #slidedeck #join-form .white-body input:focus, section#postsignup #join-form .white-body input:focus, section#supportbill #join-form .white-body input:focus, #slidedeck section#postsignup #progress .white-body input:focus, section#postsignup #slidedeck #progress .white-body input:focus, section#postsignup #progress .white-body input:focus, section#supportbill section#postsignup #progress .white-body input:focus, section#postsignup section#supportbill #progress .white-body input:focus, #slidedeck section#supportbill #progress .white-body input:focus, section#supportbill #slidedeck #progress .white-body input:focus, section#postsignup section#supportbill #progress .white-body input:focus, section#supportbill section#postsignup #progress .white-body input:focus, section#supportbill #progress .white-body input:focus {
+    outline: none;
+    box-shadow: none; }
+  #slidedeck #join-form .white-body p, section#postsignup #join-form .white-body p, section#supportbill #join-form .white-body p, #slidedeck section#postsignup #progress .white-body p, section#postsignup #slidedeck #progress .white-body p, section#postsignup #progress .white-body p, section#supportbill section#postsignup #progress .white-body p, section#postsignup section#supportbill #progress .white-body p, #slidedeck section#supportbill #progress .white-body p, section#supportbill #slidedeck #progress .white-body p, section#postsignup section#supportbill #progress .white-body p, section#supportbill section#postsignup #progress .white-body p, section#supportbill #progress .white-body p {
+    color: white;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 12px;
+    padding-top: 10px;
+    display: inline;
+    float: left;
+    line-height: 2; }
   #slidedeck #join-form .white-body button, section#postsignup #join-form .white-body button, section#supportbill #join-form .white-body button, #slidedeck section#postsignup #progress .white-body button, section#postsignup #slidedeck #progress .white-body button, section#postsignup #progress .white-body button, section#supportbill section#postsignup #progress .white-body button, section#postsignup section#supportbill #progress .white-body button, #slidedeck section#supportbill #progress .white-body button, section#supportbill #slidedeck #progress .white-body button, section#postsignup section#supportbill #progress .white-body button, section#supportbill section#postsignup #progress .white-body button, section#supportbill #progress .white-body button {
     border-radius: 3px;
     height: 60px;
@@ -161,10 +192,49 @@ header {
         width: 140px;
         height: 40px;
         font-size: 18px; } }
+#slidedeck #join-form .emailbox, section#postsignup #join-form .emailbox, section#supportbill #join-form .emailbox, #slidedeck section#postsignup #progress .emailbox, section#postsignup #slidedeck #progress .emailbox, section#postsignup #progress .emailbox, section#supportbill section#postsignup #progress .emailbox, section#postsignup section#supportbill #progress .emailbox, #slidedeck section#supportbill #progress .emailbox, section#supportbill #slidedeck #progress .emailbox, section#postsignup section#supportbill #progress .emailbox, section#supportbill section#postsignup #progress .emailbox, section#supportbill #progress .emailbox {
+  background-color: #2c3e50;
+  height: 80px;
+  margin-top: 5px; }
+  #slidedeck #join-form .emailbox label, section#postsignup #join-form .emailbox label, section#supportbill #join-form .emailbox label, #slidedeck section#postsignup #progress .emailbox label, section#postsignup #slidedeck #progress .emailbox label, section#postsignup #progress .emailbox label, section#supportbill section#postsignup #progress .emailbox label, section#postsignup section#supportbill #progress .emailbox label, #slidedeck section#supportbill #progress .emailbox label, section#supportbill #slidedeck #progress .emailbox label, section#postsignup section#supportbill #progress .emailbox label, section#supportbill section#postsignup #progress .emailbox label, section#supportbill #progress .emailbox label {
+    display: block;
+    font-family: "Proxima Nova";
+    color: white;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding-top: 9px;
+    margin-bottom: 2px;
+    font-weight: 100;
+    font-size: 13px; }
+#slidedeck #join-form .email-input, section#postsignup #join-form .email-input, section#supportbill #join-form .email-input, #slidedeck section#postsignup #progress .email-input, section#postsignup #slidedeck #progress .email-input, section#postsignup #progress .email-input, section#supportbill section#postsignup #progress .email-input, section#postsignup section#supportbill #progress .email-input, #slidedeck section#supportbill #progress .email-input, section#supportbill #slidedeck #progress .email-input, section#postsignup section#supportbill #progress .email-input, section#supportbill section#postsignup #progress .email-input, section#supportbill #progress .email-input {
+  width: 187px;
+  height: 23px;
+  background-color: #ecf0f1;
+  border: 1px #f1c40f solid;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-left: 9px;
+  float: left; }
+  @media (min-width: 768px) and (max-width: 979px) {
+    #slidedeck #join-form .email-input, section#postsignup #join-form .email-input, section#supportbill #join-form .email-input, #slidedeck section#postsignup #progress .email-input, section#postsignup #slidedeck #progress .email-input, section#postsignup #progress .email-input, section#supportbill section#postsignup #progress .email-input, section#postsignup section#supportbill #progress .email-input, #slidedeck section#supportbill #progress .email-input, section#supportbill #slidedeck #progress .email-input, section#postsignup section#supportbill #progress .email-input, section#supportbill section#postsignup #progress .email-input, section#supportbill #progress .email-input {
+      width: 127px; } }
+#slidedeck #join-form button, section#postsignup #join-form button, section#supportbill #join-form button, #slidedeck section#postsignup #progress button, section#postsignup #slidedeck #progress button, section#postsignup #progress button, section#supportbill section#postsignup #progress button, section#postsignup section#supportbill #progress button, #slidedeck section#supportbill #progress button, section#supportbill #slidedeck #progress button, section#postsignup section#supportbill #progress button, section#supportbill section#postsignup #progress button, section#supportbill #progress button {
+  margin-left: 0px;
+  margin-top: 5px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #c0392b;
+  background-image: -webkit-linear-gradient(top, #c0392b, #bd392b);
+  color: white;
+  border: none;
+  font-family: "Proxima Nova";
+  font-weight: 100;
+  font-size: 18px;
+  letter-spacing: 1px; }
 #slidedeck #join-form .social-footer, section#postsignup #join-form .social-footer, section#supportbill #join-form .social-footer, #slidedeck section#postsignup #progress .social-footer, section#postsignup #slidedeck #progress .social-footer, section#postsignup #progress .social-footer, section#supportbill section#postsignup #progress .social-footer, section#postsignup section#supportbill #progress .social-footer, #slidedeck section#supportbill #progress .social-footer, section#supportbill #slidedeck #progress .social-footer, section#postsignup section#supportbill #progress .social-footer, section#supportbill section#postsignup #progress .social-footer, section#supportbill #progress .social-footer {
   height: 55px;
   width: 100%;
-  background-color: white;
+  background-color: transparent;
   margin-top: 10px; }
 #slidedeck #ipad-form, section#postsignup #ipad-form, section#supportbill #ipad-form {
   background-image: url("../images/light_black_fill.png");
@@ -187,7 +257,7 @@ header {
     #slidedeck #ipad-form .white-body input, section#postsignup #ipad-form .white-body input, section#supportbill #ipad-form .white-body input, #slidedeck #ipad-form .white-body label, section#postsignup #ipad-form .white-body label, section#supportbill #ipad-form .white-body label {
       display: inline; }
     #slidedeck #ipad-form .white-body .form, section#postsignup #ipad-form .white-body .form, section#supportbill #ipad-form .white-body .form {
-      margin-top: 6px; }
+      margin-top: 3px; }
     #slidedeck #ipad-form .white-body label, section#postsignup #ipad-form .white-body label, section#supportbill #ipad-form .white-body label {
       margin: 0 10px 0 0;
       margin-top: -3px;
@@ -206,7 +276,7 @@ header {
     #slidedeck #ipad-form .white-body button, section#postsignup #ipad-form .white-body button, section#supportbill #ipad-form .white-body button {
       width: 40px;
       border-radius: 4px;
-      height: 30px;
+      height: 29px;
       font-size: 14px;
       padding-top: 6px;
       margin-top: -5px;
@@ -224,6 +294,7 @@ header {
   min-height: 800px;
   padding-bottom: 30px; }
   #infographic .supporters-image {
+    margin-top: 5px;
     margin-bottom: 50px;
     margin-left: 0; }
 
@@ -257,7 +328,8 @@ header {
     font-weight: 100; }
 
 #news-press {
-  min-height: 380px; }
+  min-height: 380px;
+  background-color: #7f8c8d; }
   #news-press .news-color {
     background-color: #7f8c8d;
     height: 380px;
@@ -360,7 +432,7 @@ header {
       box-sizing: border-box; } }
 
 #organizations {
-  height: 310px; }
+  min-height: 310px; }
   #organizations h4 {
     text-align: center;
     font-family: "Proxima Nova";
@@ -392,7 +464,7 @@ header {
 
 footer {
   background-color: #2c3e50;
-  height: 110px;
+  min-height: 110px;
   padding-top: 30px;
   font-size: 12px; }
   footer img {
@@ -400,13 +472,17 @@ footer {
   footer a {
     display: inline; }
   footer a, footer p {
-    font-family: "Proxima Nova"; }
-  footer .footer-about {
-    margin-top: 30px; }
-    footer .footer-about a {
-      color: #f1c40f; }
+    font-family: "Proxima Nova";
+    margin-top: 30px;
+    color: #f1c40f; }
+  footer a {
+    float: left; }
+  footer p {
+    color: white; }
   footer .lisence {
     color: #3498db; }
+  footer .sina-link {
+    float: none; }
 
 @media (max-width: 767px) {
   #section {
@@ -762,3 +838,16 @@ section#supportbill #actioncontainer h4.instructions {
 @media (max-width: 480px) {
   section#supportbill .supporters-image {
     display: none; } }
+
+.embed-wrapper {
+  max-width: 800px;
+  margin: auto;
+  /* this is just for centering, not crucial for responsiveness */ }
+
+iframe.newsbound-embedded {
+  width: 100%;
+  height: 100%; }
+
+@media (max-width: 767px) {
+  .marg-top {
+    margin-top: 15px; } }
