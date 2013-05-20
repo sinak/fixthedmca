@@ -117,7 +117,7 @@ header {
     color: #2980b9; }
     @media (min-width: 768px) and (max-width: 979px) {
       #slidedeck #join-form .blue-header h2, section#postsignup #join-form .blue-header h2, #slidedeck section#postsignup #progress .blue-header h2, section#postsignup #slidedeck #progress .blue-header h2, section#postsignup #progress .blue-header h2 {
-        font-size: 15px; } }
+        font-size: 14px; } }
     @media (max-width: 767px) {
       #slidedeck #join-form .blue-header h2, section#postsignup #join-form .blue-header h2, #slidedeck section#postsignup #progress .blue-header h2, section#postsignup #slidedeck #progress .blue-header h2, section#postsignup #progress .blue-header h2 {
         font-size: 15px;
@@ -131,21 +131,37 @@ header {
     #slidedeck #join-form .white-body .form, section#postsignup #join-form .white-body .form, #slidedeck section#postsignup #progress .white-body .form, section#postsignup #slidedeck #progress .white-body .form, section#postsignup #progress .white-body .form {
       padding: 0 10px 0 12px; } }
   #slidedeck #join-form .white-body input, section#postsignup #join-form .white-body input, #slidedeck section#postsignup #progress .white-body input, section#postsignup #slidedeck #progress .white-body input, section#postsignup #progress .white-body input {
-    width: 127px;
+    width: 150px;
     height: 20px;
     margin-bottom: 0;
+    text-align: center;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #f1c40f;
     color: #f1c40f;
     border-radius: 0px;
-    font-size: 13px;
+    font-size: 15px;
     display: inline;
     float: left;
-    padding-top: 13px; }
+    padding-top: 16px;
+    padding-bottom: 0px; }
     @media (min-width: 768px) and (max-width: 979px) {
       #slidedeck #join-form .white-body input, section#postsignup #join-form .white-body input, #slidedeck section#postsignup #progress .white-body input, section#postsignup #slidedeck #progress .white-body input, section#postsignup #progress .white-body input {
-        width: 127px; } }
+        width: 100px;
+        padding-top: 18px; } }
+  #slidedeck #join-form .white-body ::-webkit-input-placeholder, section#postsignup #join-form .white-body ::-webkit-input-placeholder, #slidedeck section#postsignup #progress .white-body ::-webkit-input-placeholder, section#postsignup #slidedeck #progress .white-body ::-webkit-input-placeholder, section#postsignup #progress .white-body ::-webkit-input-placeholder {
+    color: #f1c40f; }
+  #slidedeck #join-form .white-body :-moz-placeholder, section#postsignup #join-form .white-body :-moz-placeholder, #slidedeck section#postsignup #progress .white-body :-moz-placeholder, section#postsignup #slidedeck #progress .white-body :-moz-placeholder, section#postsignup #progress .white-body :-moz-placeholder {
+    /* Firefox 18- */
+    color: #f1c40f; }
+  #slidedeck #join-form .white-body ::-moz-placeholder, section#postsignup #join-form .white-body ::-moz-placeholder, #slidedeck section#postsignup #progress .white-body ::-moz-placeholder, section#postsignup #slidedeck #progress .white-body ::-moz-placeholder, section#postsignup #progress .white-body ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #f1c40f; }
+  #slidedeck #join-form .white-body :-ms-input-placeholder, section#postsignup #join-form .white-body :-ms-input-placeholder, #slidedeck section#postsignup #progress .white-body :-ms-input-placeholder, section#postsignup #slidedeck #progress .white-body :-ms-input-placeholder, section#postsignup #progress .white-body :-ms-input-placeholder {
+    color: #f1c40f; }
+  #slidedeck #join-form .white-body input:focus, section#postsignup #join-form .white-body input:focus, #slidedeck section#postsignup #progress .white-body input:focus, section#postsignup #slidedeck #progress .white-body input:focus, section#postsignup #progress .white-body input:focus {
+    outline: none;
+    box-shadow: none; }
   #slidedeck #join-form .white-body p, section#postsignup #join-form .white-body p, #slidedeck section#postsignup #progress .white-body p, section#postsignup #slidedeck #progress .white-body p, section#postsignup #progress .white-body p {
     color: white;
     font-family: "Proxima Nova";
@@ -278,6 +294,7 @@ header {
   min-height: 800px;
   padding-bottom: 30px; }
   #infographic .supporters-image {
+    margin-top: 5px;
     margin-bottom: 50px;
     margin-left: 0; }
 

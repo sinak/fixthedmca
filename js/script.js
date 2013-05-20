@@ -421,6 +421,4 @@ function tweetThis(url) {
     resizeExplainer()
   });
 
-   $(document).ready(function(){
-    $('#ipad-form').hide();
-   });
+ 

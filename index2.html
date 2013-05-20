@@ -98,20 +98,22 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 						<h2>Join the campaign</h2>
 					</div>
 					<div class="white-body">
-						<p style="margin-bottom:0;">I,</p><input type="email" id="email1" for="email" placeholder="name" />
+						<p style="margin-bottom:0;">I,</p><input type="text" id="name1" for="name" placeholder="your name" />
 						<p style="padding-top:0;">want Congress to fix the DMCA.</p>
 					</div>	
-					<div class="emailbox">
-						<label for="email">Your email:</label>
-						<input type="text" id="email-input">
-					</div>
-					<div class="submitbox">
-						<button class="submit-button span3">Get Started</button>
-					</div>
-					</div>
-					<div class="social-footer visible-desktop">
-						<div class="fb"></div>
-						<div class="tw"></div>
+					<div class="submit-part">
+						<div class="emailbox">
+							<label for="email">Your email:</label>
+							<input type="email1" id="email-input">
+						</div>
+						<div class="submitbox">
+							<button class="submit-button span3">Get Started</button>
+						</div>
+						</div>
+						<div class="social-footer visible-desktop">
+							<div class="fb"></div>
+							<div class="tw"></div>
+						</div>
 					</div>
 				</div>
 				<div class="hidden-desktop">
@@ -137,7 +139,7 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 	<!-- infographic -->
 	<section id="infographic">
 		<div class="container">
-			<img src="images/new/supporters.png" class="supporters-image span9">
+			<a href="#organizations"><img src="images/new/supporters.jpg" class="supporters-image span9"></a>
 			<img src="images/new/infographic.png" class="infographic-image">
 		</div>
 	</section>
@@ -353,6 +355,11 @@ $('.form-submit').click(function(){
 });
 });
 
+    $('#ipad-form').hide();
+    $('.submit-part').hide();
+    $('#name1').keypress(function(){
+    	$('.submit-part').slideDown();
+    });
 </script>
 </body>
 </html>
