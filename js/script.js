@@ -131,7 +131,7 @@ $('#about').click(function () {
 
 // SCRIPTS FOR TWEET AND CONTACT BEGIN HERE
 
-// $(document).ready(function(){
+$(document).ready(function(){
  
 //  $('#rep-form').validate(
 //  {
