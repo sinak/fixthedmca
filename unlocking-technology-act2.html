@@ -215,7 +215,7 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 										<h4>Share on Twitter</h4>
 
 										<div style="width:130px; margin: 0 auto;">
-											<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fixthedmca.org/unlocking-technology-act.html" data-text="This is critical - we need to pass this law to protect your right to modify electronics:" data-size="large" data-related="fixtmcasinak" data-counturl="http://fixthedmca.org/unlocking-technology-act.html">Tweet</a>
+											<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fixthedmca.org/unlocking-technology-act.html" data-text="This is critical - we need to pass this law to protect our right to modify electronics:" data-size="large" data-related="fixtmcasinak" data-counturl="http://fixthedmca.org/unlocking-technology-act.html">Tweet</a>
 										</div>
 									</div>
 								</div>
@@ -411,4 +411,55 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 
+
+	<script type="text/javascript">
+	function setupFacebookShare() {
+		$("#post_to_feed2").click(function() {
+  shareOnFacebook();
+});
+	}
+
+	function shareOnFacebook() {
+	   
+          // calling the API ...
+          var obj = {
+            method: 'feed',
+            link: 'http://fixthedmca.org/unlocking-technology-act.html?r=s-'+tracking_id,
+            picture: 'http://fixthedmca.org/images/fb-graphic.png',
+            name: 'Congress is close to making unlocking cell phones legal',
+            caption: 'Bill proposed that would make unlocking permanentl legal',
+            description: 'Unlocking cell phones to use them on different cell phone network was made illegal a few months ago. Now a bill is in Congress to reverse that.'
+          };
+
+          function callback(response) {
+            mixpanel.track('Facebook Share');
+            $.ajax({ 
+                type: 'POST',
+                url: '/api/record_share/fbshare',
+                data: "",
+                dataType: 'json',
+                contentType : 'application/json', 
+            });
+          }
+
+          FB.ui(obj, callback);
+	}
+
+	</script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38676652-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
 </html>
