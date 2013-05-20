@@ -131,33 +131,33 @@ $('#about').click(function () {
 
 // SCRIPTS FOR TWEET AND CONTACT BEGIN HERE
 
-$(document).ready(function(){
+// $(document).ready(function(){
  
- $('#rep-form').validate(
- {
-  rules: {
-    name: {
-      minlength: 2,
-      required: true
-    },
-    email: {
-      required: true,
-      email: true
-    },
-    "zip-code": {
-      minlength: 5,
-      required: true
-    }
-  },
-  highlight: function(element) {
-    $(element).closest('.control-group').removeClass('success').addClass('error');
-  },
-  success: function(element) {
-    element
-    .text('OK!').addClass('valid')
-    .closest('.control-group').removeClass('error').addClass('success');
-  }
- });
+//  $('#rep-form').validate(
+//  {
+//   rules: {
+//     name: {
+//       minlength: 2,
+//       required: true
+//     },
+//     email: {
+//       required: true,
+//       email: true
+//     },
+//     "zip-code": {
+//       minlength: 5,
+//       required: true
+//     }
+//   },
+//   highlight: function(element) {
+//     $(element).closest('.control-group').removeClass('success').addClass('error');
+//   },
+//   success: function(element) {
+//     element
+//     .text('OK!').addClass('valid')
+//     .closest('.control-group').removeClass('error').addClass('success');
+//   }
+//  });
 
 $('#join').waypoint(function() {
   if (!tracked_share_view) { 
