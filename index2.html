@@ -121,9 +121,9 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 					<div class="white-body">
 						<div class="form">
 							<label for="email">Get me involved:</label>
-							<input type="email" placeholder="example@email.com" class="email" />
+							<input type="email" placeholder="example@email.com" class="email" id="email" />
 							<button id="button" class="form-submit visible-desktop">LET'S DO THIS</button> 
-							<button class="submit-button">GO</button> 
+							<button class="submit-go">GO</button> 
 						</div>
 					</div>
 					<div class="social-footer">
@@ -353,6 +353,35 @@ $('.submit-button').click(function(){
           error: failSignup
 });
 });
+
+
+function validateTwo() {
+  var email=$('#email').val();
+  if (isEmail(email)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+$('.submit-go').click(function(){ 
+  if (!validateTwo()) {
+    alert('Please enter a valid name and email address');
+    return;
+  }
+      $.ajax({ 
+          type: 'POST',
+          url: 'http://grassroots.io/api/add_simple_user/1', 
+          data: JSON.stringify({simple_user: {
+                                            email: $('#email').val()
+                                            }}), 
+          dataType: 'json',
+          contentType : 'application/json',
+          success: afterSignup,
+          error: failSignup
+});
+});
+
 
     $('#ipad-form').hide();
     $('.submit-part').hide();
