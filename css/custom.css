@@ -117,7 +117,7 @@ header {
     color: #2980b9; }
     @media (min-width: 768px) and (max-width: 979px) {
       #slidedeck #join-form .blue-header h2, section#postsignup #join-form .blue-header h2, section#supportbill #join-form .blue-header h2, #slidedeck section#postsignup #progress .blue-header h2, section#postsignup #slidedeck #progress .blue-header h2, section#postsignup #progress .blue-header h2, section#supportbill section#postsignup #progress .blue-header h2, section#postsignup section#supportbill #progress .blue-header h2, #slidedeck section#supportbill #progress .blue-header h2, section#supportbill #slidedeck #progress .blue-header h2, section#postsignup section#supportbill #progress .blue-header h2, section#supportbill section#postsignup #progress .blue-header h2, section#supportbill #progress .blue-header h2 {
-        font-size: 14px; } }
+        font-size: 13px; } }
     @media (max-width: 767px) {
       #slidedeck #join-form .blue-header h2, section#postsignup #join-form .blue-header h2, section#supportbill #join-form .blue-header h2, #slidedeck section#postsignup #progress .blue-header h2, section#postsignup #slidedeck #progress .blue-header h2, section#postsignup #progress .blue-header h2, section#supportbill section#postsignup #progress .blue-header h2, section#postsignup section#supportbill #progress .blue-header h2, #slidedeck section#supportbill #progress .blue-header h2, section#supportbill #slidedeck #progress .blue-header h2, section#postsignup section#supportbill #progress .blue-header h2, section#supportbill section#postsignup #progress .blue-header h2, section#supportbill #progress .blue-header h2 {
         font-size: 15px;
