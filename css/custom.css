@@ -63,11 +63,11 @@ header {
   @media (max-width: 480px) {
     #slidedeck .deck-dim, section#postsignup .deck-dim {
       height: 280px; } }
-@media (min-width: 960px) {
+@media (min-width: 980px) {
   #slidedeck .fixed-right, section#postsignup .fixed-right {
     position: fixed;
     top: 177px; } }
-@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 768px) and (max-width: 979px) {
   #slidedeck .fixed-right, section#postsignup .fixed-right {
     top: 204px;
     position: absolute; } }
@@ -76,11 +76,11 @@ header {
     position: fixed;
     bottom: 0px;
     border-top: 1px #dbdbdb solid; } }
-@media (min-width: 960px) {
+@media (min-width: 980px) {
   #slidedeck .stuck-right, section#postsignup .stuck-right {
     position: absolute;
     top: 2010px; } }
-@media (max-width: 959px) {
+@media (max-width: 979px) {
   #slidedeck .stuck-right, section#postsignup .stuck-right {
     position: absolute;
     top: 204px; } }
@@ -89,7 +89,8 @@ header {
     width: 100%;
     margin-left: -10px;
     margin-right: 0;
-    background-color: white; } }
+    background-color: white;
+    display: none; } }
 @media (max-width: 767px) {
   #slidedeck #join-form .form, section#postsignup #join-form .form, #slidedeck section#postsignup #progress .form, section#postsignup #slidedeck #progress .form, section#postsignup #progress .form {
     text-align: center;
@@ -105,11 +106,6 @@ header {
   height: 40px;
   width: 100%;
   background-color: #2980b9; }
-  @media (max-width: 767px) {
-    #slidedeck #join-form .blue-header, section#postsignup #join-form .blue-header, #slidedeck section#postsignup #progress .blue-header, section#postsignup #slidedeck #progress .blue-header, section#postsignup #progress .blue-header {
-      display: inline;
-      width: 25%;
-      float: left; } }
   #slidedeck #join-form .blue-header h2, section#postsignup #join-form .blue-header h2, #slidedeck section#postsignup #progress .blue-header h2, section#postsignup #slidedeck #progress .blue-header h2, section#postsignup #progress .blue-header h2 {
     font-family: "Proxima Nova";
     text-align: center;
@@ -130,32 +126,21 @@ header {
   background-color: white;
   height: 230px;
   margin-top: 5px; }
-  @media (max-width: 767px) {
-    #slidedeck #join-form .white-body, section#postsignup #join-form .white-body, #slidedeck section#postsignup #progress .white-body, section#postsignup #slidedeck #progress .white-body, section#postsignup #progress .white-body {
-      display: inline;
-      float: left;
-      height: 35px;
-      width: 75%; } }
   #slidedeck #join-form .white-body .clipboard, section#postsignup #join-form .white-body .clipboard, #slidedeck section#postsignup #progress .white-body .clipboard, section#postsignup #slidedeck #progress .white-body .clipboard, section#postsignup #progress .white-body .clipboard {
     padding: 5px 0 10px 0; }
   @media (min-width: 768px) {
     #slidedeck #join-form .white-body .form, section#postsignup #join-form .white-body .form, #slidedeck section#postsignup #progress .white-body .form, section#postsignup #slidedeck #progress .white-body .form, section#postsignup #progress .white-body .form {
-      padding: 0 10px 0 10px; } }
+      padding: 0 10px 0 12px; } }
   #slidedeck #join-form .white-body input, section#postsignup #join-form .white-body input, #slidedeck section#postsignup #progress .white-body input, section#postsignup #slidedeck #progress .white-body input, section#postsignup #progress .white-body input {
     width: 187px;
     height: 30px;
     background-color: #ecf0f1;
     border: 1px #6cd0bd solid;
-    border-radius: 5px; }
+    border-radius: 5px;
+    font-size: 13px; }
     @media (min-width: 768px) and (max-width: 979px) {
       #slidedeck #join-form .white-body input, section#postsignup #join-form .white-body input, #slidedeck section#postsignup #progress .white-body input, section#postsignup #slidedeck #progress .white-body input, section#postsignup #progress .white-body input {
         width: 127px; } }
-    @media (max-width: 767px) {
-      #slidedeck #join-form .white-body input, section#postsignup #join-form .white-body input, #slidedeck section#postsignup #progress .white-body input, section#postsignup #slidedeck #progress .white-body input, section#postsignup #progress .white-body input {
-        height: 22px;
-        float: left;
-        width: 49%;
-        margin-left: 1%; } }
   #slidedeck #join-form .white-body button, section#postsignup #join-form .white-body button, #slidedeck section#postsignup #progress .white-body button, section#postsignup #slidedeck #progress .white-body button, section#postsignup #progress .white-body button {
     border-radius: 3px;
     height: 60px;
@@ -170,12 +155,7 @@ header {
     box-shadow: 2px 2px 2px #c5c5c5; }
     @media (max-width: 767px) {
       #slidedeck #join-form .white-body button, section#postsignup #join-form .white-body button, #slidedeck section#postsignup #progress .white-body button, section#postsignup #slidedeck #progress .white-body button, section#postsignup #progress .white-body button {
-        width: 41%;
-        height: 31px;
-        font-size: 15px;
-        padding-top: 5px;
-        float: left;
-        margin-left: 1%; } }
+        display: none; } }
     @media (min-width: 768px) and (max-width: 979px) {
       #slidedeck #join-form .white-body button, section#postsignup #join-form .white-body button, #slidedeck section#postsignup #progress .white-body button, section#postsignup #slidedeck #progress .white-body button, section#postsignup #progress .white-body button {
         width: 140px;
@@ -186,6 +166,59 @@ header {
   width: 100%;
   background-color: white;
   margin-top: 10px; }
+#slidedeck #ipad-form, section#postsignup #ipad-form {
+  background-image: url("../images/light_black_fill.png");
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  height: 48px;
+  display: none; }
+  #slidedeck #ipad-form .white-body, section#postsignup #ipad-form .white-body {
+    text-align: center;
+    background-color: rgba(41, 127, 184, 0.9);
+    display: inline;
+    float: left;
+    height: 44px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed; }
+    #slidedeck #ipad-form .white-body input, section#postsignup #ipad-form .white-body input, #slidedeck #ipad-form .white-body label, section#postsignup #ipad-form .white-body label {
+      display: inline; }
+    #slidedeck #ipad-form .white-body .form, section#postsignup #ipad-form .white-body .form {
+      margin-top: 6px; }
+    #slidedeck #ipad-form .white-body label, section#postsignup #ipad-form .white-body label {
+      margin: 0 10px 0 0;
+      margin-top: -3px;
+      color: white;
+      font-weight: 100;
+      font-size: 16px; }
+      @media (max-width: 480px) {
+        #slidedeck #ipad-form .white-body label, section#postsignup #ipad-form .white-body label {
+          font-size: 12px;
+          margin-right: 3px; } }
+    #slidedeck #ipad-form .white-body input, section#postsignup #ipad-form .white-body input {
+      margin-top: 5px;
+      height: 19px;
+      font-size: 13px;
+      width: 140px; }
+    #slidedeck #ipad-form .white-body button, section#postsignup #ipad-form .white-body button {
+      width: 40px;
+      border-radius: 4px;
+      height: 30px;
+      font-size: 14px;
+      padding-top: 6px;
+      margin-top: -5px;
+      background-color: #e74c3c;
+      color: white;
+      font-weight: 100;
+      font-family: "Proxima Nova";
+      border: none;
+      -moz-box-shadow: 2px 2px 2px rgba(41, 127, 184, 0.9);
+      -webkit-box-shadow: 2px 2px 2px rgba(41, 127, 184, 0.9);
+      box-shadow: 2px 2px 2px rgba(41, 127, 184, 0.9);
+      display: inline; }
 
 #infographic {
   min-height: 800px;
@@ -218,7 +251,7 @@ header {
     margin-bottom: 5px; }
   #examples p {
     font-family: "Proxima Nova";
-    font-color: #ecf0f1;
+    color: #ecf0f1;
     font-size: 13px;
     margin-left: 20px;
     font-weight: 100; }

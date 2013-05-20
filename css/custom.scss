@@ -92,11 +92,11 @@ header {
 	}
 	
 	.fixed-right {
-		@media (min-width: 960px) {
+		@media (min-width: 980px) {
 			position: fixed;
 			top: 177px;
 		}
-		@media (min-width: 768px) and (max-width: 959px) {top:204px;position:absolute;}
+		@media (min-width: 768px) and (max-width: 979px) {top:204px;position:absolute;}
 		@media (max-width: 767px) {
 			position: fixed;
 			bottom: 0px;
@@ -105,11 +105,11 @@ header {
 	}
 
 	.stuck-right {
-		@media (min-width: 960px) {
+		@media (min-width: 980px) {
 		position: absolute;
 		top: 2010px;
 		}
-		@media (max-width:959px) {position:absolute;top:204px;}
+		@media (max-width:979px) {position:absolute;top:204px;}
 	}
 
 	#join-form {
@@ -118,6 +118,7 @@ header {
 			margin-left: -10px;
 			margin-right: 0;
 			background-color: white;
+			display:none;
 		}
 
 		@media (max-width: 767px) {
@@ -140,11 +141,6 @@ header {
 		.blue-header {
 			height:40px;
 			width:100%;
-			@media (max-width: 767px) {
-				display:inline;
-				width:25%;
-				float:left;
-			}
 			background-color: #2980b9;
 
 			h2 {
@@ -169,13 +165,6 @@ header {
 		.white-body {
 			background-color:white;
 			height:230px;
-			@media (max-width: 767px) {
-				display:inline;
-				float:left;
-				height:35px;
-				width: 75%;
-			}
-
 			margin-top:5px;
 
 			.clipboard {
@@ -183,7 +172,7 @@ header {
 			}
 
 			.form {
-				@media (min-width:768px){padding: 0 10px 0 10px;}
+				@media (min-width:768px){padding: 0 10px 0 12px;}
 			}
 
 			input {
@@ -192,15 +181,10 @@ header {
 				@media (min-width: 768px) and (max-width: 979px) {
 					width: 127px;
 				}
-				@media (max-width:767px) {
-					height:22px;
-					float:left;
-					width:49%;
-					margin-left:1%;
-				}
 				background-color:#ecf0f1;
 				border: 1px #6cd0bd solid;
 				border-radius: 5px;
+				font-size:13px;
 			}
 
 			button {
@@ -208,12 +192,7 @@ header {
 				height:60px;
 				width:200px;
 				@media (max-width:767px) {
-						width: 41%;
-						height: 31px;
-						font-size: 15px;
-						padding-top: 5px;
-						float:left;
-						margin-left:1%;
+					display:none;
 					}
 				@media (min-width: 768px) and (max-width: 979px) {
 					width:140px;
@@ -236,6 +215,57 @@ header {
 			width:100%;
 			background-color: white;
 			margin-top:10px;
+		}
+	}
+
+	#ipad-form {
+		background-image: url('../images/light_black_fill.png');
+		width:100%;
+		bottom:0;
+		left:0;
+		position:fixed;
+		height:48px;
+		display:none;
+		.white-body {
+			text-align:center;
+			background-color:	rgba(41, 127, 184, .9);
+			display:inline;
+			float:left;
+			height:44px;
+			width: 100%;
+			bottom:0;
+			left:0;
+			position:fixed;
+			input, label {
+				display:inline;
+			}
+			.form {margin-top:6px;}
+			label {
+				margin:0 10px 0 0;
+				margin-top:-3px;
+				color:white;
+				font-weight:100;
+				font-size:16px;
+				@media (max-width:480px) {font-size:12px;margin-right:3px;}
+			}
+			input {margin-top:5px; height:19px;font-size:13px; width:140px}
+			button {
+				width: 40px;
+				border-radius: 4px;
+				height: 30px;
+				font-size: 14px;
+				padding-top:6px;
+				margin-top: -5px;
+				background-color:#e74c3c;
+				color:white;
+				font-weight:100;
+				font-family: $sans;
+				border:none;
+				-moz-box-shadow: 2px 2px 2px 	rgba(41, 127, 184, .9);
+				-webkit-box-shadow: 2px 2px 2px 	rgba(41, 127, 184, .9);
+				box-shadow: 2px 2px 2px 	rgba(41, 127, 184, .9);
+				display:inline;
+			}
 		}
 	}
 }
@@ -283,7 +313,7 @@ header {
 
 	p {
 		font-family: $sans;
-		font-color:#ecf0f1;
+		color:#ecf0f1;
 		font-size:13px;
 		margin-left:20px;
 		font-weight:100;
@@ -815,6 +845,7 @@ section#postsignup {
 	}
 
 }
+
 
 @media (max-width: 767px) {
 	body {padding:0}
