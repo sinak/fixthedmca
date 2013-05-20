@@ -79,7 +79,7 @@ header {
 @media (min-width: 980px) {
   #slidedeck .stuck-right, section#postsignup .stuck-right {
     position: absolute;
-    top: 2010px; } }
+    top: 2033px; } }
 @media (max-width: 979px) {
   #slidedeck .stuck-right, section#postsignup .stuck-right {
     position: absolute;
@@ -257,7 +257,7 @@ header {
     #slidedeck #ipad-form .white-body input, section#postsignup #ipad-form .white-body input, #slidedeck #ipad-form .white-body label, section#postsignup #ipad-form .white-body label {
       display: inline; }
     #slidedeck #ipad-form .white-body .form, section#postsignup #ipad-form .white-body .form {
-      margin-top: 6px; }
+      margin-top: 3px; }
     #slidedeck #ipad-form .white-body label, section#postsignup #ipad-form .white-body label {
       margin: 0 10px 0 0;
       margin-top: -3px;
@@ -276,7 +276,7 @@ header {
     #slidedeck #ipad-form .white-body button, section#postsignup #ipad-form .white-body button {
       width: 40px;
       border-radius: 4px;
-      height: 30px;
+      height: 29px;
       font-size: 14px;
       padding-top: 6px;
       margin-top: -5px;
@@ -736,3 +736,7 @@ section#postsignup #progress .white-body {
 iframe.newsbound-embedded {
   width: 100%;
   height: 100%; }
+
+@media (max-width: 767px) {
+  .marg-top {
+    margin-top: 15px; } }

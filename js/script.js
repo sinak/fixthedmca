@@ -316,11 +316,11 @@ function didSubmitEmail(d) {
 
 
  $(document).scroll(function() {
-    if ($(this).scrollTop() < 1827)  {
+    if ($(this).scrollTop() < 1850)  {
       $('#join-form').addClass('fixed-right offset9');
       $('#join-form').removeClass('stuck-right');
     }
-    else if ($(window).scrollTop() > 1827) {
+    else if ($(window).scrollTop() > 1850) {
       $('#join-form').removeClass('fixed-right');
       $('#join-form').addClass('stuck-right');
     }
@@ -421,4 +421,4 @@ function tweetThis(url) {
     resizeExplainer()
   });
 
- 
+

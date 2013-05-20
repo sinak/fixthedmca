@@ -107,7 +107,7 @@ header {
 	.stuck-right {
 		@media (min-width: 980px) {
 		position: absolute;
-		top: 2010px;
+		top: 2033px;
 		}
 		@media (max-width:979px) {position:absolute;top:204px;}
 	}
@@ -322,7 +322,7 @@ header {
 			input, label {
 				display:inline;
 			}
-			.form {margin-top:6px;}
+			.form {margin-top:3px;}
 			label {
 				margin:0 10px 0 0;
 				margin-top:-3px;
@@ -335,7 +335,7 @@ header {
 			button {
 				width: 40px;
 				border-radius: 4px;
-				height: 30px;
+				height: 29px;
 				font-size: 14px;
 				padding-top:6px;
 				margin-top: -5px;
@@ -950,3 +950,6 @@ section#postsignup {
     height: 100%;
   }
 
+.marg-top {
+@media (max-width:767px) {margin-top:15px}
+}
