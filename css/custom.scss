@@ -94,6 +94,9 @@ header {
 }
 
 #slidedeck {
+	.offset9{
+		@media (min-width:980px) {margin-left:765px}
+	}
 	.deck-dim {
 		width:100%;
 		height:450px;
@@ -417,6 +420,9 @@ header {
 
 #news-press{
 	min-height:380px;
+	@media (max-width:610px) {
+		min-height:700px;
+	}
 	background-color:#7f8c8d;
 	.news-color {
 		background-color: #7f8c8d;
@@ -560,6 +566,7 @@ header {
 
 #organizations {
 	min-height:310px;
+	background-color:white;
 	h4 {
 		text-align:center;
 		font-family: $sans;

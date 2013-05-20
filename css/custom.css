@@ -57,6 +57,9 @@ header {
 .pull-left {
   float: left; }
 
+@media (min-width: 980px) {
+  #slidedeck .offset9, section#postsignup .offset9, section#supportbill .offset9 {
+    margin-left: 765px; } }
 #slidedeck .deck-dim, section#postsignup .deck-dim, section#supportbill .deck-dim {
   width: 100%;
   height: 450px; }
@@ -330,6 +333,9 @@ header {
 #news-press {
   min-height: 380px;
   background-color: #7f8c8d; }
+  @media (max-width: 610px) {
+    #news-press {
+      min-height: 700px; } }
   #news-press .news-color {
     background-color: #7f8c8d;
     height: 380px;
@@ -432,7 +438,8 @@ header {
       box-sizing: border-box; } }
 
 #organizations {
-  min-height: 310px; }
+  min-height: 310px;
+  background-color: white; }
   #organizations h4 {
     text-align: center;
     font-family: "Proxima Nova";
