@@ -104,7 +104,7 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 					<div class="submit-part">
 						<div class="emailbox">
 							<label for="email">Your email:</label>
-							<input type="email1" id="email-input">
+							<input type="email" class="email-input" id="email1">
 						</div>
 						<div class="submitbox">
 							<button class="submit-button span3">Get Started</button>
@@ -123,7 +123,7 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 							<label for="email">Get me involved:</label>
 							<input type="email" placeholder="example@email.com" class="email" />
 							<button id="button" class="form-submit visible-desktop">LET'S DO THIS</button> 
-							<button class="form-submit">GO</button> 
+							<button class="submit-button">GO</button> 
 						</div>
 					</div>
 					<div class="social-footer">
@@ -314,8 +314,7 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 			</div>
 		</div>
 	</footer>
-	<script  
-type="text/javascript">resizeExplainer()</script>
+<script type="text/javascript">resizeExplainer()</script>
 <script type="text/javascript">
 function afterSignup() {
  alert('thanks!');
@@ -336,7 +335,7 @@ function validate() {
     return false;
   }
 }
-$('.form-submit').click(function(){ 
+$('.submit-button').click(function(){ 
   if (!validate()) {
     alert('Please enter a valid name and email address');
     return;

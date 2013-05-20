@@ -206,7 +206,7 @@ header {
     margin-bottom: 2px;
     font-weight: 100;
     font-size: 13px; }
-#slidedeck #join-form #email-input, section#postsignup #join-form #email-input, #slidedeck section#postsignup #progress #email-input, section#postsignup #slidedeck #progress #email-input, section#postsignup #progress #email-input {
+#slidedeck #join-form .email-input, section#postsignup #join-form .email-input, #slidedeck section#postsignup #progress .email-input, section#postsignup #slidedeck #progress .email-input, section#postsignup #progress .email-input {
   width: 187px;
   height: 23px;
   background-color: #ecf0f1;
@@ -216,7 +216,7 @@ header {
   margin-left: 9px;
   float: left; }
   @media (min-width: 768px) and (max-width: 979px) {
-    #slidedeck #join-form #email-input, section#postsignup #join-form #email-input, #slidedeck section#postsignup #progress #email-input, section#postsignup #slidedeck #progress #email-input, section#postsignup #progress #email-input {
+    #slidedeck #join-form .email-input, section#postsignup #join-form .email-input, #slidedeck section#postsignup #progress .email-input, section#postsignup #slidedeck #progress .email-input, section#postsignup #progress .email-input {
       width: 127px; } }
 #slidedeck #join-form button, section#postsignup #join-form button, #slidedeck section#postsignup #progress button, section#postsignup #slidedeck #progress button, section#postsignup #progress button {
   margin-left: 0px;
