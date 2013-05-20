@@ -21,7 +21,6 @@
 	<!-- ENABLE FOR REMOTE -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   	<script src="js/waypoints.min.js"></script>
-	<script src="js/script.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/zys6zcw.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -400,20 +399,55 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 			</div>
 		</div>
 	</footer>
-<div id="fb-root"></div>
 
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=360247060757406";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-</body>
+	<div id="fb-root"></div>
+    <script> 
+    window.fbAsyncInit = function() {
+      FB.init({appId: "360247060757406", status: true, cookie: true});
+
+      FB.Event.subscribe('edge.create', function(href, widget) {
+        mixpanel.track('Facebook Like') 
+          $.ajax({ 
+              type: 'POST',
+              url: '/api/record_share/fblike',
+              data: "" ,
+              dataType: 'json',
+              contentType : 'application/json', 
+          });
+      });
+      FB.Event.subscribe('comment.create', function(href, widget) {
+        mixpanel.track('Facebook Comment') 
+      });
+      }
+    </script>
+<script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=360247060757406";
+      fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+	<script>
+    window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+    js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+	</script>
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"> </script>
+	<script src="js/script.js"> </script>
+	<script src="js/jquery.validate.min.js"></script>
 
 
 	<script type="text/javascript">
 	function setupFacebookShare() {
+		$("#post_to_feed1").click(function() {
+  shareOnFacebook();
+});
 		$("#post_to_feed2").click(function() {
   shareOnFacebook();
 });
