@@ -89,22 +89,25 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 		<div class="container">
 			<div class="row">
 				<div class="span9">
-					<iframe class="deck-dim" src="http://stacks.newsbound.com/explainers/fix_dmca/app/" name="nb-stack" class="newsbound-embedded" frameborder="0" scrolling="no"></iframe>
+					<div class="embed-wrapper">
+						<iframe src="//stacks.newsbound.com/explainers/fix_dmca/app/" name="nb-stack" class="newsbound-embedded" frameborder="0" scrolling="no"></iframe>
+					</div>
 				</div>
 				<div class="span3 offset9 fixed-right"  id="join-form">
 					<div class="blue-header">
-						<h2>Join the movement</h2>
+						<h2>Join the campaign</h2>
 					</div>
 					<div class="white-body">
-						<div class="pagination-centered clipboard hidden-phone">
-							<img src="images/new/clipboard.png">
-						</div>
-						<div class="form">
-							<label for="email">Email:</label>
-							<input type="email" placeholder="example@email.com" class="email" />
-							<button class="form-submit visible-desktop">LET'S DO THIS</button> 
-							<button class="form-submit hidden-desktop">LET'S GO</button> 
-						</div>
+						<p style="margin-bottom:0;">I,</p><input type="text" for="email" placeholder="name" />
+						<p style="padding-top:0;">want Congress to fix the DMCA.</p>
+					</div>	
+					<div class="emailbox">
+						<label for="email">Your email:</label>
+						<input type="text" id="email-input">
+					</div>
+					<div class="submitbox">
+						<button class="submit-button span3">Get Started</button>
+					</div>
 					</div>
 					<div class="social-footer visible-desktop">
 						<div class="fb"></div>
@@ -209,7 +212,7 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 				<div class="span2">
 					<img src="images/new/supporters/alexis.png">
 					<h4>Alexis Ohanian</h4>
-					<p>Reddit Founder and<br>startup investor</p>
+					<p>reddit founder and<br>startup investor</p>
 				</div>
 				<div class="span2">
 					<img src="images/new/supporters/jennifer.png">
@@ -255,7 +258,14 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 		<div class="container">
 			<h4>Organizations and companies in support:</h4>
 			<div class="pagination-centered">
-				<img src="images/new/organizations.png" class="organizations-img">
+				<div class="row">
+					<div class="span6">
+						<img src="images/new/supporters-right.jpg">
+					</div>
+					<div class="span6 marg-top">
+						<img src="images/new/supporters-left.jpg">
+					</div>
+				</div>
 			</div>
 			<h5>+ OVER 25 Startups AND ONLINE COMMUNITIES:</h5>
 				<ul class="organization-list">
@@ -285,23 +295,24 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 					<li><a href="http://microyza.com/" target="_blank">Microyrza</a></li> |
 					<li><a href="http://openmedianow.net/" target="_blank" class="blue">OpenMedia</a></li> |
 					<li><a href="http://opensignal.com/" target="_blank">OpenSignal</a></li> |
-					<li><a herf="http://nytm.org/" target="_blank" class="blue">NY Tech Meetup</a></li>
+					<li><a herf="http://nytm.org/" target="_blank" class="blue">NY Tech Meetup</a></li> |
+					<li><a herf="http://amara.org/" target="_blank">Amara</a></li> |
+					<li><a herf="http://cheezburger.com/" target="_blank" class="blue">Cheezburger</a></li>
 				</ul>
 		</div>
 	</section>
 	<footer>
 		<div class="container">
 			<img src="images/new/footer-logo.png" class="pull-right">
-			<div class="footer-about">
-				<a href="/contact.html">Contact us</a>
-				<p class="pull-right">Designed and built by <a href="http://sina.is" class="sina-link">Sina Khanifar</a></p>
-			</div>
+			<a href="/contact.html">Contact us</a>
+			<p class="pull-right">Designed and built by <a href="http://sina.is" class="sina-link">Sina Khanifar</a></p>
 			<div class="clearfix"></div>
 			<div class="pull-right">
 				<p class="lisence">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.</p>
 			</div>
 		</div>
 	</footer>
-
+	<script  
+type="text/javascript">resizeExplainer()</script>
 </body>
 </html>

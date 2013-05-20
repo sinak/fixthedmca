@@ -353,6 +353,20 @@ function didSubmitEmail(d) {
   });
 
 
- $(document).ready(function(){
-      $('#ipad-form').hide();
+ var resizeExplainer = function(){
+    var wrapper = $('.embed-wrapper');
+    // height = width / aspectRatio + staticNavigationHeight
+    wrapper.height(wrapper.width() / (16/9) + 55)
+  }
+
+  $(document).ready(function(){
+    // Have the resize function called every time window resizes
+    $(window).on("resize", resizeExplainer);
+
+    // Call the resize function immediately
+    resizeExplainer()
+  });
+
+   $(document).ready(function(){
+    $('#ipad-form').hide();
    });

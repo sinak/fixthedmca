@@ -98,15 +98,16 @@ header {
 #slidedeck #join-form .blue-header, section#postsignup #join-form .blue-header, #slidedeck section#postsignup #progress .blue-header, section#postsignup #slidedeck #progress .blue-header, section#postsignup #progress .blue-header {
   height: 40px;
   width: 100%;
-  background-color: #2980b9; }
+  background-color: transparent; }
   #slidedeck #join-form .blue-header h2, section#postsignup #join-form .blue-header h2, #slidedeck section#postsignup #progress .blue-header h2, section#postsignup #slidedeck #progress .blue-header h2, section#postsignup #progress .blue-header h2 {
     font-family: "Proxima Nova";
     text-align: center;
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
     margin-top: 0;
-    letter-spacing: -1px;
-    color: white; }
+    letter-spacing: 2px;
+    color: #2980b9; }
     @media (min-width: 768px) and (max-width: 979px) {
       #slidedeck #join-form .blue-header h2, section#postsignup #join-form .blue-header h2, #slidedeck section#postsignup #progress .blue-header h2, section#postsignup #slidedeck #progress .blue-header h2, section#postsignup #progress .blue-header h2 {
         font-size: 15px; } }
@@ -116,24 +117,38 @@ header {
         padding-top: 0px;
         margin-top: 0; } }
 #slidedeck #join-form .white-body, section#postsignup #join-form .white-body, #slidedeck section#postsignup #progress .white-body, section#postsignup #slidedeck #progress .white-body, section#postsignup #progress .white-body {
-  background-color: white;
-  height: 230px;
+  background-color: #2c3e50;
+  height: 130px;
   margin-top: 5px; }
-  #slidedeck #join-form .white-body .clipboard, section#postsignup #join-form .white-body .clipboard, #slidedeck section#postsignup #progress .white-body .clipboard, section#postsignup #slidedeck #progress .white-body .clipboard, section#postsignup #progress .white-body .clipboard {
-    padding: 5px 0 10px 0; }
   @media (min-width: 768px) {
     #slidedeck #join-form .white-body .form, section#postsignup #join-form .white-body .form, #slidedeck section#postsignup #progress .white-body .form, section#postsignup #slidedeck #progress .white-body .form, section#postsignup #progress .white-body .form {
       padding: 0 10px 0 12px; } }
   #slidedeck #join-form .white-body input, section#postsignup #join-form .white-body input, #slidedeck section#postsignup #progress .white-body input, section#postsignup #slidedeck #progress .white-body input, section#postsignup #progress .white-body input {
-    width: 187px;
-    height: 30px;
-    background-color: #ecf0f1;
-    border: 1px #6cd0bd solid;
-    border-radius: 5px;
-    font-size: 13px; }
+    width: 127px;
+    height: 20px;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #f1c40f;
+    color: #f1c40f;
+    border-radius: 0px;
+    font-size: 13px;
+    display: inline;
+    float: left;
+    padding-top: 13px; }
     @media (min-width: 768px) and (max-width: 979px) {
       #slidedeck #join-form .white-body input, section#postsignup #join-form .white-body input, #slidedeck section#postsignup #progress .white-body input, section#postsignup #slidedeck #progress .white-body input, section#postsignup #progress .white-body input {
         width: 127px; } }
+  #slidedeck #join-form .white-body p, section#postsignup #join-form .white-body p, #slidedeck section#postsignup #progress .white-body p, section#postsignup #slidedeck #progress .white-body p, section#postsignup #progress .white-body p {
+    color: white;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 12px;
+    padding-top: 10px;
+    display: inline;
+    float: left;
+    line-height: 2; }
   #slidedeck #join-form .white-body button, section#postsignup #join-form .white-body button, #slidedeck section#postsignup #progress .white-body button, section#postsignup #slidedeck #progress .white-body button, section#postsignup #progress .white-body button {
     border-radius: 3px;
     height: 60px;
@@ -154,10 +169,49 @@ header {
         width: 140px;
         height: 40px;
         font-size: 18px; } }
+#slidedeck #join-form .emailbox, section#postsignup #join-form .emailbox, #slidedeck section#postsignup #progress .emailbox, section#postsignup #slidedeck #progress .emailbox, section#postsignup #progress .emailbox {
+  background-color: #2c3e50;
+  height: 80px;
+  margin-top: 5px; }
+  #slidedeck #join-form .emailbox label, section#postsignup #join-form .emailbox label, #slidedeck section#postsignup #progress .emailbox label, section#postsignup #slidedeck #progress .emailbox label, section#postsignup #progress .emailbox label {
+    display: block;
+    font-family: "Proxima Nova";
+    color: white;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding-top: 9px;
+    margin-bottom: 2px;
+    font-weight: 100;
+    font-size: 13px; }
+#slidedeck #join-form #email-input, section#postsignup #join-form #email-input, #slidedeck section#postsignup #progress #email-input, section#postsignup #slidedeck #progress #email-input, section#postsignup #progress #email-input {
+  width: 187px;
+  height: 23px;
+  background-color: #ecf0f1;
+  border: 1px #f1c40f solid;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-left: 9px;
+  float: left; }
+  @media (min-width: 768px) and (max-width: 979px) {
+    #slidedeck #join-form #email-input, section#postsignup #join-form #email-input, #slidedeck section#postsignup #progress #email-input, section#postsignup #slidedeck #progress #email-input, section#postsignup #progress #email-input {
+      width: 127px; } }
+#slidedeck #join-form button, section#postsignup #join-form button, #slidedeck section#postsignup #progress button, section#postsignup #slidedeck #progress button, section#postsignup #progress button {
+  margin-left: 0px;
+  margin-top: 5px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #c0392b;
+  background-image: -webkit-linear-gradient(top, #c0392b, #bd392b);
+  color: white;
+  border: none;
+  font-family: "Proxima Nova";
+  font-weight: 100;
+  font-size: 18px;
+  letter-spacing: 1px; }
 #slidedeck #join-form .social-footer, section#postsignup #join-form .social-footer, #slidedeck section#postsignup #progress .social-footer, section#postsignup #slidedeck #progress .social-footer, section#postsignup #progress .social-footer {
   height: 55px;
   width: 100%;
-  background-color: white;
+  background-color: transparent;
   margin-top: 10px; }
 #slidedeck #ipad-form, section#postsignup #ipad-form {
   background-image: url("../images/light_black_fill.png");
@@ -250,7 +304,8 @@ header {
     font-weight: 100; }
 
 #news-press {
-  min-height: 380px; }
+  min-height: 380px;
+  background-color: #7f8c8d; }
   #news-press .news-color {
     background-color: #7f8c8d;
     height: 380px;
@@ -353,7 +408,7 @@ header {
       box-sizing: border-box; } }
 
 #organizations {
-  height: 310px; }
+  min-height: 310px; }
   #organizations h4 {
     text-align: center;
     font-family: "Proxima Nova";
@@ -385,7 +440,7 @@ header {
 
 footer {
   background-color: #2c3e50;
-  height: 110px;
+  min-height: 110px;
   padding-top: 30px;
   font-size: 12px; }
   footer img {
@@ -393,13 +448,17 @@ footer {
   footer a {
     display: inline; }
   footer a, footer p {
-    font-family: "Proxima Nova"; }
-  footer .footer-about {
-    margin-top: 30px; }
-    footer .footer-about a {
-      color: #f1c40f; }
+    font-family: "Proxima Nova";
+    margin-top: 30px;
+    color: #f1c40f; }
+  footer a {
+    float: left; }
+  footer p {
+    color: white; }
   footer .lisence {
     color: #3498db; }
+  footer .sina-link {
+    float: none; }
 
 @media (max-width: 767px) {
   #section {
@@ -570,4 +629,15 @@ section#postsignup #progress .white-body {
     padding: 0; }
 
   section {
-    padding: 0 10px 0 10px; } }
+    padding: 0 10px 0 10px; }
+
+  .marg-top {
+    margin-top: 15px; } }
+.embed-wrapper {
+  max-width: 800px;
+  margin: auto;
+  /* this is just for centering, not crucial for responsiveness */ }
+
+iframe.newsbound-embedded {
+  width: 100%;
+  height: 100%; }
