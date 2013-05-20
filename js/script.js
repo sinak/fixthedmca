@@ -338,18 +338,72 @@ function didSubmitEmail(d) {
     }
     ;
 
-    if ($(this).scrollTop() > 185 && $(this).scrollTop() < 716 ) {
-      $('#progress').addClass('fixed-right offset9');
-      $('#progress').removeClass('stuck-right');
+    // Progress page:
+
+    if ($(window).width() > 979) {
+      if ($(this).scrollTop() > 185 && $(this).scrollTop() < 716 ) {
+        $('#progress').addClass('fixed-right offset9');
+        $('#progress').removeClass('stuck-right');
+      }
+      else if ($(this).scrollTop() > 716) {
+        $('#progress').removeClass('fixed-right');
+        $('#progress').addClass('stuck-right');
+      }
+      else if ($(this).scrollTop() < 716) {
+         $('#progress').removeClass('fixed-right offset9');
+      }
+      else {false}
     }
-    else if ($(this).scrollTop() > 716) {
-      $('#progress').removeClass('fixed-right');
-      $('#progress').addClass('stuck-right');
-    }
-    else if ($(this).scrollTop() < 716) {
-       $('#progress').removeClass('fixed-right offset9');
+    
+    else if ($(window).width() < 979) {
+      if ($(this).scrollTop() > 185 && $(this).scrollTop() < 736 ) {
+        $('#progress').addClass('fixed-right offset9');
+        $('#progress').removeClass('stuck-right');
+      }
+      else if ($(this).scrollTop() > 736) {
+        $('#progress').removeClass('fixed-right');
+        $('#progress').addClass('stuck-right');
+      }
+      else if ($(this).scrollTop() < 736) {
+         $('#progress').removeClass('fixed-right offset9');
+      }
+      else {false}
     }
     else {false}
+  })
+
+function tweetThis(url) {
+      var width  = 575,
+        height = 400,
+        left   = ($(window).width()  - width)  / 2,
+        top    = ($(window).height() - height) / 2,
+        
+        opts   = 'status=1' +
+                 ',width='  + width  +
+                 ',height=' + height +
+                 ',top='    + top    +
+                 ',left='   + left;
+
+    window.open(url, 'twitte', opts);
+
+    return false;
+}
+
+ $('.popup').click(function(event) {
+    var width  = 575,
+        height = 400,
+        left   = ($(window).width()  - width)  / 2,
+        top    = ($(window).height() - height) / 2,
+        url    = this.href,
+        opts   = 'status=1' +
+                 ',width='  + width  +
+                 ',height=' + height +
+                 ',top='    + top    +
+                 ',left='   + left;
+
+    window.open(url, 'twitte', opts);
+
+    return false;
   });
 
 

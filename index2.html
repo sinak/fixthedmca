@@ -98,7 +98,7 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 						<h2>Join the campaign</h2>
 					</div>
 					<div class="white-body">
-						<p style="margin-bottom:0;">I,</p><input type="text" for="email" placeholder="name" />
+						<p style="margin-bottom:0;">I,</p><input type="email" id="email1" for="email" placeholder="name" />
 						<p style="padding-top:0;">want Congress to fix the DMCA.</p>
 					</div>	
 					<div class="emailbox">
@@ -120,7 +120,7 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 						<div class="form">
 							<label for="email">Get me involved:</label>
 							<input type="email" placeholder="example@email.com" class="email" />
-							<button class="form-submit visible-desktop">LET'S DO THIS</button> 
+							<button id="button" class="form-submit visible-desktop">LET'S DO THIS</button> 
 							<button class="form-submit">GO</button> 
 						</div>
 					</div>
@@ -314,5 +314,45 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 	</footer>
 	<script  
 type="text/javascript">resizeExplainer()</script>
+<script type="text/javascript">
+function afterSignup() {
+ alert('thanks!');
+}
+function failSignup() {
+ alert('you are doing it wrong.');
+}
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+function validate() {
+  var email=$('#email1').val();
+  var name=$('#name1').val();
+  if (isEmail(email) && name.length > 0 ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+$('.form-submit').click(function(){ 
+  if (!validate()) {
+    alert('Please enter a valid name and email address');
+    return;
+  }
+      $.ajax({ 
+          type: 'POST',
+          url: 'http://grassroots.io/api/add_simple_user/1', 
+          data: JSON.stringify({simple_user: {
+                                            email: $('#email1').val(), 
+                                            name: $('#name1').val()
+                                            }}), 
+          dataType: 'json',
+          contentType : 'application/json',
+          success: afterSignup,
+          error: failSignup
+});
+});
+
+</script>
 </body>
 </html>

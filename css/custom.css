@@ -5,6 +5,13 @@ body {
 header, #slidedeck, section#postsignup, #infographic {
   background-color: #ecf0f1; }
 
+button:hover {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)); }
+
 header {
   padding-top: 8px; }
   header .header-bar {
@@ -469,19 +476,36 @@ footer {
   padding-right: 0; }
 header.postsignup h1 {
   margin: 20px 0 5px 0; }
+  @media (max-width: 767px) {
+    header.postsignup h1 {
+      font-size: 29px; } }
 header.postsignup h2 {
   font-size: 30px;
   color: #2c3e50;
   text-align: center;
   margin: 0px 0 20px 0;
   font-weight: 100; }
+  @media (max-width: 767px) {
+    header.postsignup h2 {
+      width: 90%;
+      font-size: 23px;
+      line-height: 110%;
+      margin: 0 auto 20px auto; } }
 
 section#postsignup .actions {
   float: left;
   width: 720px;
   margin-bottom: 40px; }
+  @media (min-width: 768px) and (max-width: 959px) {
+    section#postsignup .actions {
+      width: 558px; } }
+  @media (max-width: 767px) {
+    section#postsignup .actions {
+      width: 100%; } }
 section#postsignup #actioncontainer {
   margin-bottom: 20px; }
+  section#postsignup #actioncontainer a:hover {
+    text-decoration: none; }
   section#postsignup #actioncontainer h2 {
     font-size: 20px;
     background-color: #3f4b51;
@@ -492,12 +516,20 @@ section#postsignup #actioncontainer {
     letter-spacing: 2px;
     margin-bottom: 4px;
     margin-top: 0; }
+    @media (max-width: 767px) {
+      section#postsignup #actioncontainer h2 {
+        font-size: 15px;
+        text-align: center; } }
     section#postsignup #actioncontainer h2 span {
       display: block;
       float: left;
       font-size: 30px;
       font-weight: 400;
       padding-right: 17px; }
+      @media (max-width: 767px) {
+        section#postsignup #actioncontainer h2 span {
+          padding-right: 0px;
+          margin-right: -25px; } }
   section#postsignup #actioncontainer p {
     font-size: 16px;
     font-weight: 100;
@@ -506,17 +538,29 @@ section#postsignup #actioncontainer {
   section#postsignup #actioncontainer .contents {
     background: #ddeaec;
     padding: 5px 5px 5px 10px; }
+    @media (max-width: 767px) {
+      section#postsignup #actioncontainer .contents {
+        padding-left: 0; } }
     section#postsignup #actioncontainer .contents h4 {
       font-size: 22px;
       font-weight: 400;
       text-align: center;
       margin-top: 8px;
       line-height: 120%; }
-      @media (max-width: 979px) {
+      @media (min-width: 768px) and (max-width: 959px) {
         section#postsignup #actioncontainer .contents h4 {
           font-size: 18px; } }
+      @media (max-width: 767px) {
+        section#postsignup #actioncontainer .contents h4 {
+          font-size: 22px;
+          margin-bottom: 0px; } }
     section#postsignup #actioncontainer .contents .span8 p {
       text-align: left; }
+      @media (max-width: 767px) {
+        section#postsignup #actioncontainer .contents .span8 p {
+          text-align: center;
+          margin: 0 5px;
+          padding-bottom: 15px; } }
     section#postsignup #actioncontainer .contents button {
       height: 50px;
       border-radius: 3px;
@@ -546,7 +590,7 @@ section#postsignup #actioncontainer {
         padding: 0 10px 4px 0; }
         @media (max-width: 979px) {
           section#postsignup #actioncontainer .contents button img#phone {
-            padding: 0 5px 1px 0;
+            padding: 0 5px 2px 0;
             height: 85%; } }
     section#postsignup #actioncontainer .contents button.social {
       width: 85px;
@@ -558,6 +602,9 @@ section#postsignup #actioncontainer {
         section#postsignup #actioncontainer .contents button.social {
           width: 70px;
           height: 70px; } }
+      @media (max-width: 767px) {
+        section#postsignup #actioncontainer .contents button.social {
+          margin-top: 10px; } }
       @media (max-width: 979px) {
         section#postsignup #actioncontainer .contents button.social img {
           height: 50%; } }
@@ -565,6 +612,10 @@ section#postsignup #actioncontainer {
       margin-left: 7px; }
       section#postsignup #actioncontainer .contents .span3 div {
         padding: 0 0 0 5px; }
+      @media (max-width: 767px) {
+        section#postsignup #actioncontainer .contents .span3 {
+          margin-left: 0;
+          margin-bottom: 20px; } }
   section#postsignup #actioncontainer #contactleg h2 {
     background-color: #405342; }
   section#postsignup #actioncontainer #contactleg button {
@@ -588,8 +639,21 @@ section#postsignup #actioncontainer {
     background-color: #E9E1CC; }
 section#postsignup .fixed-right {
   top: 15px; }
+  @media (min-width: 768px) and (max-width: 959px) {
+    section#postsignup .fixed-right {
+      top: 15px;
+      position: fixed; } }
+  @media (max-width: 767px) {
+    section#postsignup .fixed-right {
+      display: none; } }
 section#postsignup .stuck-right {
   top: 731px; }
+  @media (min-width: 768px) and (max-width: 959px) {
+    section#postsignup .stuck-right {
+      top: 741px; } }
+  @media (max-width: 767px) {
+    section#postsignup .stuck-right {
+      display: none; } }
 section#postsignup #progress .blue-header {
   color: #ecf0f1;
   text-align: center;
@@ -605,13 +669,17 @@ section#postsignup #progress .blue-header {
     padding: 4px 0;
     margin-bottom: 0; }
 section#postsignup #progress .white-body {
-  background-color: #a0d0f0; }
+  background-color: #a0d0f0;
+  height: 220px; }
   section#postsignup #progress .white-body #progressbar {
     margin: 20px 0px 0 30px;
     height: 200px;
     width: 30px;
     float: left;
     background: url("../images/progressbar_full.png") no-repeat; }
+    @media (max-width: 980px) {
+      section#postsignup #progress .white-body #progressbar {
+        margin: 20px 0 0 10px; } }
   section#postsignup #progress .white-body #progressbar-over {
     height: 100px;
     width: 30px;
@@ -623,6 +691,10 @@ section#postsignup #progress .white-body {
     padding-left: 7px;
     font-weight: 100;
     float: left; }
+    @media (max-width: 980px) {
+      section#postsignup #progress .white-body #labels {
+        font-size: 13px;
+        line-height: 434%; } }
 
 @media (max-width: 767px) {
   body {
@@ -631,8 +703,14 @@ section#postsignup #progress .white-body {
   section {
     padding: 0 10px 0 10px; }
 
-  .marg-top {
-    margin-top: 15px; } }
+  body#postsignup section#examples {
+    display: none; }
+  body#postsignup section#news-press {
+    display: none; }
+  body#postsignup section#organizations {
+    display: none; }
+  body#postsignup section#fix-supporters {
+    display: none; } }
 .embed-wrapper {
   max-width: 800px;
   margin: auto;
