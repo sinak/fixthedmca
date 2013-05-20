@@ -68,7 +68,7 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 
 </head>
 
-<body>
+<body id="postsignup">
 	<!-- header: logo + h1 -->
 	<header class="postsignup">
 		<div class="container">
@@ -112,14 +112,21 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 										<button class="social">
 											<img src="images/facebook_white.png" />
 										</button>
+										<h4>Like our page</h4>
+										<fb:like href="https://www.facebook.com/FixtheDMCA" send="false" layout="button_count" width="200" show_faces="false"></fb:like>
 									</div>
 								</div>
 								<div class="span3">
 									<div>
+										<script type='text/javascript'>
+										 
+										 </script>
 										<h4>Share on Twitter</h4>
-										<button class="social">
-											<img src="images/twitter_white.png" />
-										</button>
+										<a class="popup" onClick="tweetThis('http://twitter.com/share?url=http%3a%2f%2ffixthedmca.org&text=Think+you+own+the+electronics+you+buy%3f+Not+quite.&via=fixthedmca&related=fixthedmca%2csinak');">
+											<button class="social">
+												<img src="images/twitter_white.png" />
+											</button>
+										</a>
 									</div>
 								</div>
 								<div class="clearfix"></div>
@@ -133,16 +140,18 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 							<h2><span style="number">2</span> Contact your legislators</h2>
 							<div class="contents">
 								<div class="span8">
-									<p >There's two ways to contact your representatives. <br /><strong>Calling is the most effective.</strong></p>
+									<p >There's two ways to contact your representatives - email and phone. <br /><strong>Calling is the most effective.</strong></p>
 								</div>
 								<div class="span3">
 									<div>
-										<button>
+										<a href="unlocking-technology-act.html" target="_blank">
+											<button>
 											<img id="phone" src="images/phone_white.png" />
-										Call <span><span class="visible-desktop">your</span></span> reps
-										</button>
+											Contact <span><span class="visible-desktop">your rep</span></span> 
+											</button>
+										</a>
 									</div>
-								</div>
+								</div><!--
 								<div class="span3">
 									<div>
 										<button>
@@ -150,7 +159,7 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 										Email <span><span class="visible-desktop">your</span></span> reps
 										</button>
 									</div>
-								</div>
+								</div>-->
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -189,10 +198,12 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 								</div>
 								<div class="span3">
 									<div>
-										<button>
-											<img id="phone" src="images/volunteer_white.png" />
-											Get involved <span><span class="visible-desktop"></span></span>
-										</button>
+										<a href="mailto:sina.khanifar@gmail.com?subject=Volunteering+for+FixtheDMCA!&body=I'd+like+to+volunteer+to+help+with+FixtheDMCA.+%0d%0a%0d%0aI+might+be+particularly+useful+at+...+grassroots+organizing%2fweb+development%2fdesign%2freaching+etc." target="_blank"> 
+											<button>
+												<img id="phone" src="images/volunteer_white.png" />
+												Get involved <span><span class="visible-desktop"></span></span>
+											</button>
+										</a>
 									</div>
 								</div>
 								<div class="clearfix"></div>
@@ -391,6 +402,15 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 			</div>
 		</div>
 	</footer>
+<div id="fb-root"></div>
 
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=360247060757406";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
+
 </html>
