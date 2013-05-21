@@ -341,7 +341,7 @@ $('.submit-button').click(function(){
   }
       $.ajax({ 
           type: 'POST',
-          url: 'http://grassroots.io/api/add_simple_user/1', 
+          url: '/api/add_simple_user/1', 
           data: JSON.stringify({simple_user: {
                                             email: $('#email1').val(), 
                                             name: $('#name1').val()
@@ -370,7 +370,7 @@ $('.submit-go').click(function(){
   }
       $.ajax({ 
           type: 'POST',
-          url: 'http://grassroots.io/api/add_simple_user/1', 
+          url: '/api/add_simple_user/1', 
           data: JSON.stringify({simple_user: {
                                             email: $('#email').val()
                                             }}), 
