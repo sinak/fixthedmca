@@ -315,6 +315,9 @@ mixpanel.init("656d34b0852f725e0039ff0b8946bfb0");</script><!-- end Mixpanel -->
 	</footer>
 <script type="text/javascript">resizeExplainer()</script>
 <script type="text/javascript">
+function afterTheFall(v) {
+  alert(v);
+}
 function afterSignup() {
  alert('thanks!');
 }
@@ -341,14 +344,13 @@ $('.submit-button').click(function(){
   }
       $.ajax({ 
           type: 'POST',
-          url: '/api/add_simple_user/1', 
+          url: 'http://grassroots.io/api/add_simple_user/1', 
           data: JSON.stringify({simple_user: {
                                             email: $('#email1').val(), 
                                             name: $('#name1').val()
                                             }}), 
-          dataType: 'json',
-          contentType : 'application/json',
-          success: afterSignup,
+          dataType: 'jsonp',
+          jsonpCallback: 'afterTheFall',
           error: failSignup
 });
 });
@@ -370,13 +372,13 @@ $('.submit-go').click(function(){
   }
       $.ajax({ 
           type: 'POST',
-          url: '/api/add_simple_user/1', 
+          url: 'http://grassroots.io/api/add_simple_user/1', 
           data: JSON.stringify({simple_user: {
                                             email: $('#email').val()
                                             }}), 
-          dataType: 'json',
+          dataType: 'jsonp',
+          jsonpCallback: 'afterTheFall',
           contentType : 'application/json',
-          success: afterSignup,
           error: failSignup
 });
 });
